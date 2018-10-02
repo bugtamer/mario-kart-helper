@@ -1,4 +1,15 @@
-# MarioKartHelper
+# Mario Kart Helper
+
+
+[![MIT License][mit-license-button]][mit-license]
+
+[mit-license-button]: https://img.shields.io/badge/license-MIT-green.svg
+
+[mit-license]: https://opensource.org/licenses/MIT
+
+- [User story #1](docs/user_stories/user_story_01.md)
+
+***
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
