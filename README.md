@@ -13,8 +13,9 @@
 
 ## Table Of Content
 
-- [License](./LICENSE)
-- [Project requirements](./docs/requirements.md)
-- [Angular/CLI info](./docs/angular-cli-info.md)
 - [User stories](./docs/user_stories/user_story_01.md)
 - [Sketches](./docs/sketches/README.md)
+- [Mockups](./docs/mockups/README.md)
+- [Project requirements](./docs/requirements.md)
+- [Angular/CLI info](./docs/angular-cli-info.md)
+- [License](./LICENSE)
