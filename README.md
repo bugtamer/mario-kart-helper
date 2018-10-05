@@ -18,4 +18,5 @@
 - [Mockups](./docs/mockups/README.md)
 - [Project requirements](./docs/requirements.md)
 - [Angular/CLI info](./docs/angular-cli-info.md)
+- [How to configure Angular Material](./docs/material_angular/material_angular.md)
 - [License](./LICENSE)
