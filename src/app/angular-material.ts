@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
     imports: [
@@ -12,7 +13,8 @@ import { MatSelectModule } from '@angular/material/select';
         MatGridListModule,
         MatButtonModule,
         MatCheckboxModule,
-        MatSelectModule
+        MatSelectModule,
+        MatIconModule
     ],
 
     exports: [
@@ -20,7 +22,8 @@ import { MatSelectModule } from '@angular/material/select';
         MatGridListModule,
         MatButtonModule,
         MatCheckboxModule,
-        MatSelectModule
+        MatSelectModule,
+        MatIconModule
     ],
 })
 

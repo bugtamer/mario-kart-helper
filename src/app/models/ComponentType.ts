@@ -1,4 +1,4 @@
-enum ComponentType {
+export enum ComponentType {
 
     Driver = 'D',
     Body = 'B',

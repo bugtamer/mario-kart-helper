@@ -47,3 +47,7 @@ or try out
 - `$ cd mario-kart-helper`
 - `$ git remote add origin https://github.com/bugtamer/mario-kart-helper.git`
 - `$ git push -u origin master`
+
+## 6 To test the app locally while developing
+
+- `$ ng serve` or use `$ sudo ng serve` when the browser doesn't reflect the file changes
