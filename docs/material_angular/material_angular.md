@@ -30,7 +30,7 @@
 
   `mario-kart-helper/src/app/angular-material.ts`
 
-  ```
+```typescript
 1  import { NgModule } from '@angular/core';
 2
 3  @NgModule({
@@ -39,7 +39,7 @@
 6  })
 7
 8  export class AngularMaterialModule { }
-  ```
+```
 
 - Update `mario-kart-helper/src/app/app.module.ts` so that it imports `AngularMaterialModule`
 
@@ -47,7 +47,7 @@
 
   `mario-kart-helper/src/app/app.module.ts`
 
-  ```
+```typescript
 01  import { BrowserModule } from '@angular/platform-browser';
 02  import { NgModule } from '@angular/core';
 03  import { AngularMaterialModule } from './angular-material';
@@ -66,7 +66,7 @@
 16      bootstrap: [AppComponent]
 17  })
 18  export class AppModule { }
-  ```
+```
 
 - Be sure to import the Angular Material modules after Angular's `BrowserModule`, as the import order matters for *NgModules*.
 
@@ -80,7 +80,7 @@
 
   `mario-kart-helper/src/app/angular-material.ts`
 
-  ```
+```typescript
 1  import { NgModule } from '@angular/core';
 2  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 3
@@ -90,7 +90,7 @@
 7  })
 8
 9  export class AngularMaterialModule { }
-  ```
+```
 
   **Pay close attention to** lines **2**, **5** and **6**
 
@@ -101,7 +101,7 @@
 
   `mario-kart-helper/src/app/angular-material.ts`
 
-  ```
+```typescript
 01  import { NgModule } from '@angular/core';
 02  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 03  import { MatButtonModule, MatCheckboxModule } from '@angular/material';
@@ -121,7 +121,7 @@
 17  })
 18
 19  export class AngularMaterialModule { }
-  ```
+```
 
 ## 5 Include a prebuilt theme
 
@@ -146,7 +146,3 @@
 
 - Configurable module loader enabling backwards compatibility workflows for ES modules in browsers.
 - See [appendix-configuring-systemjs](https://material.angular.io/guide/getting-started#appendix-configuring-systemjs)
-
-
-
-
