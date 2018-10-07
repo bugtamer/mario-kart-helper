@@ -11,6 +11,7 @@ import { DriversComponent } from './components/content/drivers/drivers.component
 import { BodiesComponent } from './components/content/bodies/bodies.component';
 import { TiresComponent } from './components/content/tires/tires.component';
 import { GlidersComponent } from './components/content/gliders/gliders.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { GlidersComponent } from './components/content/gliders/gliders.component
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularMaterialModule
   ],
   providers: [

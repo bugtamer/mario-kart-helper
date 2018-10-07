@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StatsService } from '../../../services/stats/stats.service';
+import { ComponentType } from '../../../models/ComponentType';
 
 @Component({
   selector: 'app-drivers',
@@ -13,7 +14,8 @@ export class DriversComponent implements OnInit {
   constructor(private _statsService: StatsService) { }
 
   ngOnInit() {
-    this._drivers = this._statsService.getDrivers();
+    this._statsService.getComponents(ComponentType.Driver)
+    .subscribe(receivedComponentData => this._drivers = receivedComponentData);
   }
 
 }

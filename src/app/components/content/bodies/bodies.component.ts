@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StatsService } from '../../../services/stats/stats.service';
+import { ComponentType } from '../../../models/ComponentType';
 
 @Component({
   selector: 'app-bodies',
@@ -13,7 +14,8 @@ export class BodiesComponent implements OnInit {
   constructor(private _statsService: StatsService) { }
 
   ngOnInit() {
-    this._bodies = this._statsService.getBodies();
+    this._statsService.getComponents(ComponentType.Body)
+    .subscribe(receivedComponentData => this._bodies = receivedComponentData);
   }
 
 }

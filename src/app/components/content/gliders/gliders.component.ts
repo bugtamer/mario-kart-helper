@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StatsService } from '../../../services/stats/stats.service';
+import { ComponentType } from '../../../models/ComponentType';
 
 @Component({
   selector: 'app-gliders',
@@ -13,7 +14,8 @@ export class GlidersComponent implements OnInit {
   constructor(private _statsService: StatsService) { }
 
   ngOnInit() {
-    this._gliders = this._statsService.getGliders();
+    this._statsService.getComponents(ComponentType.Glider)
+    .subscribe(receivedComponentData => this._gliders = receivedComponentData);
   }
 
 }
