@@ -1,4 +1,4 @@
-# Mario Kart Helper
+# Mario Kart Helper  :warning: :construction: :bangbang:
 
 
 [![MIT License][mit-license-button]][mit-license]
@@ -19,8 +19,9 @@
 - [Project requirements](./docs/requirements.md)
 - [Angular/CLI info](./docs/angular-cli-info.md)
 - [How to configure Angular Material](./docs/material_angular/material_angular.md)
+- [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/)  :wink:
 - [License](./LICENSE)
 
-## Snapshots
+## Snapshots :warning: :construction: :bangbang:
 
 ![home](./docs/snapshots/home.png)
