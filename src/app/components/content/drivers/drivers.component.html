@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select placeholder="Drivers">
+    <mat-option *ngFor="let driver of _drivers" [value]="driver.name">
+      {{ driver.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

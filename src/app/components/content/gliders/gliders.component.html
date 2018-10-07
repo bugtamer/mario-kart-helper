@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select placeholder="Gliders">
+    <mat-option *ngFor="let glider of _gliders" [value]="glider.name">
+      {{ glider.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

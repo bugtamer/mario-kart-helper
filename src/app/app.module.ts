@@ -7,13 +7,21 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContentComponent } from './components/content/content.component';
 import { KartElementComponent } from './components/content/kart-element/kart-element.component';
 import { StatsService } from './services/stats/stats.service';
+import { DriversComponent } from './components/content/drivers/drivers.component';
+import { BodiesComponent } from './components/content/bodies/bodies.component';
+import { TiresComponent } from './components/content/tires/tires.component';
+import { GlidersComponent } from './components/content/gliders/gliders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    KartElementComponent
+    KartElementComponent,
+    DriversComponent,
+    BodiesComponent,
+    TiresComponent,
+    GlidersComponent
   ],
   imports: [
     BrowserModule,

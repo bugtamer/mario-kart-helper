@@ -20,3 +20,7 @@
 - [Angular/CLI info](./docs/angular-cli-info.md)
 - [How to configure Angular Material](./docs/material_angular/material_angular.md)
 - [License](./LICENSE)
+
+## Snapshots
+
+![home](./docs/snapshots/home.png)
