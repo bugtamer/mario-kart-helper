@@ -1,7 +1,9 @@
 <mat-form-field>
-  <mat-select placeholder="Drivers">
-    <mat-option *ngFor="let driver of _drivers" [value]="driver.name">
+  <mat-select placeholder="Drivers" [(value)]="_selectedDriver" (selectionChange)="onDriverChange()">
+    <mat-option *ngFor="let driver of _drivers" [(value)]="driver.name">
       {{ driver.name }}
     </mat-option>
   </mat-select>
 </mat-form-field>
+<p>Selected: {{ _selectedDriver }}</p>
+<pre>{{ _driver | json }}</pre>
