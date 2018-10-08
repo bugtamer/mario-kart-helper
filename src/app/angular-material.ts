@@ -6,6 +6,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
     imports: [
@@ -14,7 +17,10 @@ import { MatIconModule } from '@angular/material/icon';
         MatButtonModule,
         MatCheckboxModule,
         MatSelectModule,
-        MatIconModule
+        MatIconModule,
+        MatCardModule,
+        MatSliderModule,
+        MatBadgeModule
     ],
 
     exports: [
@@ -23,7 +29,10 @@ import { MatIconModule } from '@angular/material/icon';
         MatButtonModule,
         MatCheckboxModule,
         MatSelectModule,
-        MatIconModule
+        MatIconModule,
+        MatCardModule,
+        MatSliderModule,
+        MatBadgeModule
     ],
 })
 
