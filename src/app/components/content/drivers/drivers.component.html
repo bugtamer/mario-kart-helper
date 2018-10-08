@@ -19,7 +19,21 @@
   <mat-card-content>
     <!-- CONTENT (begin) -->
 
-    Weight
+    Average speed
+    <br>
+    <mat-slider
+        class="example-margin"
+        disabled
+        max="10"
+        min="0"
+        step=".25"
+        thumbLabel
+        tickInterval=".25"
+        [value]="_driver.acceleration || 0"
+        [matBadge]="_driver.acceleration || 0" matBadgePosition="above after" matBadgeOverlap="false">
+    </mat-slider>
+    Acceleration
+    <br>
     <mat-slider
         class="example-margin"
         disabled
@@ -31,6 +45,35 @@
         [value]="_driver.weight || 0"
         [matBadge]="_driver.weight || 0" matBadgePosition="above after" matBadgeOverlap="false">
     </mat-slider>
+    Weight
+    <br>
+    Average handling
+    <br>
+    <mat-slider
+        class="example-margin"
+        disabled
+        max="10"
+        min="0"
+        step=".25"
+        thumbLabel
+        tickInterval=".25"
+        [value]="_driver.grid || 0"
+        [matBadge]="_driver.grid || 0" matBadgePosition="above after" matBadgeOverlap="false">
+    </mat-slider>
+    Grid
+    <br>
+    <mat-slider
+        class="example-margin"
+        disabled
+        max="10"
+        min="0"
+        step=".25"
+        thumbLabel
+        tickInterval=".25"
+        [value]="_driver.miniTurbo || 0"
+        [matBadge]="_driver.miniTurbo || 0" matBadgePosition="above after" matBadgeOverlap="false">
+    </mat-slider>
+    Mini-Turbo
 
     <p>Content</p>
     <!-- CONTENT (end) -->
