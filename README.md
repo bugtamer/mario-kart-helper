@@ -22,7 +22,8 @@
 - [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/)  :wink:
 - Licenses
   - [Project license](./LICENSE)
-  - [Image licence (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/deed.en) and [Image attribution](https://www.mariowiki.com/Mario_Kart_8_Deluxe)
+  - Some images could have a different licence from the project.
+    Those image licenses are in its own folder.
 
 ## Snapshots :warning: :construction: :bangbang:
 
