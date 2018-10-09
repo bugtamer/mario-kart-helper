@@ -20,7 +20,9 @@
 - [Angular/CLI info](./docs/angular-cli-info.md)
 - [How to configure Angular Material](./docs/material_angular/material_angular.md)
 - [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/)  :wink:
-- [License](./LICENSE)
+- Licenses
+  - [Project license](./LICENSE)
+  - [Image licence (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/deed.en) and [Image attribution](https://www.mariowiki.com/Mario_Kart_8_Deluxe)
 
 ## Snapshots :warning: :construction: :bangbang:
 
