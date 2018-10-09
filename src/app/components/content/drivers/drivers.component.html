@@ -15,68 +15,88 @@
     </mat-card-title>
     <mat-card-subtitle>{{ _driver.type }} - {{ _driver.size }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="_driver.name" [alt]="_driver.name">
+  <!-- <img mat-card-image src="../../../assets/img/drivers/Mario.png" [alt]="_driver.name"> -->
   <mat-card-content>
-    <!-- CONTENT (begin) -->
+  <!-- CONTENT (begin) -->
+    <!-- LIST (begin) -->
+    <mat-list role="list">
+      <!-- Average speed -->
+      <mat-list-item role="listitem">
+        <h4 mat-line>Average speed</h4>
+      </mat-list-item>
 
-    Average speed
-    <br>
-    <mat-slider
-        class="example-margin"
-        disabled
-        max="10"
-        min="0"
-        step=".25"
-        thumbLabel
-        tickInterval=".25"
-        [value]="_driver.acceleration || 0"
-        [matBadge]="_driver.acceleration || 0" matBadgePosition="above after" matBadgeOverlap="false">
-    </mat-slider>
-    Acceleration
-    <br>
-    <mat-slider
-        class="example-margin"
-        disabled
-        max="10"
-        min="0"
-        step=".25"
-        thumbLabel
-        tickInterval=".25"
-        [value]="_driver.weight || 0"
-        [matBadge]="_driver.weight || 0" matBadgePosition="above after" matBadgeOverlap="false">
-    </mat-slider>
-    Weight
-    <br>
-    Average handling
-    <br>
-    <mat-slider
-        class="example-margin"
-        disabled
-        max="10"
-        min="0"
-        step=".25"
-        thumbLabel
-        tickInterval=".25"
-        [value]="_driver.grid || 0"
-        [matBadge]="_driver.grid || 0" matBadgePosition="above after" matBadgeOverlap="false">
-    </mat-slider>
-    Grid
-    <br>
-    <mat-slider
-        class="example-margin"
-        disabled
-        max="10"
-        min="0"
-        step=".25"
-        thumbLabel
-        tickInterval=".25"
-        [value]="_driver.miniTurbo || 0"
-        [matBadge]="_driver.miniTurbo || 0" matBadgePosition="above after" matBadgeOverlap="false">
-    </mat-slider>
-    Mini-Turbo
+      <!-- Acceleration -->
+      <mat-list-item role="listitem">
+        <h4 mat-line>Acceleration</h4>
+        <mat-slider
+            class="example-margin"
+            disabled
+            max="10"
+            min="0"
+            step=".25"
+            thumbLabel
+            tickInterval=".25"
+            [value]="_driver.weight || 0"
+            [matBadge]="_driver.weight || 0" matBadgePosition="above after" matBadgeOverlap="false">
+        </mat-slider>
+      </mat-list-item>
+
+      <!-- Weight -->
+      <mat-list-item role="listitem">
+        <h4 mat-line>Weight</h4>
+        <mat-slider
+          class="example-margin"
+          disabled
+          max="10"
+          min="0"
+          step=".25"
+          thumbLabel
+          tickInterval=".25"
+          [value]="_driver.weight || 0"
+          [matBadge]="_driver.weight || 0" matBadgePosition="above after" matBadgeOverlap="false">
+        </mat-slider>
+      </mat-list-item>
+
+      <!-- Average handling -->
+      <mat-list-item role="listitem">
+        <h4 mat-line>Average handling</h4>
+      </mat-list-item>
+
+      <!-- Grid -->
+      <mat-list-item role="listitem">
+        <h4 mat-line>Grid</h4>
+        <mat-slider
+          class="example-margin"
+          disabled
+          max="10"
+          min="0"
+          step=".25"
+          thumbLabel
+          tickInterval=".25"
+          [value]="_driver.grid || 0"
+          [matBadge]="_driver.grid || 0" matBadgePosition="above after" matBadgeOverlap="false">
+        </mat-slider>
+      </mat-list-item>
+
+      <mat-list-item role="listitem">
+        <h4 mat-line>Mini-Turbo</h4>
+        <mat-slider
+          class="example-margin"
+          disabled
+          max="10"
+          min="0"
+          step=".25"
+          thumbLabel
+          tickInterval=".25"
+          [value]="_driver.miniTurbo || 0"
+          [matBadge]="_driver.miniTurbo || 0" matBadgePosition="above after" matBadgeOverlap="false">
+        </mat-slider>
+      </mat-list-item>
+    </mat-list>
+    <!-- LIST (end) -->
 
     <p>Content</p>
-    <!-- CONTENT (end) -->
+  <!-- CONTENT (end) -->
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>LIKE</button>

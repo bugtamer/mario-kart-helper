@@ -16,8 +16,10 @@ export class DriversComponent implements OnInit {
   constructor(private _statsService: StatsService) { }
 
   ngOnInit() {
+    this._selectedDriver = "Mario";
     this._statsService.getComponents(ComponentType.Driver)
-    .subscribe(receivedComponentData => this._drivers = receivedComponentData);
+    .subscribe(receivedComponentData => {this._drivers = receivedComponentData;
+      this.onDriverChange();});
   }
 
   
