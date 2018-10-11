@@ -1,0 +1,21 @@
+<mat-list-item role="listitem">
+  <h4 mat-line>{{ name }}</h4>
+
+  <mat-slider
+    class="example-margin"
+
+    [disabled]="disabled"
+    [thumbLabel]="thumbLabel"
+    [tickInterval]="tickInterval"
+    [vertical]="vertical"
+    [invert]="invert"
+    [min]="min"
+    [max]="max"
+    [step]="step"
+    [value]="value"
+
+    [matBadge]="value"
+    matBadgePosition="above after"
+    matBadgeOverlap="false">
+  </mat-slider>
+</mat-list-item>

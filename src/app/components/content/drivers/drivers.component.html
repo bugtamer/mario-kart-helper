@@ -20,82 +20,14 @@
   <!-- CONTENT (begin) -->
     <!-- LIST (begin) -->
     <mat-list role="list">
-      <!-- Average speed -->
-      <mat-list-item role="listitem">
-        <h4 mat-line>Average speed</h4>
-      </mat-list-item>
-
-      <!-- Acceleration -->
-      <mat-list-item role="listitem">
-        <h4 mat-line>Acceleration</h4>
-        <mat-slider
-            class="example-margin"
-            disabled
-            max="10"
-            min="0"
-            step=".25"
-            thumbLabel
-            tickInterval=".25"
-            [value]="_driver.weight || 0"
-            [matBadge]="_driver.weight || 0" matBadgePosition="above after" matBadgeOverlap="false">
-        </mat-slider>
-      </mat-list-item>
-
-      <!-- Weight -->
-      <mat-list-item role="listitem">
-        <h4 mat-line>Weight</h4>
-        <mat-slider
-          class="example-margin"
-          disabled
-          max="10"
-          min="0"
-          step=".25"
-          thumbLabel
-          tickInterval=".25"
-          [value]="_driver.weight || 0"
-          [matBadge]="_driver.weight || 0" matBadgePosition="above after" matBadgeOverlap="false">
-        </mat-slider>
-      </mat-list-item>
-
-      <!-- Average handling -->
-      <mat-list-item role="listitem">
-        <h4 mat-line>Average handling</h4>
-      </mat-list-item>
-
-      <!-- Grid -->
-      <mat-list-item role="listitem">
-        <h4 mat-line>Grid</h4>
-        <mat-slider
-          class="example-margin"
-          disabled
-          max="10"
-          min="0"
-          step=".25"
-          thumbLabel
-          tickInterval=".25"
-          [value]="_driver.grid || 0"
-          [matBadge]="_driver.grid || 0" matBadgePosition="above after" matBadgeOverlap="false">
-        </mat-slider>
-      </mat-list-item>
-
-      <mat-list-item role="listitem">
-        <h4 mat-line>Mini-Turbo</h4>
-        <mat-slider
-          class="example-margin"
-          disabled
-          max="10"
-          min="0"
-          step=".25"
-          thumbLabel
-          tickInterval=".25"
-          [value]="_driver.miniTurbo || 0"
-          [matBadge]="_driver.miniTurbo || 0" matBadgePosition="above after" matBadgeOverlap="false">
-        </mat-slider>
-      </mat-list-item>
+      <app-slider name="Average speed (FIX)" value="0"></app-slider>
+      <app-slider name="Acceleration" [value]="_driver.acceleration"></app-slider>
+      <app-slider name="Weight" [value]="_driver.weight"></app-slider>
+      <app-slider name="Average handling (FIX)" value="0"></app-slider>
+      <app-slider name="Grid" [value]="_driver.grid"></app-slider>
+      <app-slider name="Mini-Turbo" [value]="_driver.miniTurbo"></app-slider>
     </mat-list>
     <!-- LIST (end) -->
-
-    <p>Content</p>
   <!-- CONTENT (end) -->
   </mat-card-content>
   <mat-card-actions>

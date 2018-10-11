@@ -12,6 +12,7 @@ import { BodiesComponent } from './components/content/bodies/bodies.component';
 import { TiresComponent } from './components/content/tires/tires.component';
 import { GlidersComponent } from './components/content/gliders/gliders.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SliderComponent } from './components/content/kart/statistics/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     DriversComponent,
     BodiesComponent,
     TiresComponent,
-    GlidersComponent
+    GlidersComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
