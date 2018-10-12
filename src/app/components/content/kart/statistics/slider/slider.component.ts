@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-slider',
+  selector: 'app-kart-statistics-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
@@ -9,6 +9,10 @@ export class SliderComponent implements OnInit {
 
   @Input()
   name: string;
+
+  @Input()
+  value: number;
+
   disabled: boolean = true;
   thumbLabel: boolean = false;
   tickInterval: number = .25;
@@ -19,8 +23,6 @@ export class SliderComponent implements OnInit {
   min: number = 0;
   max: number = 10;
   step: number = .25;
-  @Input()
-  value: number;
   
   constructor() { }
 
