@@ -1,4 +1,4 @@
-export enum ComponentType {
+export enum KartComponentType {
 
     Driver = 'D',
     Body = 'B',
@@ -7,4 +7,4 @@ export enum ComponentType {
 
 }
 
-export default ComponentType;
+export default KartComponentType;

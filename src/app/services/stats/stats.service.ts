@@ -1,33 +1,29 @@
 import { Injectable } from '@angular/core';
-import { ComponentType } from '../../models/ComponentType';
+import { KartComponentType } from '../../models/KartComponentType';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import KartFeatures from 'src/app/models/KartFeatures';
+import DataSource from './DataSource';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StatsService {
 
-  private _componentStore: object = {};
-  private _componentsObs: object = {};
-  private _dataSource: object = {};
+  private _kartFeaturesStore: object = {};
+  private _kartFeaturesObs: object = {};
 
 
-  constructor(private _httpClient: HttpClient) {
-    this._dataSource[ComponentType.Driver] = 'http://www.mocky.io/v2/5bba0d9a31000085043ed9f4';
-    this._dataSource[ComponentType.Body] = 'http://www.mocky.io/v2/5bba4c203100005a00148c43';
-    this._dataSource[ComponentType.Tires] = 'http://www.mocky.io/v2/5bba4c523100005c00148c44';
-    this._dataSource[ComponentType.Glider] = 'http://www.mocky.io/v2/5bba4c823100005b00148c45';
-  }
+  constructor(private _httpClient: HttpClient) { }
 
 
-  getComponents(componentType: ComponentType): Observable<any> {
-    if (this._componentStore[componentType]) {
-      this._componentsObs[componentType] = of (this._componentStore[componentType]);
-    } else if (! this._componentStore[componentType]) {
-      this._componentsObs[componentType] = this._httpClient
-      .get<any>( this._dataSource[componentType] )
+  getComponents(type: KartComponentType): Observable<KartFeatures[]> {
+    if (this._kartFeaturesStore[type]) {
+      this._kartFeaturesObs[type] = of (this._kartFeaturesStore[type]);
+    } else if (! this._kartFeaturesStore[type]) {
+      this._kartFeaturesObs[type] = this._httpClient
+      .get<any>( DataSource.getResource(type) )
       // You can easily compose a bunch of pure function operators and pass them
       // as a single operator to an observable,
       // so you can write RxJS code that is much more re-usable by just piping
@@ -38,16 +34,16 @@ export class StatsService {
         // https://www.learnrxjs.io/operators/utility/do.html
         tap (
           data => {
-            this._componentStore[componentType] = data;
+            this._kartFeaturesStore[type] = data;
             window.localStorage.setItem(
-              componentType,
-              JSON.stringify(this._componentStore[componentType]));
+              type,
+              JSON.stringify(this._kartFeaturesStore[type]));
           },
           error => console.log('error', error)
         )
       );
     }
-    return this._componentsObs[componentType];
+    return this._kartFeaturesObs[type];
   }
 
 }

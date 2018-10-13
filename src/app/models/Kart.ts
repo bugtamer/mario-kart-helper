@@ -1,27 +1,20 @@
-import Path from "./Path";
-import DriverSize from "./DriverSize";
+import KartFeatures from "./KartFeatures";
 
 class Kart {
 
-    public speed: Path;
-    public acceleration: number;
-    public weight: number;
-    public handling: Path;
-    public grid: number;
-    public miniTurbo: number;
-    public size: DriverSize;
+    public driver: KartFeatures;
+    public body: KartFeatures;
+    public tires: KartFeatures;
+    public glider: KartFeatures;
 
     
-    constructor (speed: Path, acceleration: number, weight: number,
-        handling: Path, grid: number, miniTurbo: number) {
+    constructor (driver: KartFeatures, body: KartFeatures,
+        tires: KartFeatures, glider: KartFeatures) {
 
-            this.speed = speed;
-            this.acceleration = acceleration;
-            this.weight = weight;
-            this.handling = handling;
-            this.grid = grid;
-            this.miniTurbo = miniTurbo;
-            this.size = null;
+        this.driver = driver;
+        this.body = body;
+        this.tires = tires;
+        this.glider = glider;
     }
 
 }

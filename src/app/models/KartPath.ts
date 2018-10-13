@@ -1,4 +1,4 @@
-class Path {
+class KartPath {
 
     public ground: number;
     public water: number;
@@ -13,12 +13,6 @@ class Path {
         this.antiGravity = antiGravity;
     }
 
-    
-    getAverage() {
-        var avg = (this.ground + this.water + this.air + this.antiGravity) / 4;
-        return avg.toFixed(2);
-    }
-
 }
 
-export default Path;
+export default KartPath;

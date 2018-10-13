@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import Kart from 'src/app/models/Kart';
+import KartFeatures from 'src/app/models/KartFeatures';
 
 @Component({
   selector: 'app-kart-statistics-stats',
@@ -9,7 +9,7 @@ import Kart from 'src/app/models/Kart';
 export class StatsComponent implements OnInit {
 
   @Input()
-  element: any;
+  element: KartFeatures;
 
   constructor() { }
 

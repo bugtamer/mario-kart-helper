@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import KartFeatures from 'src/app/models/KartFeatures';
 
 @Component({
   selector: 'app-kart-element',
@@ -10,7 +11,7 @@ export class ElementComponent implements OnInit {
   @Input()
   type;
 
-  element: any = { };
+  kartFeatures: KartFeatures = new KartFeatures(null, null, null, 0, 0, null, 0, 0, null, null);
 
   
   constructor() { }
@@ -18,8 +19,8 @@ export class ElementComponent implements OnInit {
   ngOnInit() { }
 
 
-  updateElement(newElement: any): void {
-    this.element = newElement;
+  updateKartFeatures(newFeatures: KartFeatures): void {
+    this.kartFeatures = newFeatures;
   }
   
 }

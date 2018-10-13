@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import ComponentType from 'src/app/models/ComponentType';
+import KartComponentType from 'src/app/models/KartComponentType';
 
 @Component({
   selector: 'app-content',
@@ -8,10 +8,10 @@ import ComponentType from 'src/app/models/ComponentType';
 })
 export class ContentComponent implements OnInit {
 
-  private _driver = ComponentType.Driver;
-  private _body = ComponentType.Body;
-  private _tires = ComponentType.Tires;
-  private _glider = ComponentType.Glider;
+  private _driver = KartComponentType.Driver;
+  private _body = KartComponentType.Body;
+  private _tires = KartComponentType.Tires;
+  private _glider = KartComponentType.Glider;
 
   
   constructor() { }

@@ -1,17 +1,18 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
+    <!--<div mat-card-avatar class="example-header-image"></div>-->
+    <img mat-card-avatar [src]="kartFeatures.image ? kartFeatures.image.url : '#'" [alt]="kartFeatures.name ? kartFeatures.name : ''">
     <mat-card-title>
 
-      <app-kart-selector [type]="type" (newSelection)="updateElement($event)"></app-kart-selector>
+      <app-kart-selector [type]="type" (newSelection)="updateKartFeatures($event)"></app-kart-selector>
 
     </mat-card-title>
-    <mat-card-subtitle>{{ element.type }} - {{ element.size }}</mat-card-subtitle>
+    <mat-card-subtitle>{{ kartFeatures.type }} {{ kartFeatures.size ? ' - ' + kartFeatures.size : kartFeatures.size }}</mat-card-subtitle>
   </mat-card-header>
-  <!-- <img mat-card-image src="../../../assets/img/drivers/Mario.png" [alt]="element.name"> -->
+  <!--<img mat-card-image [src]="kartFeatures.image ? kartFeatures.image.url : '#'" [alt]="kartFeatures.name">-->
   <mat-card-content>
 
-    <app-kart-statistics-stats [element]="element"></app-kart-statistics-stats>
+    <app-kart-statistics-stats [element]="kartFeatures"></app-kart-statistics-stats>
 
   </mat-card-content>
   <mat-card-actions>
@@ -19,4 +20,3 @@
     <button mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>
-  

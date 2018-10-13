@@ -1,5 +1,5 @@
 <mat-form-field>
-  <mat-select (selectionChange)="onSelectorChange()" [(value)]="_selectedElement" [placeholder]="_element.type">
+  <mat-select (selectionChange)="onSelectorChange($event)" [(value)]="_selectedElement" [placeholder]="_element.type">
     <mat-option *ngFor="let item of _allElements" [(value)]="item.name">
       {{ item.name }}
     </mat-option>
