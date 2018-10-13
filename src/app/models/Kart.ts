@@ -1,6 +1,6 @@
 import KartFeatures from "./KartFeatures";
 
-class Kart {
+export class Kart {
 
     public driver: KartFeatures;
     public body: KartFeatures;

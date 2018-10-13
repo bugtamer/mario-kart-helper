@@ -1,4 +1,4 @@
-class KartComponentPicture {
+export class KartComponentPicture {
 
     public url: string;
     public width: number;

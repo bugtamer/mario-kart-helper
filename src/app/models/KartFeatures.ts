@@ -3,7 +3,7 @@ import KartComponentType from "./KartComponentType";
 import KartComponentPicture from "./KartComponentPicture";
 import DriverSize from "./DriverSize";
 
-class KartFeatures {
+export class KartFeatures {
 
     public name: string;
     public type: KartComponentType;

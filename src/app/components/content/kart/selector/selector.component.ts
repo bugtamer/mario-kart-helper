@@ -3,6 +3,8 @@ import { StatsService } from 'src/app/services/stats/stats.service';
 import { EventEmitter } from '@angular/core'; // XXX and not: from 'events';
 import KartComponentType from 'src/app/models/KartComponentType';
 import KartFeatures from 'src/app/models/KartFeatures';
+import { DummyModel } from 'src/app/util/dummy-model';
+import { Random } from 'src/app/util/random';
 
 @Component({
   selector: 'app-kart-selector',
@@ -17,7 +19,7 @@ export class SelectorComponent implements OnInit {
   @Output('newSelection')
   private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
   
-  private _element: KartFeatures = new KartFeatures(null, null, null, 0, 0, null, 0, 0, null, null);
+  private _element: KartFeatures = DummyModel.getKartFeatures();
   private _allElements: KartFeatures[];
   private _selectedElement: string;
 
@@ -30,7 +32,7 @@ export class SelectorComponent implements OnInit {
       receivedComponentData => {
         this._allElements = receivedComponentData;
         console.log('this._allElements', this._allElements);
-        this._selectedElement = this._allElements[this.getRandom(this._allElements.length)].name;
+        this._selectedElement = this._allElements[Random.getInteger(this._allElements.length)].name;
         this.onSelectorChange();
       });
   }
@@ -45,10 +47,6 @@ export class SelectorComponent implements OnInit {
         break;
       }
     }
-  }
-
-  private getRandom(upperLimit: number): number {
-    return Math.floor(Math.random() * upperLimit + 1);
   }
 
 }

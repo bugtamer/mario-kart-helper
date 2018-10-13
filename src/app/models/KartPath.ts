@@ -1,4 +1,4 @@
-class KartPath {
+export class KartPath {
 
     public ground: number;
     public water: number;
