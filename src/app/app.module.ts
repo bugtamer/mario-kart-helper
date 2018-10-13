@@ -11,6 +11,7 @@ import { SliderComponent } from './components/content/kart/statistics/slider/sli
 import { StatsComponent } from './components/content/kart/statistics/stats/stats.component';
 import { SelectorComponent } from './components/content/kart/selector/selector.component';
 import { ElementComponent } from './components/content/kart/element/element.component';
+import { AverageService } from './services/avg/average.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ElementComponent } from './components/content/kart/element/element.comp
     AngularMaterialModule
   ],
   providers: [
-    StatsService
+    StatsService,
+    AverageService
   ],
   bootstrap: [AppComponent]
 })
