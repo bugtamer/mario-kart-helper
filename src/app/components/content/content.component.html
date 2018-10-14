@@ -1,4 +1,5 @@
-<app-kart-element [type]="_driver"></app-kart-element>
-<app-kart-element [type]="_body"></app-kart-element>
-<app-kart-element [type]="_tires"></app-kart-element>
-<app-kart-element [type]="_glider"></app-kart-element>
+<app-kart-statistics-stats [element]="element"></app-kart-statistics-stats>
+<app-kart-element [type]="_kart.driver.type" (featureChange)="onFeatureChange($event)"></app-kart-element>
+<app-kart-element [type]="_kart.body.type" (featureChange)="onFeatureChange($event)"></app-kart-element>
+<app-kart-element [type]="_kart.tires.type" (featureChange)="onFeatureChange($event)"></app-kart-element>
+<app-kart-element [type]="_kart.glider.type" (featureChange)="onFeatureChange($event)"></app-kart-element>

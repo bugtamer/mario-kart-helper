@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { KartPath } from '../../models/KartPath';
 import Kart from '../../models/Kart';
+import KartFeatures from 'src/app/models/KartFeatures';
+import { DummyModel } from 'src/app/util/dummy-model';
 
 @Injectable({
     providedIn: 'root'
@@ -43,6 +45,40 @@ export class AverageService {
     
     public getMiniTurbo(kart: Kart, decimal?: number): string {
         return this.getScalar(kart, 'miniTurbo', decimal);
+    }
+
+    
+    public getKartFeatures(kart: Kart): KartFeatures {
+        let kartFeatures: KartFeatures = DummyModel.getKartFeatures();
+        kartFeatures.speed = this.kartPathOfKartIs(kart, 'speed');
+        kartFeatures.acceleration = +this.getAcceleration(kart, 0);
+        kartFeatures.weight = +this.getWeight(kart, 0);
+        kartFeatures.handling = this.kartPathOfKartIs(kart, 'handling');
+        kartFeatures.grid = +this.getGrid(kart, 0);
+        kartFeatures.miniTurbo = +this.getMiniTurbo(kart, 0);
+        // console.log('kartFeatures', kartFeatures);
+        return kartFeatures;
+    }
+
+    
+    kartPathOfKartIs(kart: Kart, feature): KartPath {
+        let kartPath: KartPath = DummyModel.getKartPath();
+        kartPath.ground = this.getSpecificFeaturePath(kart, feature, 'ground');
+        kartPath.water = this.getSpecificFeaturePath(kart, feature, 'water');
+        kartPath.air = this.getSpecificFeaturePath(kart, feature, 'air');
+        kartPath.antiGravity = this.getSpecificFeaturePath(kart, feature, 'antiGravity');
+        // console.log('kartPath', kartPath);
+        return kartPath;
+    }
+
+    
+    private getSpecificFeaturePath(kart: Kart, featureType: string, pathType: string): number {
+        let avg: number = 0;
+        avg += kart.driver[featureType][pathType];
+        avg += kart.body[featureType][pathType];
+        avg += kart.tires[featureType][pathType];
+        avg += kart.glider[featureType][pathType];
+        return + this.round(avg / 4, 0);
     }
 
     

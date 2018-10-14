@@ -1,9 +1,9 @@
 export enum KartComponentType {
 
-    Driver = 'D',
-    Body = 'B',
-    Tires = 'T',
-    Glider = 'G'
+    Driver = 'Driver',
+    Body = 'Body',
+    Tires = 'Tires',
+    Glider = 'Glider'
 
 }
 

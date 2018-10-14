@@ -1,8 +1,8 @@
 enum DriverSize {
 
-    Small = 'S',
-    Medium = 'M',
-    Large = 'L'
+    Small = 'Small',
+    Medium = 'Medium',
+    Large = 'Large'
 
 }
 

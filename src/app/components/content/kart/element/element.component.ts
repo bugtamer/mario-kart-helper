@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import KartFeatures from 'src/app/models/KartFeatures';
 import { DummyModel } from 'src/app/util/dummy-model';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-kart-element',
@@ -11,6 +12,9 @@ export class ElementComponent implements OnInit {
 
   @Input()
   type;
+  
+  @Output('featureChange')
+  private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
 
   kartFeatures: KartFeatures = DummyModel.getKartFeatures();
 
@@ -22,6 +26,7 @@ export class ElementComponent implements OnInit {
 
   updateKartFeatures(newFeatures: KartFeatures): void {
     this.kartFeatures = newFeatures;
+    this._event.emit(newFeatures);
   }
   
 }
