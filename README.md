@@ -1,4 +1,4 @@
-# Mario Kart Helper  :warning: :construction: :bangbang:
+# Mario Kart Helper :warning: :construction: :bangbang:
 
 
 [![MIT License][mit-license-button]][mit-license]
@@ -13,13 +13,14 @@
 
 ## Table Of Content
 
+- [Project 'Kanban'](https://github.com/bugtamer/mario-kart-helper/projects) :clipboard:
 - [User stories](./docs/user_stories/user_story_01.md)
 - [Sketches](./docs/sketches/README.md)
 - [Mockups](./docs/mockups/README.md)
 - [Project requirements](./docs/requirements.md)
 - [Angular/CLI info](./docs/angular-cli-info.md)
 - [How to configure Angular Material](./docs/material_angular/material_angular.md)
-- [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/)  :wink:
+- [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :wink:
 - Licenses
   - [Project license](./LICENSE)
   - Some images could have a different licence from the project.
