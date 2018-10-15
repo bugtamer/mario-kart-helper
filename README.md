@@ -14,7 +14,7 @@
 ## Table Of Content
 
 - [Project 'Kanban'](https://github.com/bugtamer/mario-kart-helper/projects) :clipboard:
-- [User stories](./docs/user_stories/user_story_01.md)
+- [User stories](./docs/user_stories/README.md)
 - [Sketches](./docs/sketches/README.md)
 - [Mockups](./docs/mockups/README.md)
 - [Project requirements](./docs/requirements.md)
