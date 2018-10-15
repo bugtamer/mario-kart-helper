@@ -1,8 +1,8 @@
 <mat-list role="list">
-  <app-kart-statistics-slider name="Average speed" [value]="_avg.getPath(element.speed, 0)"></app-kart-statistics-slider>
-  <app-kart-statistics-slider name="Acceleration" [value]="element.acceleration"></app-kart-statistics-slider>
-  <app-kart-statistics-slider name="Weight" [value]="element.weight"></app-kart-statistics-slider>
-  <app-kart-statistics-slider name="Average handling" [value]="_avg.getPath(element.handling, 0)"></app-kart-statistics-slider>
-  <app-kart-statistics-slider name="Grid" [value]="element.grid"></app-kart-statistics-slider>
-  <app-kart-statistics-slider name="Mini-Turbo" [value]="element.miniTurbo"></app-kart-statistics-slider>
+  <app-kart-statistics-slider name="Average speed" [value]="_avg.path(element.speed).toFixed(0)"></app-kart-statistics-slider>
+  <app-kart-statistics-slider name="Acceleration" [value]="element.acceleration.toFixed(0)"></app-kart-statistics-slider>
+  <app-kart-statistics-slider name="Weight" [value]="element.weight.toFixed(0)"></app-kart-statistics-slider>
+  <app-kart-statistics-slider name="Average handling" [value]="_avg.path(element.handling).toFixed(0)"></app-kart-statistics-slider>
+  <app-kart-statistics-slider name="Grid" [value]="element.grid.toFixed(0)"></app-kart-statistics-slider>
+  <app-kart-statistics-slider name="Mini-Turbo" [value]="element.miniTurbo.toFixed(0)"></app-kart-statistics-slider>
 </mat-list>

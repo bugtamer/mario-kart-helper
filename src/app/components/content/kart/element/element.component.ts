@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import KartFeatures from 'src/app/models/KartFeatures';
-import { DummyModel } from 'src/app/util/dummy-model';
+import { NullModel } from 'src/app/util/null-domain-models';
 import { EventEmitter } from '@angular/core';
 
 @Component({
@@ -16,7 +16,7 @@ export class ElementComponent implements OnInit {
   @Output('featureChange')
   private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
 
-  kartFeatures: KartFeatures = DummyModel.getKartFeatures();
+  kartFeatures: KartFeatures = NullModel.getKartFeatures();
 
   
   constructor() { }

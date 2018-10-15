@@ -3,7 +3,7 @@ import { StatsService } from 'src/app/services/stats/stats.service';
 import { EventEmitter } from '@angular/core'; // XXX and not: from 'events';
 import KartComponentType from 'src/app/models/KartComponentType';
 import KartFeatures from 'src/app/models/KartFeatures';
-import { DummyModel } from 'src/app/util/dummy-model';
+import { NullModel } from 'src/app/util/null-domain-models';
 import { Random } from 'src/app/util/random';
 
 @Component({
@@ -19,7 +19,7 @@ export class SelectorComponent implements OnInit {
   @Output('newSelection')
   private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
   
-  private _element: KartFeatures = DummyModel.getKartFeatures();
+  private _element: KartFeatures = NullModel.getKartFeatures();
   private _allElements: KartFeatures[];
   private _selectedElement: string;
 

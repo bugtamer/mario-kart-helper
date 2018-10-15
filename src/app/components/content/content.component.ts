@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import KartComponentType from 'src/app/models/KartComponentType';
 import Kart from 'src/app/models/Kart';
-import { DummyModel } from 'src/app/util/dummy-model';
+import { NullModel } from 'src/app/util/null-domain-models';
 import { AverageService } from 'src/app/services/avg/average.service';
 import KartFeatures from 'src/app/models/KartFeatures';
 
@@ -20,8 +20,8 @@ export class ContentComponent implements OnInit {
 
   
   ngOnInit() {
-    this.element = DummyModel.getKartFeatures()
-    this._kart = DummyModel.getKart();
+    this.element = NullModel.getKartFeatures()
+    this._kart = NullModel.getKart();
     this._kart.driver.type = KartComponentType.Driver;
     this._kart.body.type = KartComponentType.Body;
     this._kart.tires.type = KartComponentType.Tires;
@@ -36,7 +36,7 @@ export class ContentComponent implements OnInit {
       case KartComponentType.Tires: this._kart.tires = kFeature; break;
       case KartComponentType.Glider: this._kart.glider = kFeature; break;
     }
-    this.element = this._avg.getKartFeatures(this._kart);
+    this.element = this._avg.kart(this._kart);
   }
 
 }

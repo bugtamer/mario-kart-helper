@@ -3,24 +3,24 @@ import { KartFeatures } from '../models/KartFeatures';
 import { KartPath } from '../models/KartPath';
 import { Kart } from '../models/Kart';
 
-export class DummyModel {
+export class NullModel {
     
   public static getKart() {
     return new Kart(
-        DummyModel.getKartFeatures(),
-        DummyModel.getKartFeatures(),
-        DummyModel.getKartFeatures(),
-        DummyModel.getKartFeatures());
+        NullModel.getKartFeatures(),
+        NullModel.getKartFeatures(),
+        NullModel.getKartFeatures(),
+        NullModel.getKartFeatures());
   }
   
     
   public static getKartFeatures() {
     return new KartFeatures(null,
-        DummyModel.getKartComponentType(),
-        DummyModel.getKartPath(), 0, 0,
-        DummyModel.getKartPath(), 0, 0,
-        DummyModel.getDriverSize(),
-        DummyModel.getKartComponentPicture());
+        NullModel.getKartComponentType(),
+        NullModel.getKartPath(), 0, 0,
+        NullModel.getKartPath(), 0, 0,
+        NullModel.getDriverSize(),
+        NullModel.getKartComponentPicture());
   }
 
   
