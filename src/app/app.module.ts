@@ -12,6 +12,7 @@ import { StatsComponent } from './components/content/kart/statistics/stats/stats
 import { SelectorComponent } from './components/content/kart/selector/selector.component';
 import { ElementComponent } from './components/content/kart/element/element.component';
 import { AverageService } from './services/avg/average.service';
+import { PathComponent } from './components/content/kart/statistics/path/path.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AverageService } from './services/avg/average.service';
     SliderComponent,
     StatsComponent,
     SelectorComponent,
-    ElementComponent
+    ElementComponent,
+    PathComponent
   ],
   imports: [
     BrowserModule,

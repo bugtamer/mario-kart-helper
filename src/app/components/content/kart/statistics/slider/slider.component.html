@@ -1,9 +1,10 @@
 <mat-list-item role="listitem">
   <h4 mat-line>{{ name }}</h4>
+  
+  <span [matBadge]="value"  matBadgePosition="above before" matBadgeOverlap="false"></span>
 
   <mat-slider
     class="example-margin"
-
     [disabled]="disabled"
     [thumbLabel]="thumbLabel"
     [tickInterval]="tickInterval"
@@ -12,10 +13,6 @@
     [min]="min"
     [max]="max"
     [step]="step"
-    [value]="value"
-
-    [matBadge]="value"
-    matBadgePosition="above after"
-    matBadgeOverlap="false">
+    [value]="value">
   </mat-slider>
 </mat-list-item>
