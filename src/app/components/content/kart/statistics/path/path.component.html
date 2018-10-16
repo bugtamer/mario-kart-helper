@@ -10,10 +10,10 @@
     </mat-expansion-panel-header>
 
     
-    <app-kart-statistics-slider name="Ground" [value]="path.ground"></app-kart-statistics-slider>
-    <app-kart-statistics-slider name="Water" [value]="path.water"></app-kart-statistics-slider>
-    <app-kart-statistics-slider name="Air" [value]="path.air"></app-kart-statistics-slider>
-    <app-kart-statistics-slider name="Anti-gravity" [value]="path.antiGravity"></app-kart-statistics-slider>
+    <app-kart-statistics-slider name="Ground" [value]="path.ground.toFixed(0)"></app-kart-statistics-slider>
+    <app-kart-statistics-slider name="Water" [value]="path.water.toFixed(0)"></app-kart-statistics-slider>
+    <app-kart-statistics-slider name="Air" [value]="path.air.toFixed(0)"></app-kart-statistics-slider>
+    <app-kart-statistics-slider name="Anti-gravity" [value]="path.antiGravity.toFixed(0)"></app-kart-statistics-slider>
 
   </mat-expansion-panel>
 </mat-accordion>
