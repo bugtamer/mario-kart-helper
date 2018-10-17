@@ -19,7 +19,9 @@
 - [Mockups](./docs/mockups/README.md)
 - [Project requirements](./docs/requirements.md)
 - [Angular/CLI info](./docs/angular-cli-info.md)
-- [How to configure Angular Material](./docs/material_angular/material_angular.md)
+- [Angular Material](./docs/material_angular/material_angular.md)
+- [Testing](./docs/testing/README.md)
+- [Troubleshooting](./docs/troubleshooting/README.md)
 - [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :wink:
 - Licenses
   - [Project license](./LICENSE)
