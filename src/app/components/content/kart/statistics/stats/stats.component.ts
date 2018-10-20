@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import KartFeatures from 'src/app/models/KartFeatures';
 import { AverageService } from 'src/app/services/avg/average.service';
+import { NullModel } from 'src/app/util/null-domain-models';
 
 @Component({
   selector: 'app-kart-statistics-stats',
@@ -10,7 +11,7 @@ import { AverageService } from 'src/app/services/avg/average.service';
 export class StatsComponent implements OnInit {
 
   @Input()
-  element: KartFeatures;
+  element: KartFeatures = NullModel.getKartFeatures();
 
   constructor(private _avg: AverageService) { }
 
