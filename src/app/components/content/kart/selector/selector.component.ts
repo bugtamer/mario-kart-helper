@@ -31,7 +31,6 @@ export class SelectorComponent implements OnInit {
     this._statsService.getComponents( this._type ).subscribe(
       receivedComponentData => {
         this._allElements = receivedComponentData;
-        console.log('this._allElements', this._allElements);
         this._selectedElement = this._allElements[Random.getInteger(this._allElements.length)].name;
         this.onSelectorChange();
       });
@@ -39,7 +38,6 @@ export class SelectorComponent implements OnInit {
 
   
   onSelectorChange(event?: Event): void {
-    console.log('event', event);
     for (let i=0;   i < this._allElements.length;   i++) {
       if (this._allElements[i].name === this._selectedElement) {
           this._element = this._allElements[i];
