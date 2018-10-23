@@ -10,6 +10,7 @@ import { ElementComponent } from 'src/app/components/content/kart/element/elemen
 import { PathComponent } from 'src/app/components/content/kart/statistics/path/path.component';
 import { SliderComponent } from 'src/app/components/content/kart/statistics/slider/slider.component';
 import { SelectorComponent } from 'src/app/components/content/kart/selector/selector.component';
+import { TabularComponent } from 'src/app/components/content/kart/statistics/tabular/tabular.component';
 
 
 describe('ContentComponent', () => {
@@ -26,7 +27,8 @@ describe('ContentComponent', () => {
         ElementComponent,
         PathComponent,
         SliderComponent,
-        SelectorComponent
+        SelectorComponent,
+        TabularComponent
       ],
       imports: [
         BrowserModule,

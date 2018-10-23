@@ -12,6 +12,7 @@ import { StatsComponent } from './components/content/kart/statistics/stats/stats
 import { SelectorComponent } from './components/content/kart/selector/selector.component';
 import { ElementComponent } from './components/content/kart/element/element.component';
 import { PathComponent } from './components/content/kart/statistics/path/path.component';
+import { TabularComponent } from 'src/app/components/content/kart/statistics/tabular/tabular.component';
 
 describe('AppComponent', () => {
 
@@ -25,7 +26,8 @@ describe('AppComponent', () => {
         StatsComponent,
         SelectorComponent,
         ElementComponent,
-        PathComponent
+        PathComponent,
+        TabularComponent
       ],
       imports: [
         BrowserModule,

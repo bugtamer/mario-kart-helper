@@ -13,6 +13,7 @@ import { SelectorComponent } from './components/content/kart/selector/selector.c
 import { ElementComponent } from './components/content/kart/element/element.component';
 import { AverageService } from './services/avg/average.service';
 import { PathComponent } from './components/content/kart/statistics/path/path.component';
+import { TabularComponent } from './components/content/kart/statistics/tabular/tabular.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PathComponent } from './components/content/kart/statistics/path/path.co
     StatsComponent,
     SelectorComponent,
     ElementComponent,
-    PathComponent
+    PathComponent,
+    TabularComponent
   ],
   imports: [
     BrowserModule,

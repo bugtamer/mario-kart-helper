@@ -11,6 +11,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
         MatSliderModule,
         MatBadgeModule,
         MatListModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatTableModule
     ],
 
     exports: [
@@ -38,7 +40,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
         MatSliderModule,
         MatBadgeModule,
         MatListModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatTableModule
     ],
 })
 
