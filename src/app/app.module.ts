@@ -14,6 +14,7 @@ import { ElementComponent } from './components/content/kart/element/element.comp
 import { AverageService } from './services/avg/average.service';
 import { PathComponent } from './components/content/kart/statistics/path/path.component';
 import { TabularComponent } from './components/content/kart/statistics/tabular/tabular.component';
+import { TotalPointService } from './services/level/TotalPoint.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TabularComponent } from './components/content/kart/statistics/tabular/t
   ],
   providers: [
     StatsService,
-    AverageService
+    AverageService,
+    TotalPointService
   ],
   bootstrap: [AppComponent]
 })
