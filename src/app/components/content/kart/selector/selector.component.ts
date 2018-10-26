@@ -22,6 +22,8 @@ export class SelectorComponent implements OnInit {
   private _element: KartFeatures = NullModel.getKartFeatures();
   private _allElements: KartFeatures[];
   private _selectedElement: string;
+  imgUrl: string = '#';
+  imgName: string = '';
 
   
   constructor(private _statsService: StatsService) { }
@@ -40,8 +42,10 @@ export class SelectorComponent implements OnInit {
   onSelectorChange(event?: Event): void {
     for (let i=0;   i < this._allElements.length;   i++) {
       if (this._allElements[i].name === this._selectedElement) {
-          this._element = this._allElements[i];
+        this._element = this._allElements[i];
         this._event.emit( this._element );
+        this.imgUrl = this._element.image.url;
+        this.imgName = this._element.name;
         break;
       }
     }

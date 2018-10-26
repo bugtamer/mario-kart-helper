@@ -1,55 +1,36 @@
-<table>
-    <tr>
-      <td>
-        <app-kart-selector type="Driver" (newSelection)="updateDriver($event)"></app-kart-selector>
-      </td>
-      <td>
-        <app-kart-selector type="Body" (newSelection)="updateBody($event)"></app-kart-selector>
-      </td>
-      <td>
-        <app-kart-selector type="Tires" (newSelection)="updateTires($event)"></app-kart-selector>
-      </td>
-      <td>
-        <app-kart-selector type="Glider" (newSelection)="updateGlider($event)"></app-kart-selector>
-      </td>
-    </tr>
-</table>  
-
-
+<div class="center">
+  <app-kart-selector type="Driver" (newSelection)="updateDriver($event)"></app-kart-selector>
+  <app-kart-selector type="Body" (newSelection)="updateBody($event)"></app-kart-selector>
+  <app-kart-selector type="Tires" (newSelection)="updateTires($event)"></app-kart-selector>
+  <app-kart-selector type="Glider" (newSelection)="updateGlider($event)"></app-kart-selector>
+</div>
 
 <table>
-  
   <!-- headers -->
   <tr>
     <th>Avg</th>
     <th>Level</th>
     <th>Feature</th>
     <th>
-      <img [src]="kart.driver.image.url">
-      Driver
+      <img [src]="kart.driver.image.url" [title]="kart.driver.name" [alt]="kart.driver.name">
     </th>
     <th>
-      <img [src]="kart.body.image.url">
-      Body
+      <img [src]="kart.body.image.url" [title]="kart.body.name" [alt]="kart.body.name">
     </th>
     <th>
-      <img [src]="kart.tires.image.url">
-      Tires
+      <img [src]="kart.tires.image.url" [title]="kart.tires.name" [alt]="kart.tires.name">
     </th>
     <th>
-      <img [src]="kart.glider.image.url">
-      Glider
+      <img [src]="kart.glider.image.url" [title]="kart.glider.name" [alt]="kart.glider.name">
     </th>
   </tr>
 
 <!-- size -->
 <tr>
-    <td colspan="2">{{ kart.driver.size }}</td>
-    <th>Size</th>
-    <td>{{ kart.driver.size }}</td>
-    <td>{{ kart.body.size }}</td>
-    <td>{{ kart.tires.size }}</td>
-    <td>{{ kart.glider.size }}</td>
+  <td></td>
+  <td></td>
+  <th>Size</th>
+    <td colspan="4">{{ kart.driver.size }}</td>
   </tr>
     
 <!-- speed -->

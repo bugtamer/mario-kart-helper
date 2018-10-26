@@ -1,9 +1,16 @@
 <mat-form-field>
   <mat-select (selectionChange)="onSelectorChange($event)" [(value)]="_selectedElement" [placeholder]="_element.type">
+
+    <mat-select-trigger>
+      <img [src]="imgUrl" [alt]="imgName" [alt]="imgName">
+      {{ imgName }}
+    </mat-select-trigger>
+
     <mat-option *ngFor="let item of _allElements" [(value)]="item.name">
-      <img [src]="item.image ? item.image.url : '#'" [alt]="item.name ? item.name : ''">
+      <img [src]="item.image ? item.image.url : '#'" [title]="item.name ? item.name : ''" [alt]="item.name ? item.name : ''">
       {{ item.name }}
       <span class="size">{{ item.size ? item.size : '' }}</span>
     </mat-option>
+    
   </mat-select>
 </mat-form-field>

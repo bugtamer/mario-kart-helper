@@ -13,3 +13,7 @@ tr:nth-child(even) {
 img {
     height: 1em;
 }
+
+.center {
+    text-align: center;
+}
