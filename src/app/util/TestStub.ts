@@ -4,6 +4,7 @@ import KartFeatures from "../models/KartFeatures";
 import KartComponentPicture from "../models/KartComponentPicture";
 import KartComponentType from "../models/KartComponentType";
 import DriverSize from "../models/DriverSize";
+import { Decimals } from "./Decimals";
 
 
 const ACCELERATION:       number =  1;
@@ -77,59 +78,37 @@ export class PictureStub extends KartComponentPicture {
 
 
 
-export class TotalPointStub {
-    static path:             number = GROUND + WATER + AIR + ANTI_GRAVITY;
+export class PointsStub {
+    static path:         number = GROUND + WATER + AIR + ANTI_GRAVITY;
     
-    static pathGround:       number = NUMBER_OF_PATHS * GROUND;
-    static pathWater:        number = NUMBER_OF_PATHS * WATER;
-    static pathAir:          number = NUMBER_OF_PATHS * AIR;
-    static pathAntiGravity:  number = NUMBER_OF_PATHS * ANTI_GRAVITY;
+    static ground:       number = NUMBER_OF_PATHS * GROUND;
+    static water:        number = NUMBER_OF_PATHS * WATER;
+    static air:          number = NUMBER_OF_PATHS * AIR;
+    static antiGravity:  number = NUMBER_OF_PATHS * ANTI_GRAVITY;
 
-    static kartAcceleration: number = NUMBER_OF_FEATURES * ACCELERATION;
-    static kartWeight:       number = NUMBER_OF_FEATURES * WEIGHT;
-    static kartGrid:         number = NUMBER_OF_FEATURES * GRID;
-    static kartMiniTurbo:    number = NUMBER_OF_FEATURES * MINI_TURBO;
+    static acceleration: number = NUMBER_OF_FEATURES * ACCELERATION;
+    static weight:       number = NUMBER_OF_FEATURES * WEIGHT;
+    static grid:         number = NUMBER_OF_FEATURES * GRID;
+    static miniTurbo:    number = NUMBER_OF_FEATURES * MINI_TURBO;
     
-    static kartSpeed: KartPath = new PathStub(
-        TotalPointStub.pathGround,
-        TotalPointStub.pathWater,
-        TotalPointStub.pathAir,
-        TotalPointStub.pathAntiGravity
-    );
-    
-    static kartHandling: KartPath = new PathStub(
-        TotalPointStub.pathGround,
-        TotalPointStub.pathWater,
-        TotalPointStub.pathAir,
-        TotalPointStub.pathAntiGravity
-    );
+    static speed:        number = PointsStub.path;
+    static handling:     number = PointsStub.path;
 }
 
 
 
 export class AverageStub {
-    static path:             number = TotalPointStub.path            / NUMBER_OF_PATHS;
-    static pathGround:       number = TotalPointStub.pathGround      / NUMBER_OF_PATHS;
-    static pathWater:        number = TotalPointStub.pathWater       / NUMBER_OF_PATHS;
-    static pathAir:          number = TotalPointStub.pathAir         / NUMBER_OF_PATHS;
-    static pathAntiGravity:  number = TotalPointStub.pathAntiGravity / NUMBER_OF_PATHS;
+    static path:         number = Decimals.remove(PointsStub.path        / NUMBER_OF_PATHS);
+    static ground:       number = Decimals.remove(PointsStub.ground      / NUMBER_OF_PATHS);
+    static water:        number = Decimals.remove(PointsStub.water       / NUMBER_OF_PATHS);
+    static air:          number = Decimals.remove(PointsStub.air         / NUMBER_OF_PATHS);
+    static antiGravity:  number = Decimals.remove(PointsStub.antiGravity / NUMBER_OF_PATHS);
 
-    static kartAcceleration: number = (OFFSET + TotalPointStub.kartAcceleration) / NUMBER_OF_FEATURES;
-    static kartWeight:       number = (OFFSET + TotalPointStub.kartWeight      ) / NUMBER_OF_FEATURES;
-    static kartGrid:         number = (OFFSET + TotalPointStub.kartGrid        ) / NUMBER_OF_FEATURES;
-    static kartMiniTurbo:    number = (OFFSET + TotalPointStub.kartMiniTurbo   ) / NUMBER_OF_FEATURES;
+    static acceleration: number = (OFFSET + PointsStub.acceleration) / NUMBER_OF_FEATURES;
+    static weight:       number = (OFFSET + PointsStub.weight      ) / NUMBER_OF_FEATURES;
+    static grid:         number = (OFFSET + PointsStub.grid        ) / NUMBER_OF_FEATURES;
+    static miniTurbo:    number = (OFFSET + PointsStub.miniTurbo   ) / NUMBER_OF_FEATURES;
     
-    static kartSpeed: KartPath = new PathStub(
-        (OFFSET + TotalPointStub.pathGround     ) / NUMBER_OF_FEATURES,
-        (OFFSET + TotalPointStub.pathWater      ) / NUMBER_OF_FEATURES,
-        (OFFSET + TotalPointStub.pathAir        ) / NUMBER_OF_FEATURES,
-        (OFFSET + TotalPointStub.pathAntiGravity) / NUMBER_OF_FEATURES
-    );
-    
-    static kartHandling: KartPath = new PathStub(
-        (OFFSET + TotalPointStub.pathGround     ) / NUMBER_OF_FEATURES,
-        (OFFSET + TotalPointStub.pathWater      ) / NUMBER_OF_FEATURES,
-        (OFFSET + TotalPointStub.pathAir        ) / NUMBER_OF_FEATURES,
-        (OFFSET + TotalPointStub.pathAntiGravity) / NUMBER_OF_FEATURES
-    );
+    static speed:        number = (OFFSET + PointsStub.speed)    / NUMBER_OF_FEATURES;
+    static handling:     number = (OFFSET + PointsStub.handling) / NUMBER_OF_FEATURES;
 }

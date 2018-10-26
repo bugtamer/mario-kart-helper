@@ -21,196 +21,176 @@
   
   <!-- headers -->
   <tr>
-      <th>Avg</th>
-      <th>Level</th>
-      <th>Feature</th>
-      <th>
-        <img [src]="kart.driver.image.url">
-        Driver
-      </th>
-      <th>
-        <img [src]="kart.body.image.url">
-        Body
-      </th>
-      <th>
-        <img [src]="kart.tires.image.url">
-        Tires
-      </th>
-      <th>
-        <img [src]="kart.glider.image.url">
-        Glider
-      </th>
-    </tr>
-  
-  <!-- size -->
-  <tr>
-      <td colspan="2">{{ kart.driver.size }}</td>
-      <th>Size</th>
-      <td>{{ kart.driver.size }}</td>
-      <td>{{ kart.body.size }}</td>
-      <td>{{ kart.tires.size }}</td>
-      <td>{{ kart.glider.size }}</td>
-    </tr>
-      
-  <!-- speed -->
-  <tr>
-    <td>{{ ( +(
-      _avg.path( kart.driver .speed ) +
-      _avg.path( kart.body   .speed ) +
-      _avg.path( kart.tires  .speed ) +
-      _avg.path( kart.glider .speed ) ).toFixed(0) / 4 ).toFixed(2) }}
-    </td>
-    <td>{{ (
-      _avg.path( kart.driver .speed ) +
-      _avg.path( kart.body   .speed ) +
-      _avg.path( kart.tires  .speed ) +
-      _avg.path( kart.glider .speed ) ).toFixed(0) }}
-    </td>
-    <th>Speed *</th>
-    <td>{{ _avg.path( kart.driver .speed ).toFixed(0) }}</td>
-    <td>{{ _avg.path( kart.body   .speed ).toFixed(0) }}</td>
-    <td>{{ _avg.path( kart.tires  .speed ).toFixed(0) }}</td>
-    <td>{{ _avg.path( kart.glider .speed ).toFixed(0) }}</td>
+    <th>Avg</th>
+    <th>Level</th>
+    <th>Feature</th>
+    <th>
+      <img [src]="kart.driver.image.url">
+      Driver
+    </th>
+    <th>
+      <img [src]="kart.body.image.url">
+      Body
+    </th>
+    <th>
+      <img [src]="kart.tires.image.url">
+      Tires
+    </th>
+    <th>
+      <img [src]="kart.glider.image.url">
+      Glider
+    </th>
   </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'ground').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'speed', 'ground') }}</td>
-    <td>Ground</td>
-    <td>{{ kart.driver .speed.ground }}</td>
-    <td>{{ kart.body   .speed.ground }}</td>
-    <td>{{ kart.tires  .speed.ground }}</td>
-    <td>{{ kart.glider .speed.ground }}</td>
+
+<!-- size -->
+<tr>
+    <td colspan="2">{{ kart.driver.size }}</td>
+    <th>Size</th>
+    <td>{{ kart.driver.size }}</td>
+    <td>{{ kart.body.size }}</td>
+    <td>{{ kart.tires.size }}</td>
+    <td>{{ kart.glider.size }}</td>
   </tr>
-  
+    
+<!-- speed -->
+<tr>
+  <td>{{ _avg.speed(kart) }}</td>
+  <td>{{ _totalPoints.speed(kart) }}</td>
+  <th>Speed *</th>
+  <td>{{ _avg.path( kart.driver.speed ) }}</td>
+  <td>{{ _avg.path( kart.body.speed ) }}</td>
+  <td>{{ _avg.path( kart.tires.speed ) }}</td>
+  <td>{{ _avg.path( kart.glider.speed ) }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.speedGround(kart) }}</td>
+  <td>{{ _totalPoints.speedGround(kart) }}</td>
+  <td>Ground</td>
+  <td>{{ kart.driver .speed.ground }}</td>
+  <td>{{ kart.body   .speed.ground }}</td>
+  <td>{{ kart.tires  .speed.ground }}</td>
+  <td>{{ kart.glider .speed.ground }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.speedWater(kart) }}</td>
+  <td>{{ _totalPoints.speedWater(kart) }}</td>
+  <td>Water</td>
+  <td>{{ kart.driver .speed.water }}</td>
+  <td>{{ kart.body   .speed.water }}</td>
+  <td>{{ kart.tires  .speed.water }}</td>
+  <td>{{ kart.glider .speed.water }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.speedAir(kart) }}</td>
+  <td>{{ _totalPoints.speedAir(kart) }}</td>
+  <td>Air</td>
+  <td>{{ kart.driver .speed.air }}</td>
+  <td>{{ kart.body   .speed.air }}</td>
+  <td>{{ kart.tires  .speed.air }}</td>
+  <td>{{ kart.glider .speed.air }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.speedAntiGravity(kart) }}</td>
+  <td>{{ _totalPoints.speedAntiGravity(kart) }}</td>
+  <td>Anti-Gravity</td>
+  <td>{{ kart.driver .speed.antiGravity }}</td>
+  <td>{{ kart.body   .speed.antiGravity }}</td>
+  <td>{{ kart.tires  .speed.antiGravity }}</td>
+  <td>{{ kart.glider .speed.antiGravity }}</td>
+</tr>
+
+<!-- acceleration -->
+<tr>
+  <td>{{ _avg.acceleration(kart) }}</td>
+  <td>{{ _totalPoints.acceleration(kart) }}</td>
+  <th>Acceleration</th>
+  <td>{{ kart.driver .acceleration }}</td>
+  <td>{{ kart.body   .acceleration }}</td>
+  <td>{{ kart.tires  .acceleration }}</td>
+  <td>{{ kart.glider .acceleration }}</td>
+</tr>
+
+<!-- weight -->
+<tr>
+  <td>{{ _avg.weight(kart) }}</td>
+  <td>{{ _totalPoints.weight(kart) }}</td>
+  <th>Weight</th>
+  <td>{{ kart.driver .weight }}</td>
+  <td>{{ kart.body   .weight }}</td>
+  <td>{{ kart.tires  .weight }}</td>
+  <td>{{ kart.glider .weight }}</td>
+</tr>
+
+<!-- handling -->
   <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'water').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'speed', 'water') }}</td>
-    <td>Water</td>
-    <td>{{ kart.driver .speed.water }}</td>
-    <td>{{ kart.body   .speed.water }}</td>
-    <td>{{ kart.tires  .speed.water }}</td>
-    <td>{{ kart.glider .speed.water }}</td>
-  </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'air').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'speed', 'air') }}</td>
-    <td>Air</td>
-    <td>{{ kart.driver .speed.air }}</td>
-    <td>{{ kart.body   .speed.air }}</td>
-    <td>{{ kart.tires  .speed.air }}</td>
-    <td>{{ kart.glider .speed.air }}</td>
-  </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'antiGravity').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'speed', 'antiGravity').toFixed(0) }}</td>
-    <td>Anti-Gravity</td>
-    <td>{{ kart.driver .speed.antiGravity }}</td>
-    <td>{{ kart.body   .speed.antiGravity }}</td>
-    <td>{{ kart.tires  .speed.antiGravity }}</td>
-    <td>{{ kart.glider .speed.antiGravity }}</td>
-  </tr>
-      
-  <!-- acceleration -->
-  <tr>
-    <td>{{ _avg.feature(kart, 'acceleration').toFixed(2) }}</td>
-    <td>{{ _totalPoints.feature(kart, 'acceleration') }}</td>
-    <th>Acceleration</th>
-    <td>{{ kart.driver .acceleration }}</td>
-    <td>{{ kart.body   .acceleration }}</td>
-    <td>{{ kart.tires  .acceleration }}</td>
-    <td>{{ kart.glider .acceleration }}</td>
-  </tr>
-  
-  <!-- weight -->
-  <tr>
-    <td>{{ _avg.feature(kart, 'weight').toFixed(2) }}</td>
-    <td>{{ _totalPoints.feature(kart, 'weight') }}</td>
-    <th>Weight</th>
-    <td>{{ kart.driver .weight }}</td>
-    <td>{{ kart.body   .weight }}</td>
-    <td>{{ kart.tires  .weight }}</td>
-    <td>{{ kart.glider .weight }}</td>
-  </tr>
-  
-  <!-- handling -->
-  <tr>
-    <td>{{ ( +(
-      _avg.path( kart.driver .speed ) +
-      _avg.path( kart.body   .speed ) +
-      _avg.path( kart.tires  .speed ) +
-      _avg.path( kart.glider .speed ) ).toFixed(0) / 4 ).toFixed(2) }}
-    </td>
-    <td>{{ (
-      _avg.path( kart.driver .handling ) +
-      _avg.path( kart.body   .handling ) +
-      _avg.path( kart.tires  .handling ) +
-      _avg.path( kart.glider .handling ) ).toFixed(0) }}
-    </td>
-    <th>Handling *</th>
-    <td>{{ _avg.path( kart.driver .handling ).toFixed(0) }}</td>
-    <td>{{ _avg.path( kart.body   .handling ).toFixed(0) }}</td>
-    <td>{{ _avg.path( kart.tires  .handling ).toFixed(0) }}</td>
-    <td>{{ _avg.path( kart.glider .handling ).toFixed(0) }}</td>
-  </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'ground').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'handling', 'ground') }}</td>
-    <td>Ground</td>
-    <td>{{ kart.driver .handling.ground }}</td>
-    <td>{{ kart.body   .handling.ground }}</td>
-    <td>{{ kart.tires  .handling.ground }}</td>
-    <td>{{ kart.glider .handling.ground }}</td>
-  </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'water').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'handling', 'water') }}</td>
-    <td>Water</td>
-    <td>{{ kart.driver .handling.water }}</td>
-    <td>{{ kart.body   .handling.water }}</td>
-    <td>{{ kart.tires  .handling.water }}</td>
-    <td>{{ kart.glider .handling.water }}</td>
-  </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'air').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'handling', 'air') }}</td>
-    <td>Air</td>
-    <td>{{ kart.driver .handling.air }}</td>
-    <td>{{ kart.body   .handling.air }}</td>
-    <td>{{ kart.tires  .handling.air }}</td>
-    <td>{{ kart.glider .handling.air }}</td>
-  </tr>
-  
-  <tr>
-    <td>{{ _avg.subPath(kart, 'handling', 'antiGravity').toFixed(2) }}</td>
-    <td>{{ _totalPoints.pathItem(kart, 'handling', 'antiGravity') }}</td>
-    <td>Anti-Gravity</td>
-    <td>{{ kart.driver .handling.antiGravity }}</td>
-    <td>{{ kart.body   .handling.antiGravity }}</td>
-    <td>{{ kart.tires  .handling.antiGravity }}</td>
-    <td>{{ kart.glider .handling.antiGravity }}</td>
-  </tr>
-            
-  <!-- Grid -->
-  <tr>
-    <td>{{ _avg.feature(kart, 'grid').toFixed(2) }}</td>
-    <td>{{ _totalPoints.feature(kart, 'grid') }}</td>
-    <th>Grid</th>
-    <td>{{ kart.driver .grid }}</td>
-    <td>{{ kart.body   .grid }}</td>
-    <td>{{ kart.tires  .grid }}</td>
-    <td>{{ kart.glider .grid }}</td>
-  </tr>
-  
+  <td>{{ _avg.handling(kart) }}</td>
+  <td>{{ _totalPoints.handling(kart) }}</td>
+  <th>Handling *</th>
+  <td>{{ _avg.path( kart.driver .handling ) }}</td>
+  <td>{{ _avg.path( kart.body   .handling ) }}</td>
+  <td>{{ _avg.path( kart.tires  .handling ) }}</td>
+  <td>{{ _avg.path( kart.glider .handling ) }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.handlingGround(kart) }}</td>
+  <td>{{ _totalPoints.handlingGround(kart) }}</td>
+  <td>Ground</td>
+  <td>{{ kart.driver .handling.ground }}</td>
+  <td>{{ kart.body   .handling.ground }}</td>
+  <td>{{ kart.tires  .handling.ground }}</td>
+  <td>{{ kart.glider .handling.ground }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.handlingWater(kart) }}</td>
+  <td>{{ _totalPoints.handlingWater(kart) }}</td>
+  <td>Water</td>
+  <td>{{ kart.driver .handling.water }}</td>
+  <td>{{ kart.body   .handling.water }}</td>
+  <td>{{ kart.tires  .handling.water }}</td>
+  <td>{{ kart.glider .handling.water }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.handlingAir(kart) }}</td>
+  <td>{{ _totalPoints.handlingAir(kart) }}</td>
+  <td>Air</td>
+  <td>{{ kart.driver .handling.air }}</td>
+  <td>{{ kart.body   .handling.air }}</td>
+  <td>{{ kart.tires  .handling.air }}</td>
+  <td>{{ kart.glider .handling.air }}</td>
+</tr>
+
+<tr>
+  <td>{{ _avg.handlingAntiGravity(kart) }}</td>
+  <td>{{ _totalPoints.handlingAntiGravity(kart) }}</td>
+  <td>Anti-Gravity</td>
+  <td>{{ kart.driver .handling.antiGravity }}</td>
+  <td>{{ kart.body   .handling.antiGravity }}</td>
+  <td>{{ kart.tires  .handling.antiGravity }}</td>
+  <td>{{ kart.glider .handling.antiGravity }}</td>
+</tr>
+
+<!-- Grid -->
+<tr>
+  <td>{{ _avg.grid(kart) }}</td>
+  <td>{{ _totalPoints.grid(kart) }}</td>
+  <th>Grid</th>
+  <td>{{ kart.driver .grid }}</td>
+  <td>{{ kart.body   .grid }}</td>
+  <td>{{ kart.tires  .grid }}</td>
+  <td>{{ kart.glider .grid }}</td>
+</tr>
+
   <!-- Mini-Turbo -->
   <tr>
-    <td>{{ _avg.feature(kart, 'miniTurbo').toFixed(2) }}</td>
-    <td>{{ _totalPoints.feature(kart, 'miniTurbo') }}</td>
+    <td>{{ _avg.miniTurbo(kart) }}</td>
+    <td>{{ _totalPoints.miniTurbo(kart) }}</td>
     <th>Mini-Turbo</th>
     <td>{{ kart.driver .miniTurbo }}</td>
     <td>{{ kart.body   .miniTurbo }}</td>

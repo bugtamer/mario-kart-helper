@@ -3,8 +3,8 @@ import Kart from 'src/app/models/Kart';
 import KartFeatures from 'src/app/models/KartFeatures';
 import { NullModel } from 'src/app/util/null-domain-models';
 import KartComponentType from 'src/app/models/KartComponentType';
-import { AverageService } from 'src/app/services/avg/average.service';
-import { TotalPointService } from 'src/app/services/level/TotalPoint.service';
+import { AverageService } from 'src/app/services/avg/Average.service';
+import { PointsService } from 'src/app/services/points/Points.service';
 
 @Component({
   selector: 'app-tabular',
@@ -20,7 +20,7 @@ export class TabularComponent implements OnInit {
   kartTotalPoints: KartFeatures;
   displayedColumns: string[];
 
-  constructor(private _totalPoints: TotalPointService, private _avg: AverageService) { }
+  constructor(private _totalPoints: PointsService, private _avg: AverageService) { }
 
   ngOnInit() {
     this.kart = NullModel.getKart();
@@ -65,9 +65,27 @@ export class TabularComponent implements OnInit {
     }
     //this.kart[feature.toLowerCase()] = newFeature;
     this._kartFeatureArray[order] = newFeature;
-    this.kartAvgFeatures = this._avg.kart(this.kart);
-    this.kartTotalPoints = this._totalPoints.kart( this.kart );
+    this.setFeature(this.kartAvgFeatures, this._avg, this.kart);
+    this.setFeature(this.kartTotalPoints, this._totalPoints, this.kart);
+    // this.kartAvgFeatures = this._avg.kart(this.kart);
+    // this.kartTotalPoints = this._totalPoints.kart( this.kart );
     console.log('Input was updated', this.kart);
+  }
+
+
+  setFeature(feature: KartFeatures, service, kart: Kart) {
+    feature.speed.ground         = service.speedGround(kart);
+    feature.speed.water          = service.speedWater(kart);
+    feature.speed.air            = service.speedAir(kart);
+    feature.speed.antiGravity    = service.speedAntiGravity(kart);
+    feature.acceleration         = service.acceleration(kart);
+    feature.weight               = service.weight(kart);
+    feature.handling.ground      = service.handlingGround(kart);
+    feature.handling.water       = service.handlingWater(kart);
+    feature.handling.air         = service.handlingAir(kart);
+    feature.handling.antiGravity = service.handlingAntiGravity(kart);
+    feature.grid                 = service.grid(kart);
+    feature.miniTurbo            = service.miniTurbo(kart);
   }
 
 }

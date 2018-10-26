@@ -11,10 +11,10 @@ import { SliderComponent } from './components/content/kart/statistics/slider/sli
 import { StatsComponent } from './components/content/kart/statistics/stats/stats.component';
 import { SelectorComponent } from './components/content/kart/selector/selector.component';
 import { ElementComponent } from './components/content/kart/element/element.component';
-import { AverageService } from './services/avg/average.service';
+import { AverageService } from './services/avg/Average.service';
 import { PathComponent } from './components/content/kart/statistics/path/path.component';
 import { TabularComponent } from './components/content/kart/statistics/tabular/tabular.component';
-import { TotalPointService } from './services/level/TotalPoint.service';
+import { PointsService } from './services/points/Points.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { TotalPointService } from './services/level/TotalPoint.service';
   providers: [
     StatsService,
     AverageService,
-    TotalPointService
+    PointsService
   ],
   bootstrap: [AppComponent]
 })
