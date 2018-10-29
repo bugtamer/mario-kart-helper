@@ -22,6 +22,8 @@ export class StatsService {
     if (this._kartFeaturesStore[type]) {
       this._kartFeaturesObs[type] = of (this._kartFeaturesStore[type]);
     } else if (! this._kartFeaturesStore[type]) {
+      return DataSource.getData(type);
+/*
       this._kartFeaturesObs[type] = this._httpClient
       .get<any>( DataSource.getResource(type) )
       // You can easily compose a bunch of pure function operators and pass them
@@ -42,8 +44,9 @@ export class StatsService {
           error => console.log('error', error)
         )
       );
+*/
     }
-    return this._kartFeaturesObs[type];
+//    return this._kartFeaturesObs[type];
   }
 
 }

@@ -1,8 +1,12 @@
-export const DRIVERS = [
+import KartFeatures from "src/app/models/KartFeatures";
+import KartComponentType from "src/app/models/KartComponentType";
+import DriverSize from "src/app/models/DriverSize";
+
+export const DRIVERS: KartFeatures[] = [
   {
     "name": "Baby Peach",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 0,
       "water": 0,
@@ -27,8 +31,8 @@ export const DRIVERS = [
   },
   {
     "name": "Baby Daisy",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 0,
       "water": 0,
@@ -53,8 +57,8 @@ export const DRIVERS = [
   },
   {
     "name": "Baby Rosalina",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 0,
       "water": 0,
@@ -79,8 +83,8 @@ export const DRIVERS = [
   },
   {
     "name": "Lemmy",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 0,
       "water": 0,
@@ -105,8 +109,8 @@ export const DRIVERS = [
   },
   {
     "name": "Baby Mario",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 1,
       "water": 1,
@@ -131,8 +135,8 @@ export const DRIVERS = [
   },
   {
     "name": "Baby Luigi",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 1,
       "water": 1,
@@ -157,8 +161,8 @@ export const DRIVERS = [
   },
   {
     "name": "Dry Bones",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 1,
       "water": 1,
@@ -183,8 +187,8 @@ export const DRIVERS = [
   },
   {
     "name": "Mii (Light)",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 1,
       "water": 1,
@@ -209,8 +213,8 @@ export const DRIVERS = [
   },
   {
     "name": "Toadette",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 2,
       "water": 2,
@@ -235,8 +239,8 @@ export const DRIVERS = [
   },
   {
     "name": "Wendy",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 2,
       "water": 2,
@@ -261,8 +265,8 @@ export const DRIVERS = [
   },
   {
     "name": "Isabelle",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 2,
       "water": 2,
@@ -287,8 +291,8 @@ export const DRIVERS = [
   },
   {
     "name": "Koopa",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 2,
       "water": 2,
@@ -313,8 +317,8 @@ export const DRIVERS = [
   },
   {
     "name": "Lakitu",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 2,
       "water": 2,
@@ -339,8 +343,8 @@ export const DRIVERS = [
   },
   {
     "name": "Bowser Jr",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 2,
       "water": 2,
@@ -365,8 +369,8 @@ export const DRIVERS = [
   },
   {
     "name": "Toad",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 3,
       "water": 3,
@@ -391,8 +395,8 @@ export const DRIVERS = [
   },
   {
     "name": "Shy Guy",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 3,
       "water": 3,
@@ -417,8 +421,8 @@ export const DRIVERS = [
   },
   {
     "name": "Larry",
-    "type": "Driver",
-    "size": "Small",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Small,
     "speed": {
       "ground": 3,
       "water": 3,
@@ -443,8 +447,8 @@ export const DRIVERS = [
   },
   {
     "name": "Cat Peach",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 4,
       "water": 4,
@@ -469,8 +473,8 @@ export const DRIVERS = [
   },
   {
     "name": "Villager Female",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 4,
       "water": 4,
@@ -495,8 +499,8 @@ export const DRIVERS = [
   },
   {
     "name": "Female Inkling",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 4,
       "water": 4,
@@ -521,8 +525,8 @@ export const DRIVERS = [
   },
   {
     "name": "Peach",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 5,
       "water": 5,
@@ -547,8 +551,8 @@ export const DRIVERS = [
   },
   {
     "name": "Daisy",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 5,
       "water": 5,
@@ -573,8 +577,8 @@ export const DRIVERS = [
   },
   {
     "name": "Yoshi",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 5,
       "water": 5,
@@ -599,8 +603,8 @@ export const DRIVERS = [
   },
   {
     "name": "Tanooki Mario",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 5,
       "water": 5,
@@ -625,8 +629,8 @@ export const DRIVERS = [
   },
   {
     "name": "Villager Male",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 5,
       "water": 5,
@@ -651,8 +655,8 @@ export const DRIVERS = [
   },
   {
     "name": "Male Inkling",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 5,
       "water": 5,
@@ -677,8 +681,8 @@ export const DRIVERS = [
   },
   {
     "name": "Mario",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 6,
       "water": 6,
@@ -703,8 +707,8 @@ export const DRIVERS = [
   },
   {
     "name": "Ludwig",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 6,
       "water": 6,
@@ -729,8 +733,8 @@ export const DRIVERS = [
   },
   {
     "name": "Mii (Medium)",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 6,
       "water": 6,
@@ -755,8 +759,8 @@ export const DRIVERS = [
   },
   {
     "name": "Luigi",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 6,
       "water": 6,
@@ -781,8 +785,8 @@ export const DRIVERS = [
   },
   {
     "name": "Iggy",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 6,
       "water": 6,
@@ -807,8 +811,8 @@ export const DRIVERS = [
   },
   {
     "name": "Metal Mario",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 8,
       "water": 8,
@@ -833,8 +837,8 @@ export const DRIVERS = [
   },
   {
     "name": "Pink Gold Peach",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 8,
       "water": 8,
@@ -859,8 +863,8 @@ export const DRIVERS = [
   },
   {
     "name": "Gold Mario",
-    "type": "Driver",
-    "size": "Medium",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Medium,
     "speed": {
       "ground": 8,
       "water": 8,
@@ -885,8 +889,8 @@ export const DRIVERS = [
   },
   {
     "name": "Rosalina",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 7,
       "water": 7,
@@ -911,8 +915,8 @@ export const DRIVERS = [
   },
   {
     "name": "Link",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 7,
       "water": 7,
@@ -937,8 +941,8 @@ export const DRIVERS = [
   },
   {
     "name": "King Boo",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 7,
       "water": 7,
@@ -963,8 +967,8 @@ export const DRIVERS = [
   },
   {
     "name": "Donkey Kong",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 9,
       "water": 9,
@@ -989,8 +993,8 @@ export const DRIVERS = [
   },
   {
     "name": "Waluigi",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 9,
       "water": 9,
@@ -1015,8 +1019,8 @@ export const DRIVERS = [
   },
   {
     "name": "Roy",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 9,
       "water": 9,
@@ -1041,8 +1045,8 @@ export const DRIVERS = [
   },
   {
     "name": "Wario",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 10,
       "water": 10,
@@ -1067,8 +1071,8 @@ export const DRIVERS = [
   },
   {
     "name": "Dry Bowser",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 10,
       "water": 10,
@@ -1093,8 +1097,8 @@ export const DRIVERS = [
   },
   {
     "name": "Bowser",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 10,
       "water": 10,
@@ -1119,8 +1123,8 @@ export const DRIVERS = [
   },
   {
     "name": "Morton",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 10,
       "water": 10,
@@ -1145,8 +1149,8 @@ export const DRIVERS = [
   },
   {
     "name": "Mii (Heavy)",
-    "type": "Driver",
-    "size": "Large",
+    "type": KartComponentType.Driver,
+    "size": DriverSize.Large,
     "speed": {
       "ground": 10,
       "water": 10,

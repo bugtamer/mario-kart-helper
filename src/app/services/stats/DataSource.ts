@@ -1,4 +1,11 @@
 import KartComponentType from "src/app/models/KartComponentType";
+import { Observable, of, from } from 'rxjs';
+import { DRIVERS } from './data/drivers';
+import { BODIES } from './data/bodies';
+import { TIRES } from './data/tires';
+import { GLIDERS } from './data/gliders';
+import KartFeatures from "src/app/models/KartFeatures";
+import { map } from "rxjs/operators";
 
 class DataSource {
 
@@ -30,6 +37,28 @@ class DataSource {
         return resource;
     }
 
+    
+    static getData(type: KartComponentType): Observable<KartFeatures[]> {
+        let data: KartFeatures[];
+        switch (type) {
+          case KartComponentType.Driver:
+            data = DRIVERS;
+            break;
+            
+            case KartComponentType.Body:
+            data = BODIES;
+            break;
+            
+            case KartComponentType.Tires:
+            data = TIRES;
+            break;
+            
+            case KartComponentType.Glider:
+            data = GLIDERS;
+            break;
+        }
+        return of(data);
+      }
 }
 
 export default DataSource;

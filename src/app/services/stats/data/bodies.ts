@@ -1,7 +1,10 @@
-export const BODIES = [
+import KartFeatures from "src/app/models/KartFeatures";
+import KartComponentType from "src/app/models/KartComponentType";
+
+export const BODIES: KartFeatures[] = [
   {
     "name": "Standard Kart",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 3,
@@ -27,7 +30,7 @@ export const BODIES = [
   },
   {
     "name": "The Duke",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 3,
@@ -53,7 +56,7 @@ export const BODIES = [
   },
   {
     "name": "300 SL Roadster",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 3,
@@ -79,7 +82,7 @@ export const BODIES = [
   },
   {
     "name": "Pipe Frame",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 1,
@@ -105,7 +108,7 @@ export const BODIES = [
   },
   {
     "name": "Varmint",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 1,
@@ -131,7 +134,7 @@ export const BODIES = [
   },
   {
     "name": "City Tripper",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 1,
@@ -157,7 +160,7 @@ export const BODIES = [
   },
   {
     "name": "Mach 8",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 3,
@@ -183,7 +186,7 @@ export const BODIES = [
   },
   {
     "name": "Sports Coupe (Sports Coupé)",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 3,
@@ -209,7 +212,7 @@ export const BODIES = [
   },
   {
     "name": "Inkstriker",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 3,
@@ -235,7 +238,7 @@ export const BODIES = [
   },
   {
     "name": "Steel Driver",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -261,7 +264,7 @@ export const BODIES = [
   },
   {
     "name": "Tri-Speeder",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -287,7 +290,7 @@ export const BODIES = [
   },
   {
     "name": "Bone Rattler",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -313,7 +316,7 @@ export const BODIES = [
   },
   {
     "name": "Cat Cruiser",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -339,7 +342,7 @@ export const BODIES = [
   },
   {
     "name": "Comet",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -365,7 +368,7 @@ export const BODIES = [
   },
   {
     "name": "Yoshi Bike",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -391,7 +394,7 @@ export const BODIES = [
   },
   {
     "name": "Teddy Buggy",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -417,7 +420,7 @@ export const BODIES = [
   },
   {
     "name": "Circuit Special",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 5,
@@ -443,7 +446,7 @@ export const BODIES = [
   },
   {
     "name": "Badwagon",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 5,
@@ -469,7 +472,7 @@ export const BODIES = [
   },
   {
     "name": "Prancer",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 5,
@@ -495,7 +498,7 @@ export const BODIES = [
   },
   {
     "name": "Badwagon",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 5,
@@ -521,7 +524,7 @@ export const BODIES = [
   },
   {
     "name": "Prancer",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 5,
@@ -547,7 +550,7 @@ export const BODIES = [
   },
   {
     "name": "GLA",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 5,
@@ -573,7 +576,7 @@ export const BODIES = [
   },
   {
     "name": "Prancer",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -599,7 +602,7 @@ export const BODIES = [
   },
   {
     "name": "Sport Bike",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -625,7 +628,7 @@ export const BODIES = [
   },
   {
     "name": "Jet Bike",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -651,7 +654,7 @@ export const BODIES = [
   },
   {
     "name": "Biddybuggy (Buggybud)",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 0,
@@ -677,7 +680,7 @@ export const BODIES = [
   },
   {
     "name": "Mr. Scooty (Mr Scooty)",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 0,
@@ -703,7 +706,7 @@ export const BODIES = [
   },
   {
     "name": "Landship",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 1,
@@ -729,7 +732,7 @@ export const BODIES = [
   },
   {
     "name": "Streetle",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 1,
@@ -755,7 +758,7 @@ export const BODIES = [
   },
   {
     "name": "Sneeker (Bounder)",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -781,7 +784,7 @@ export const BODIES = [
   },
   {
     "name": "Standard Bike",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -807,7 +810,7 @@ export const BODIES = [
   },
   {
     "name": "Blue Falcon",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -833,7 +836,7 @@ export const BODIES = [
   },
   {
     "name": "Tanooki Kart",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -859,7 +862,7 @@ export const BODIES = [
   },
   {
     "name": "Blue Falcon",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -885,7 +888,7 @@ export const BODIES = [
   },
   {
     "name": "Tanooki Kart",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -911,7 +914,7 @@ export const BODIES = [
   },
   {
     "name": "W 25 Silver Arrow",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -937,7 +940,7 @@ export const BODIES = [
   },
   {
     "name": "Blue Falcon",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -963,7 +966,7 @@ export const BODIES = [
   },
   {
     "name": "Tanooki Kart",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 4,
@@ -989,7 +992,7 @@ export const BODIES = [
   },
   {
     "name": "Tanooki Kart",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,
@@ -1015,7 +1018,7 @@ export const BODIES = [
   },
   {
     "name": "Koopa Clown",
-    "type": "Body",
+    "type": KartComponentType.Body,
     "size": null,
     "speed": {
       "ground": 2,

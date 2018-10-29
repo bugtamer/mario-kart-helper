@@ -1,7 +1,10 @@
-export const GLIDERS = [
+import KartFeatures from "src/app/models/KartFeatures";
+import KartComponentType from "src/app/models/KartComponentType";
+
+export const GLIDERS: KartFeatures[] = [
   {
     "name": "Super Glider",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 1,
@@ -27,7 +30,7 @@ export const GLIDERS = [
   },
   {
     "name": "Waddle Wing",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 1,
@@ -53,7 +56,7 @@ export const GLIDERS = [
   },
   {
     "name": "Hylian Kite",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 1,
@@ -79,7 +82,7 @@ export const GLIDERS = [
   },
   {
     "name": "Cloud Glider",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -105,7 +108,7 @@ export const GLIDERS = [
   },
   {
     "name": "Parachute",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -131,7 +134,7 @@ export const GLIDERS = [
   },
   {
     "name": "Flower Glider",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -157,7 +160,7 @@ export const GLIDERS = [
   },
   {
     "name": "Paper Glider",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -183,7 +186,7 @@ export const GLIDERS = [
   },
   {
     "name": "Wario Wing",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 1,
@@ -209,7 +212,7 @@ export const GLIDERS = [
   },
   {
     "name": "Plane Glider",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 1,
@@ -235,7 +238,7 @@ export const GLIDERS = [
   },
   {
     "name": "Gold Glider",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 1,
@@ -261,7 +264,7 @@ export const GLIDERS = [
   },
   {
     "name": "Peach Parasol",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -287,7 +290,7 @@ export const GLIDERS = [
   },
   {
     "name": "Parafoil",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -313,7 +316,7 @@ export const GLIDERS = [
   },
   {
     "name": "Bowser Kite",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,
@@ -339,7 +342,7 @@ export const GLIDERS = [
   },
   {
     "name": "MKTV Parafoil",
-    "type": "Glider",
+    "type": KartComponentType.Glider,
     "size": null,
     "speed": {
       "ground": 0,

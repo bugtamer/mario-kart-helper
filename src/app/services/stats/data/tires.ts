@@ -1,7 +1,10 @@
-export const TIRES = [
+import KartFeatures from "src/app/models/KartFeatures";
+import KartComponentType from "src/app/models/KartComponentType";
+
+export const TIRES: KartFeatures[] = [
   {
     "name": "Standard (Normal)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 2,
@@ -27,7 +30,7 @@ export const TIRES = [
   },
   {
     "name": "Blue Standard (Normal Blue)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 2,
@@ -53,7 +56,7 @@ export const TIRES = [
   },
   {
     "name": "GLA Tires (GLA Wheels)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 2,
@@ -79,7 +82,7 @@ export const TIRES = [
   },
   {
     "name": "Monster",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 2,
@@ -105,7 +108,7 @@ export const TIRES = [
   },
   {
     "name": "Hot Monster (Funky Monster)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 2,
@@ -131,7 +134,7 @@ export const TIRES = [
   },
   {
     "name": "Roller",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 0,
@@ -157,7 +160,7 @@ export const TIRES = [
   },
   {
     "name": "Azure Roller",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 0,
@@ -183,7 +186,7 @@ export const TIRES = [
   },
   {
     "name": "Slim",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 3,
@@ -209,7 +212,7 @@ export const TIRES = [
   },
   {
     "name": "Wood (Wooden)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 3,
@@ -235,7 +238,7 @@ export const TIRES = [
   },
   {
     "name": "Crimson Slim",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 3,
@@ -261,7 +264,7 @@ export const TIRES = [
   },
   {
     "name": "Slick",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 4,
@@ -287,7 +290,7 @@ export const TIRES = [
   },
   {
     "name": "Cyber Slick",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 4,
@@ -313,7 +316,7 @@ export const TIRES = [
   },
   {
     "name": "Metal",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 4,
@@ -339,7 +342,7 @@ export const TIRES = [
   },
   {
     "name": "Gold Tires (Gold Wheels)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 4,
@@ -365,7 +368,7 @@ export const TIRES = [
   },
   {
     "name": "Button",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 1,
@@ -391,7 +394,7 @@ export const TIRES = [
   },
   {
     "name": "Leaf Tires (Leaf Tyres)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 1,
@@ -417,7 +420,7 @@ export const TIRES = [
   },
   {
     "name": "Off-Road",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 3,
@@ -443,7 +446,7 @@ export const TIRES = [
   },
   {
     "name": "Retro Off-Road",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 3,
@@ -469,7 +472,7 @@ export const TIRES = [
   },
   {
     "name": "Triforce Tires (Triforce Tyres)",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 3,
@@ -495,7 +498,7 @@ export const TIRES = [
   },
   {
     "name": "Sponge",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 1,
@@ -521,7 +524,7 @@ export const TIRES = [
   },
   {
     "name": "Cushion",
-    "type": "Tires",
+    "type": KartComponentType.Tires,
     "size": null,
     "speed": {
       "ground": 1,
