@@ -15,6 +15,7 @@ import { AverageService } from './services/avg/Average.service';
 import { PathComponent } from './components/content/kart/statistics/path/path.component';
 import { TabularComponent } from './components/content/kart/statistics/tabular/tabular.component';
 import { PointsService } from './services/points/Points.service';
+import { SizePipe } from './pipes/size/size.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PointsService } from './services/points/Points.service';
     SelectorComponent,
     ElementComponent,
     PathComponent,
-    TabularComponent
+    TabularComponent,
+    SizePipe
   ],
   imports: [
     BrowserModule,
