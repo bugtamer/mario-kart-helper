@@ -16,6 +16,7 @@ import { PathComponent } from './components/content/kart/statistics/path/path.co
 import { TabularComponent } from './components/content/kart/statistics/tabular/tabular.component';
 import { PointsService } from './services/points/Points.service';
 import { SizePipe } from './pipes/size/size.pipe';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SizePipe } from './pipes/size/size.pipe';
     ElementComponent,
     PathComponent,
     TabularComponent,
-    SizePipe
+    SizePipe,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
