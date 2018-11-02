@@ -1,0 +1,22 @@
+<button mat-icon-button [matMenuTriggerFor]="menu">
+  <!-- <mat-icon>more_vert</mat-icon> -->
+  <mat-icon>menu</mat-icon>
+</button>
+
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/simple">
+    <mat-icon>view_list</mat-icon>
+    <span>Simple kart builder</span>
+  </button>
+
+  <button mat-menu-item routerLink="/advanced">
+    <mat-icon>tune</mat-icon>
+    <span>Advanced kart builder</span>
+  </button>
+  
+  <button mat-menu-item disabled>
+    <mat-icon>build</mat-icon>
+    <span>not implemented</span>
+  </button>
+</mat-menu>

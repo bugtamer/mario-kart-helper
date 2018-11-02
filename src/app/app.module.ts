@@ -21,6 +21,8 @@ import { ElementComponent } from 'src/app/components/kart/element/element.compon
 import { PathComponent } from 'src/app/components/kart/statistics/path/path.component';
 import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tabular.component';
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
+import { MenuComponent } from './components/header/menu/menu.component';
+import { AdvancedComponent } from './components/kart-builders/advanced/advanced.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-no
     PathComponent,
     TabularComponent,
     SizePipe,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MenuComponent,
+    AdvancedComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.component';
+import { AdvancedComponent } from 'src/app/components/kart-builders/advanced/advanced.component';
 
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 
@@ -11,6 +12,7 @@ import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-no
 // Be sure it is the last route in the configuration.
 const appRoutes: Routes = [
   { path: 'simple', component: SimpleComponent, pathMatch: 'full' },
+  { path: 'advanced', component: AdvancedComponent, pathMatch: 'full' },
   { path: '', redirectTo: '/simple', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];

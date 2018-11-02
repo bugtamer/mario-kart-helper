@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularMaterialModule } from '../../angular-material';
 
 import { HeaderComponent } from './header.component';
+import { MenuComponent } from 'src/app/components/header/menu/menu.component';
 
 describe('HeaderComponent', () => {
 
@@ -13,7 +14,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ],
+      declarations: [ HeaderComponent, MenuComponent ],
       imports: [
         BrowserModule,
         AngularMaterialModule
