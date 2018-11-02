@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularMaterialModule } from 'src/app/angular-material';
 
 import { StatsComponent } from './stats.component';
-import { PathComponent } from 'src/app/components/content/kart/statistics/path/path.component';
-import { SliderComponent } from 'src/app/components/content/kart/statistics/slider/slider.component';
+import { PathComponent } from 'src/app/components/kart/statistics/path/path.component';
+import { SliderComponent } from 'src/app/components/kart/statistics/slider/slider.component';
 
 
 describe('StatsComponent', () => {

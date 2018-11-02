@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ElementComponent } from './element.component';
-import { SelectorComponent } from './../../../../components/content/kart/selector/selector.component';
+import { SelectorComponent } from 'src/app/components/kart/selector/selector.component';
 
 import { BrowserModule } from '@angular/platform-browser';
-import { AngularMaterialModule } from './../../../../angular-material';
+import { AngularMaterialModule } from 'src/app/angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
 

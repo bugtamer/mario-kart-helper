@@ -63,13 +63,9 @@ export class TabularComponent implements OnInit {
       case KartComponentType.Tires: this.kart.tires = newFeature; break;
       case KartComponentType.Glider: this.kart.glider = newFeature; break;
     }
-    //this.kart[feature.toLowerCase()] = newFeature;
     this._kartFeatureArray[order] = newFeature;
     this.setFeature(this.kartAvgFeatures, this._avg, this.kart);
     this.setFeature(this.kartTotalPoints, this._totalPoints, this.kart);
-    // this.kartAvgFeatures = this._avg.kart(this.kart);
-    // this.kartTotalPoints = this._totalPoints.kart( this.kart );
-    console.log('Input was updated', this.kart);
   }
 
 

@@ -4,7 +4,7 @@ import { AngularMaterialModule } from 'src/app/angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { TabularComponent } from './tabular.component';
-import { SelectorComponent } from 'src/app/components/content/kart/selector/selector.component';
+import { SelectorComponent } from 'src/app/components/kart/selector/selector.component';
 
 
 describe('TabularComponent', () => {

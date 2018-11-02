@@ -6,11 +6,11 @@ import { AverageService } from 'src/app/services/avg/Average.service';
 import KartFeatures from 'src/app/models/KartFeatures';
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: 'app-simple',
+  templateUrl: './simple.component.html',
+  styleUrls: ['./simple.component.css']
 })
-export class ContentComponent implements OnInit {
+export class SimpleComponent implements OnInit {
 
   private _kart: Kart;
   element: KartFeatures;

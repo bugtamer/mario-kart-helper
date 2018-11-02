@@ -1,29 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularMaterialModule } from './angular-material';
+import { HttpClientModule } from '@angular/common/http';
+
+import { routingProvider } from 'src/app/routing';
+
+import { StatsService } from 'src/app/services/stats/stats.service';
+import { PointsService } from 'src/app/services/points/Points.service';
+import { AverageService } from 'src/app/services/avg/Average.service';
+
+import { SizePipe } from 'src/app/pipes/size/size.pipe';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ContentComponent } from './components/content/content.component';
-import { StatsService } from './services/stats/stats.service';
-import { HttpClientModule } from '@angular/common/http';
-import { SliderComponent } from './components/content/kart/statistics/slider/slider.component';
-import { StatsComponent } from './components/content/kart/statistics/stats/stats.component';
-import { SelectorComponent } from './components/content/kart/selector/selector.component';
-import { ElementComponent } from './components/content/kart/element/element.component';
-import { AverageService } from './services/avg/Average.service';
-import { PathComponent } from './components/content/kart/statistics/path/path.component';
-import { TabularComponent } from './components/content/kart/statistics/tabular/tabular.component';
-import { PointsService } from './services/points/Points.service';
-import { SizePipe } from './pipes/size/size.pipe';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { routingProvider } from 'src/app/routing';
+import { HeaderComponent } from 'src/app/components/header/header.component';
+import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.component';
+import { SliderComponent } from 'src/app/components/kart/statistics/slider/slider.component';
+import { StatsComponent } from 'src/app/components/kart/statistics/stats/stats.component';
+import { SelectorComponent } from 'src/app/components/kart/selector/selector.component';
+import { ElementComponent } from 'src/app/components/kart/element/element.component';
+import { PathComponent } from 'src/app/components/kart/statistics/path/path.component';
+import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tabular.component';
+import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent,
+    SimpleComponent,
     SliderComponent,
     StatsComponent,
     SelectorComponent,

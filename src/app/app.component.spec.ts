@@ -3,16 +3,20 @@ import { TestBed, async } from '@angular/core/testing';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularMaterialModule } from './angular-material';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common';
+
+import { routingProvider } from './routing';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ContentComponent } from './components/content/content.component';
-import { SliderComponent } from './components/content/kart/statistics/slider/slider.component';
-import { StatsComponent } from './components/content/kart/statistics/stats/stats.component';
-import { SelectorComponent } from './components/content/kart/selector/selector.component';
-import { ElementComponent } from './components/content/kart/element/element.component';
-import { PathComponent } from './components/content/kart/statistics/path/path.component';
-import { TabularComponent } from 'src/app/components/content/kart/statistics/tabular/tabular.component';
+import { HeaderComponent } from 'src/app/components/header/header.component';
+import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.component';
+import { SliderComponent } from 'src/app/components/kart/statistics/slider/slider.component';
+import { StatsComponent } from 'src/app/components/kart/statistics/stats/stats.component';
+import { SelectorComponent } from 'src/app/components/kart/selector/selector.component';
+import { ElementComponent } from 'src/app/components/kart/element/element.component';
+import { PathComponent } from 'src/app/components/kart/statistics/path/path.component';
+import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tabular.component';
+import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 
 describe('AppComponent', () => {
 
@@ -21,18 +25,23 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         HeaderComponent,
-        ContentComponent,
+        SimpleComponent,
         SliderComponent,
         StatsComponent,
         SelectorComponent,
         ElementComponent,
         PathComponent,
-        TabularComponent
+        TabularComponent,
+        PageNotFoundComponent
       ],
       imports: [
         BrowserModule,
         AngularMaterialModule,
-        HttpClientModule
+        HttpClientModule,
+        routingProvider
+      ],
+      providers: [
+        {provide: APP_BASE_HREF, useValue : '/' }
       ]
     }).compileComponents();
   }));

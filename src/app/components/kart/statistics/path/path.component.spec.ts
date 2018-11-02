@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AngularMaterialModule } from 'src/app/angular-material';
 
 import { PathComponent } from './path.component';
-import { SliderComponent } from 'src/app/components/content/kart/statistics/slider/slider.component';
+import { SliderComponent } from 'src/app/components/kart/statistics/slider/slider.component';
 
 
 describe('PathComponent', () => {
