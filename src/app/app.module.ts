@@ -17,6 +17,7 @@ import { TabularComponent } from './components/content/kart/statistics/tabular/t
 import { PointsService } from './services/points/Points.service';
 import { SizePipe } from './pipes/size/size.pipe';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { routingProvider } from 'src/app/routing';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
   imports: [
     BrowserModule,
     HttpClientModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    routingProvider
   ],
   providers: [
     StatsService,
