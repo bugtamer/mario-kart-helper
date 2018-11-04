@@ -1,6 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { AngularMaterialModule } from '../../../angular-material';
+import { HttpClientModule } from '@angular/common/http';
+
+import { StatsService } from 'src/app/services/stats/stats.service';
+
 import { AdvancedComponent } from './advanced.component';
+import { FeatureListComponent } from 'src/app/components/features/feature-list/feature-list.component';
 
 
 describe('AdvancedComponent', () => {
@@ -11,7 +17,9 @@ describe('AdvancedComponent', () => {
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdvancedComponent ]
+      declarations: [ AdvancedComponent, FeatureListComponent ],
+      imports: [ AngularMaterialModule, HttpClientModule ],
+      providers: [ StatsService ]
     })
     .compileComponents();
   }));

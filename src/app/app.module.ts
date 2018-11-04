@@ -23,6 +23,7 @@ import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tab
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 import { MenuComponent } from './components/header/menu/menu.component';
 import { AdvancedComponent } from './components/kart-builders/advanced/advanced.component';
+import { FeatureListComponent } from './components/features/feature-list/feature-list.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AdvancedComponent } from './components/kart-builders/advanced/advanced.
     SizePipe,
     PageNotFoundComponent,
     MenuComponent,
-    AdvancedComponent
+    AdvancedComponent,
+    FeatureListComponent
   ],
   imports: [
     BrowserModule,

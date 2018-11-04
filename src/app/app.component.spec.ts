@@ -19,6 +19,7 @@ import { PathComponent } from 'src/app/components/kart/statistics/path/path.comp
 import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tabular.component';
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 import { MenuComponent } from 'src/app/components/header/menu/menu.component';
+import { FeatureListComponent } from 'src/app/components/features/feature-list/feature-list.component';
 
 describe('AppComponent', () => {
 
@@ -36,7 +37,8 @@ describe('AppComponent', () => {
         PathComponent,
         TabularComponent,
         PageNotFoundComponent,
-        MenuComponent
+        MenuComponent,
+        FeatureListComponent
       ],
       imports: [
         BrowserModule,
