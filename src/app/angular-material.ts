@@ -17,6 +17,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { MatSortModule } from '@angular/material/sort';
         MatTabsModule,
         MatRadioModule,
         MatSnackBarModule,
-        MatSortModule
+        MatSortModule,
+        MatPaginatorModule
     ],
 
     exports: [
@@ -56,7 +58,8 @@ import { MatSortModule } from '@angular/material/sort';
         MatTabsModule,
         MatRadioModule,
         MatSnackBarModule,
-        MatSortModule
+        MatSortModule,
+        MatPaginatorModule
     ],
 })
 

@@ -3,7 +3,7 @@ import KartFeatures from 'src/app/models/KartFeatures';
 import KartComponentType from 'src/app/models/KartComponentType';
 import { StatsService } from 'src/app/services/stats/stats.service';
 import { AverageService } from 'src/app/services/avg/Average.service';
-import { MatSnackBar, MatSort, MatTableDataSource } from '@angular/material';
+import { MatSnackBar, MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
 
 
 @Component({
@@ -13,12 +13,16 @@ import { MatSnackBar, MatSort, MatTableDataSource } from '@angular/material';
 })
 export class FeatureListComponent implements OnInit {
 
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatSort)
+  sort: MatSort;
   
+  @ViewChild(MatPaginator)
+  paginator: MatPaginator;
+    
   @Input('type')
   _type: KartComponentType;
 
-  dataSource;//: Array<KartFeatures>;// = ELEMENT_DATA;
+  dataSource;
   displayedColumns: string[] = [
     'choice',
     'totalPoints',
@@ -44,8 +48,9 @@ export class FeatureListComponent implements OnInit {
   ngOnInit() {
     this._statsService.getComponents( this._type ).subscribe(
       receivedComponentData => {
-        this.dataSource = new MatTableDataSource(receivedComponentData);
+        this.dataSource = new MatTableDataSource<KartFeatures>(receivedComponentData);
         this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
       }
     );
   }
