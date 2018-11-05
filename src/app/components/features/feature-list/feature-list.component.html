@@ -9,13 +9,13 @@
   
       <!-- Speed Column -->
       <ng-container matColumnDef="speed">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Spd </th>
+        <th mat-header-cell *matHeaderCellDef> Spd </th>
         <td mat-cell *matCellDef="let feature">{{_avg.path(feature.speed)}}</td>
       </ng-container>
   
       <!-- Speed Ground Column -->
       <ng-container matColumnDef="speedGround">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>terrain</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.speed.ground}}</td>
@@ -23,7 +23,7 @@
   
       <!-- Speed Water Column -->
       <ng-container matColumnDef="speedWater">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>waves</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.speed.water}}</td>
@@ -31,7 +31,7 @@
   
       <!-- Speed Air Column -->
       <ng-container matColumnDef="speedAir">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>airplanemode_active</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.speed.air}}</td>
@@ -39,7 +39,7 @@
   
       <!-- Speed Anti-Gravity Column -->
       <ng-container matColumnDef="speedAntiGravity">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>language</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.speed.antiGravity}}</td>
@@ -47,13 +47,13 @@
         
       <!-- Handling Column -->
       <ng-container matColumnDef="handling">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Hnd </th>
+        <th mat-header-cell *matHeaderCellDef> Hnd </th>
         <td mat-cell *matCellDef="let feature">{{_avg.path(feature.handling)}}</td>
       </ng-container>
   
       <!-- Handling Ground Column -->
       <ng-container matColumnDef="handlingGround">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>terrain</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.handling.ground}}</td>
@@ -61,7 +61,7 @@
   
       <!-- Handling Water Column -->
       <ng-container matColumnDef="handlingWater">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>waves</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.handling.water}}</td>
@@ -69,7 +69,7 @@
   
       <!-- Handling Air Column -->
       <ng-container matColumnDef="handlingAir">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>airplanemode_active</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.handling.air}}</td>
@@ -77,7 +77,7 @@
   
       <!-- Handling Anti-Gravity Column -->
       <ng-container matColumnDef="handlingAntiGravity">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <th mat-header-cell *matHeaderCellDef>
           <mat-icon>language</mat-icon>
         </th>
         <td mat-cell *matCellDef="let feature">{{feature.handling.antiGravity}}</td>
@@ -105,7 +105,7 @@
         
       <!-- Image Column -->
       <ng-container matColumnDef="image">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Img </th>
+        <th mat-header-cell *matHeaderCellDef> Img </th>
         <td mat-cell *matCellDef="let feature">
           <img [src]="feature.image.url" [alt]="feature.name" [title]="feature.name">
         </td>
@@ -125,7 +125,7 @@
   
       <!-- Total points Column -->
       <ng-container matColumnDef="totalPoints">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> TP </th>
+        <th mat-header-cell *matHeaderCellDef> TP </th>
         <td mat-cell *matCellDef="let feature">
           {{
             feature.weight +
@@ -147,6 +147,6 @@
     </table>
   </mat-radio-group>
           
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 50]" showFirstLastButtons></mat-paginator>
 
 </div>
