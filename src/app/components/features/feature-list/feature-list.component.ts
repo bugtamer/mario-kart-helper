@@ -4,6 +4,7 @@ import KartComponentType from 'src/app/models/KartComponentType';
 import { StatsService } from 'src/app/services/stats/stats.service';
 import { AverageService } from 'src/app/services/avg/Average.service';
 import { MatSnackBar, MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
+import { NullModel } from 'src/app/util/null-domain-models';
 
 
 @Component({
@@ -19,8 +20,8 @@ export class FeatureListComponent implements OnInit {
   @ViewChild(MatPaginator)
   paginator: MatPaginator;
     
-  @Input('type')
-  _type: KartComponentType;
+  @Input('data')
+  data;
 
   dataSource;
   displayedColumns: string[] = [
@@ -46,13 +47,11 @@ export class FeatureListComponent implements OnInit {
   constructor(public snackBar: MatSnackBar, private _statsService: StatsService, private _avg: AverageService) { }
 
   ngOnInit() {
-    this._statsService.getComponents( this._type ).subscribe(
-      receivedComponentData => {
-        this.dataSource = new MatTableDataSource<KartFeatures>(receivedComponentData);
-        this.dataSource.sort = this.sort;
-        this.dataSource.paginator = this.paginator;
-      }
-    );
+    this.data = this.data || [ NullModel.getKartFeatures() ];
+    console.log(this.data[0].type, this.data);
+    this.dataSource = new MatTableDataSource<KartFeatures>(this.data);
+    this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
   
 }

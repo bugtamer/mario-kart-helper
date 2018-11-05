@@ -1,22 +1,22 @@
 <mat-tab-group>
   <mat-tab label="Kart">
-    Kart
+    <app-feature-list [data]="kartFeatureList"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Drivers">
-    <app-feature-list type="Driver"></app-feature-list>
+    <app-feature-list [data]="driverList"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Body">
-    <app-feature-list type="Body"></app-feature-list>
+    <app-feature-list [data]="bodyList"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Tires">
-    <app-feature-list type="Tires"></app-feature-list>
+    <app-feature-list [data]="tiresList"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Glider">
-    <app-feature-list type="Glider"></app-feature-list>
+    <app-feature-list [data]="gliderList"></app-feature-list>
   </mat-tab>
 </mat-tab-group>
 
