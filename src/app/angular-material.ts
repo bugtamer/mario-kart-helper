@@ -14,6 +14,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
     imports: [
@@ -30,7 +33,10 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatExpansionModule,
         MatTableModule,
         MatMenuModule,
-        MatTabsModule
+        MatTabsModule,
+        MatRadioModule,
+        MatSnackBarModule,
+        MatSortModule
     ],
 
     exports: [
@@ -47,7 +53,10 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatExpansionModule,
         MatTableModule,
         MatMenuModule,
-        MatTabsModule
+        MatTabsModule,
+        MatRadioModule,
+        MatSnackBarModule,
+        MatSortModule
     ],
 })
 

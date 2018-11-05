@@ -1,11 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import KartFeatures from 'src/app/models/KartFeatures';
-import { DRIVERS } from 'src/app/services/stats/data/drivers';
 import KartComponentType from 'src/app/models/KartComponentType';
 import { StatsService } from 'src/app/services/stats/stats.service';
-
-
-// const ELEMENT_DATA: KartFeatures[] = DRIVERS;
+import { AverageService } from 'src/app/services/avg/Average.service';
+import { MatSnackBar, MatSort, MatTableDataSource } from '@angular/material';
 
 
 @Component({
@@ -15,20 +13,41 @@ import { StatsService } from 'src/app/services/stats/stats.service';
 })
 export class FeatureListComponent implements OnInit {
 
+  @ViewChild(MatSort) sort: MatSort;
+  
   @Input('type')
   _type: KartComponentType;
 
-  dataSource: Array<KartFeatures>;// = ELEMENT_DATA;
-  displayedColumns: string[] = ['image', 'acceleration', 'weight'];
-  //['image', 'speed', 'acceleration', 'weight', 'handling', 'grid', 'miniTurbo'];
+  dataSource;//: Array<KartFeatures>;// = ELEMENT_DATA;
+  displayedColumns: string[] = [
+    'choice',
+    'totalPoints',
+    'image',
+    'speed',
+    'speedGround',
+    'speedWater',
+    'speedAir',
+    'speedAntiGravity',
+    'acceleration',
+    'weight',
+    'handling',
+    'handlingGround',
+    'handlingWater',
+    'handlingAir',
+    'handlingAntiGravity',
+    'grid',
+    'miniTurbo'
+  ];
 
-  constructor(private _statsService: StatsService) { }
+  constructor(public snackBar: MatSnackBar, private _statsService: StatsService, private _avg: AverageService) { }
 
   ngOnInit() {
     this._statsService.getComponents( this._type ).subscribe(
       receivedComponentData => {
-        this.dataSource = receivedComponentData;
-      });
+        this.dataSource = new MatTableDataSource(receivedComponentData);
+        this.dataSource.sort = this.sort;
+      }
+    );
   }
-
+  
 }
