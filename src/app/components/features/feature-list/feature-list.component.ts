@@ -23,6 +23,9 @@ export class FeatureListComponent implements OnInit {
   @Input('data')
   data;
 
+  @Input()
+  hasChoice: boolean;
+
   dataSource;
   displayedColumns: string[] = [
     'choice',
@@ -47,6 +50,7 @@ export class FeatureListComponent implements OnInit {
   constructor(public snackBar: MatSnackBar, private _statsService: StatsService, private _avg: AverageService) { }
 
   ngOnInit() {
+    // this.hasChoice = this.hasChoice;
     this.data = this.data || [ NullModel.getKartFeatures() ];
     console.log(this.data[0].type, this.data);
     this.dataSource = new MatTableDataSource<KartFeatures>(this.data);
