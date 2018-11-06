@@ -7,7 +7,6 @@ import { BODIES } from 'src/app/services/stats/data/bodies';
 import { TIRES } from 'src/app/services/stats/data/tires';
 import { GLIDERS } from 'src/app/services/stats/data/gliders';
 import { NullModel } from 'src/app/util/null-domain-models';
-import { log } from 'util';
 
 @Component({
   selector: 'app-advanced',

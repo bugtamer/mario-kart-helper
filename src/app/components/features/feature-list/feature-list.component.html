@@ -6,81 +6,89 @@
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  
+        
+      <!-- Choice Column -->
+      <ng-container matColumnDef="choice">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let feature">
+          <mat-radio-button [value]="feature.name" *ngIf="areChoosable == true"></mat-radio-button>
+        </td>
+      </ng-container>
+
       <!-- Speed Column -->
       <ng-container matColumnDef="speed">
-        <th mat-header-cell *matHeaderCellDef> Spd </th>
-        <td mat-cell *matCellDef="let feature">{{_avg.path(feature.speed)}}</td>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Spd </th>
+        <td mat-cell *matCellDef="let feature">{{feature.speed}}</td>
       </ng-container>
   
       <!-- Speed Ground Column -->
       <ng-container matColumnDef="speedGround">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>terrain</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.speed.ground}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.speedGround}}</td>
       </ng-container>
   
       <!-- Speed Water Column -->
       <ng-container matColumnDef="speedWater">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>waves</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.speed.water}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.speedWater}}</td>
       </ng-container>
   
       <!-- Speed Air Column -->
       <ng-container matColumnDef="speedAir">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>airplanemode_active</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.speed.air}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.speedAir}}</td>
       </ng-container>
   
       <!-- Speed Anti-Gravity Column -->
       <ng-container matColumnDef="speedAntiGravity">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>language</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.speed.antiGravity}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.speedAntiGravity}}</td>
       </ng-container>
         
       <!-- Handling Column -->
       <ng-container matColumnDef="handling">
-        <th mat-header-cell *matHeaderCellDef> Hnd </th>
-        <td mat-cell *matCellDef="let feature">{{_avg.path(feature.handling)}}</td>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Hnd </th>
+        <td mat-cell *matCellDef="let feature">{{feature.handling}}</td>
       </ng-container>
   
       <!-- Handling Ground Column -->
       <ng-container matColumnDef="handlingGround">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>terrain</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.handling.ground}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.handlingGround}}</td>
       </ng-container>
   
       <!-- Handling Water Column -->
       <ng-container matColumnDef="handlingWater">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>waves</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.handling.water}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.handlingWater}}</td>
       </ng-container>
   
       <!-- Handling Air Column -->
       <ng-container matColumnDef="handlingAir">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>airplanemode_active</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.handling.air}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.handlingAir}}</td>
       </ng-container>
   
       <!-- Handling Anti-Gravity Column -->
       <ng-container matColumnDef="handlingAntiGravity">
-        <th mat-header-cell *matHeaderCellDef>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <mat-icon>language</mat-icon>
         </th>
-        <td mat-cell *matCellDef="let feature">{{feature.handling.antiGravity}}</td>
+        <td mat-cell *matCellDef="let feature">{{feature.handlingAntiGravity}}</td>
       </ng-container>
   
       <!-- MiniTurbo Column -->
@@ -95,58 +103,36 @@
         <td mat-cell *matCellDef="let feature"> {{feature.grid}} </td>
       </ng-container>
         
-      <!-- Choice Column -->
-      <ng-container matColumnDef="choice">
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let feature">
-          <mat-radio-button [value]="feature.name" *ngIf="hasChoice"></mat-radio-button>
-        </td>
-      </ng-container>
-        
       <!-- Image Column -->
       <ng-container matColumnDef="image">
-        <th mat-header-cell *matHeaderCellDef> Img </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Img </th>
         <td mat-cell *matCellDef="let feature">
-          <img [src]="feature.image.url" [alt]="feature.name" [title]="feature.name">
+          <img [src]="feature.image" [alt]="feature.name" [title]="feature.name">
         </td>
       </ng-container>
   
       <!-- Acceleration Column -->
       <ng-container matColumnDef="acceleration">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Acc </th>
-        <td mat-cell *matCellDef="let feature"> {{feature.acceleration}} </td>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Acc</th>
+        <td mat-cell *matCellDef="let feature">{{feature.acceleration}}</td>
       </ng-container>
   
       <!-- Weight Column -->
       <ng-container matColumnDef="weight">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Wgt </th>
-        <td mat-cell *matCellDef="let feature"> {{feature.weight}} </td>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Wgt</th>
+        <td mat-cell *matCellDef="let feature">{{feature.weight}}</td>
+        <td mat-footer-cell *matFooterCellDef>{{getTotal()}}</td>
       </ng-container>
   
       <!-- Total points Column -->
       <ng-container matColumnDef="totalPoints">
-        <th mat-header-cell *matHeaderCellDef> TP </th>
-        <td mat-cell *matCellDef="let feature">
-          {{
-            feature.weight +
-            feature.acceleration +
-            feature.grid +
-            feature.miniTurbo +
-            feature.speed.ground +
-            feature.speed.water +
-            feature.speed.air +
-            feature.speed.antiGravity +
-            feature.handling.ground +
-            feature.handling.water +
-            feature.handling.air +
-            feature.handling.antiGravity
-          }}
-        </td>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>TP</th>
+        <td mat-cell *matCellDef="let feature">{{feature.totalPoints}}</td>
       </ng-container>
   
     </table>
   </mat-radio-group>
-          
+  
   <mat-paginator [pageSizeOptions]="[5, 10, 25, 50]" showFirstLastButtons></mat-paginator>
 
 </div>

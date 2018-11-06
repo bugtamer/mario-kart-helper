@@ -8,6 +8,7 @@ import { routingProvider } from 'src/app/routing';
 import { StatsService } from 'src/app/services/stats/stats.service';
 import { PointsService } from 'src/app/services/points/Points.service';
 import { AverageService } from 'src/app/services/avg/Average.service';
+import { ParseFeatureService } from 'src/app/services/model-adapters/model-adapters.service';
 
 import { SizePipe } from 'src/app/pipes/size/size.pipe';
 
@@ -51,7 +52,8 @@ import { FeatureListComponent } from './components/features/feature-list/feature
   providers: [
     StatsService,
     AverageService,
-    PointsService
+    PointsService,
+    ParseFeatureService
   ],
   bootstrap: [AppComponent]
 })

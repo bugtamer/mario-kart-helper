@@ -1,10 +1,7 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import KartFeatures from 'src/app/models/KartFeatures';
-import KartComponentType from 'src/app/models/KartComponentType';
-import { StatsService } from 'src/app/services/stats/stats.service';
-import { AverageService } from 'src/app/services/avg/Average.service';
-import { MatSnackBar, MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
-import { NullModel } from 'src/app/util/null-domain-models';
+import { MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
+import { getDisplayedColumns } from './displayedColumns';
+import { ParseFeatureService, TabularFeature } from '../../../services/model-adapters/model-adapters.service';
 
 
 @Component({
@@ -24,38 +21,25 @@ export class FeatureListComponent implements OnInit {
   data;
 
   @Input()
-  hasChoice: boolean;
+  areChoosable: boolean = this.areChoosable || true;
 
   dataSource;
-  displayedColumns: string[] = [
-    'choice',
-    'totalPoints',
-    'image',
-    'speed',
-    'speedGround',
-    'speedWater',
-    'speedAir',
-    'speedAntiGravity',
-    'acceleration',
-    'weight',
-    'handling',
-    'handlingGround',
-    'handlingWater',
-    'handlingAir',
-    'handlingAntiGravity',
-    'grid',
-    'miniTurbo'
-  ];
+  displayedColumns: string[] = getDisplayedColumns();
 
-  constructor(public snackBar: MatSnackBar, private _statsService: StatsService, private _avg: AverageService) { }
+  
+  constructor(private _parse: ParseFeatureService) { }
 
+  
   ngOnInit() {
-    // this.hasChoice = this.hasChoice;
-    this.data = this.data || [ NullModel.getKartFeatures() ];
-    console.log(this.data[0].type, this.data);
-    this.dataSource = new MatTableDataSource<KartFeatures>(this.data);
+    let parsedData = this.goAroundMatSortHeaderInabilityToManageSubproperties(this.data);
+    this.dataSource = new MatTableDataSource<TabularFeature>(parsedData);
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }
+
   
+  private goAroundMatSortHeaderInabilityToManageSubproperties(data) {
+    return this._parse.toTabularFeatureArray(data);
+  }
+
 }
