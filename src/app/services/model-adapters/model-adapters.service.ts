@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { AverageService } from '../avg/Average.service';
 import { KartFeatures } from '../../models/KartFeatures';
+import Kart from 'src/app/models/Kart';
 
 
 export interface TabularFeature {
@@ -49,20 +50,31 @@ export class NullTabularFeature implements TabularFeature {
 @Injectable({
     providedIn: 'root'
   })
-export class ParseFeatureService {
+export class MatTableParserService {
 
     constructor(private avg: AverageService) { }
 
     
-    toTabularFeatureArray(input: Array<KartFeatures>): Array<TabularFeature> {
+    parseKart(input: Kart): Array<TabularFeature> {
+        let featureArray: Array<KartFeatures> = [ ];
+        featureArray.push(input.driver);
+        featureArray.push(input.body);
+        featureArray.push(input.tires);
+        featureArray.push(input.glider);
+        let output = this.parseFeatureArray(featureArray);
+        return output;
+    }
+
+    
+    parseFeatureArray(input: Array<KartFeatures>): Array<TabularFeature> {
         let output: Array<TabularFeature> = [];
         for (let i=0; i < input.length; i++)
-            output.push( this.toTabularFeature(input[i]) );
+            output.push( this.parseFeature(input[i]) );
         return output;
     }
 
 
-    toTabularFeature(input: KartFeatures): TabularFeature {
+    parseFeature(input: KartFeatures): TabularFeature {
         let output: TabularFeature =  new NullTabularFeature();
         output['totalPoints']  = this.getTotalPoints(input);
         output['name'] = input.name;

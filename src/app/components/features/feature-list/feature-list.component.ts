@@ -1,8 +1,9 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, Output, EventEmitter } from '@angular/core';
 import { MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
 import { getDisplayedColumns } from './displayedColumns';
-import { ParseFeatureService, TabularFeature } from '../../../services/model-adapters/model-adapters.service';
+import { MatTableParserService, TabularFeature } from '../../../services/model-adapters/model-adapters.service';
 import { NullModel } from 'src/app/util/null-domain-models';
+import { KartFeatures } from 'src/app/models/KartFeatures';
 
 
 @Component({
@@ -19,16 +20,19 @@ export class FeatureListComponent implements OnInit {
   paginator: MatPaginator;
     
   @Input('data')
-  data;
+  data: Array<KartFeatures>;
 
   @Input()
   areChoosable: boolean = this.areChoosable || true;
+
+  @Output('newSelection')
+  private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
 
   dataSource;
   displayedColumns: string[] = getDisplayedColumns();
 
   
-  constructor(private _parse: ParseFeatureService) { }
+  constructor(private _parser: MatTableParserService) { }
 
   
   ngOnInit() {
@@ -40,8 +44,18 @@ export class FeatureListComponent implements OnInit {
   }
 
   
-  private goAroundMatSortHeaderInabilityToManageSubproperties(data) {
-    return this._parse.toTabularFeatureArray(data);
+  private goAroundMatSortHeaderInabilityToManageSubproperties(data: Array<KartFeatures>) {
+    return this._parser.parseFeatureArray(data);
+  }
+
+
+  onChoiceChange(event): void {
+    let selectedFeatureName: string = event.value;
+    for (let i=0;   i < this.data.length;   i++)
+      if (this.data[i].name === selectedFeatureName) {
+        this._event.emit( this.data[i] );
+        break;
+      }
   }
 
 }

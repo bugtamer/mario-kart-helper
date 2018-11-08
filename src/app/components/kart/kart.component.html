@@ -1,0 +1,17 @@
+<app-feature-list [data]="_parser.parseKart(kart)" areChoosable="false"></app-feature-list>
+
+<table>
+    <tr>
+        <th>kart | json</th>
+        <th>_parser.parseKart(kart) | json</th>
+    </tr>
+
+    <tr>
+        <td>
+            <pre>{{kart | json}}</pre>
+        </td>
+        <td>
+            <pre>{{_parser.parseKart(kart) | json}}</pre>
+        </td>
+    </tr>
+</table>
