@@ -11,7 +11,7 @@ import { Random } from 'src/app/util/random';
   templateUrl: './feature-selector.component.html',
   styleUrls: ['./feature-selector.component.css']
 })
-export class SelectorComponent implements OnInit {
+export class FeatureSelectorComponent implements OnInit {
 
   @Input('type')
   private _type: KartComponentType;

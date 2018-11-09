@@ -9,7 +9,7 @@ import { NullModel } from 'src/app/util/null-domain-models';
   templateUrl: './kart-tabular.component.html',
   styleUrls: ['./kart-tabular.component.css']
 })
-export class TabularComponent implements OnInit {
+export class KartTabularComponent implements OnInit {
 
   @Input('kart')
   private kart: Kart;

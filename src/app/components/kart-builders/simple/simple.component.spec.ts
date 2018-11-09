@@ -4,8 +4,8 @@ import { AngularMaterialModule } from '../../../angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { SimpleComponent } from './simple.component';
-import { SelectorComponent } from '../../features/feature-selector/feature-selector.component';
-import { TabularComponent } from '../../kart/kart-tabular/kart-tabular.component';
+import { FeatureSelectorComponent } from '../../features/feature-selector/feature-selector.component';
+import { KartTabularComponent } from '../../kart/kart-tabular/kart-tabular.component';
 
 
 describe('SimpleComponent', () => {
@@ -18,8 +18,8 @@ describe('SimpleComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         SimpleComponent,
-        SelectorComponent,
-        TabularComponent
+        FeatureSelectorComponent,
+        KartTabularComponent
       ],
       imports: [
         AngularMaterialModule,

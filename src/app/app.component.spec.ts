@@ -11,11 +11,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/app/components/header/header.component';
 import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.component';
 import { AdvancedComponent } from 'src/app/components/kart-builders/advanced/advanced.component';
-import { SliderComponent } from 'src/app/components/features/feature-slider/feature-slider.component';
-import { StatsComponent } from 'src/app/components/kart/kart-stats/kart-stats.component';
-import { SelectorComponent } from 'src/app/components/features/feature-selector/feature-selector.component';
-import { PathComponent } from 'src/app/components/features/feature-path/feature-path.component';
-import { TabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
+import { FeatureSliderComponent } from 'src/app/components/features/feature-slider/feature-slider.component';
+import { KartStatsComponent } from 'src/app/components/kart/kart-stats/kart-stats.component';
+import { FeatureSelectorComponent } from 'src/app/components/features/feature-selector/feature-selector.component';
+import { FeaturePathComponent } from 'src/app/components/features/feature-path/feature-path.component';
+import { KartTabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 import { MenuComponent } from 'src/app/components/header/menu/menu.component';
 import { FeatureListComponent } from 'src/app/components/features/feature-list/feature-list.component';
@@ -30,11 +30,11 @@ describe('AppComponent', () => {
         HeaderComponent,
         SimpleComponent,
         AdvancedComponent,
-        SliderComponent,
-        StatsComponent,
-        SelectorComponent,
-        PathComponent,
-        TabularComponent,
+        FeatureSliderComponent,
+        KartStatsComponent,
+        FeatureSelectorComponent,
+        FeaturePathComponent,
+        KartTabularComponent,
         PageNotFoundComponent,
         MenuComponent,
         FeatureListComponent,

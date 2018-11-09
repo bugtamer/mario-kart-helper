@@ -8,7 +8,7 @@ import { NullModel } from 'src/app/util/null-domain-models';
   templateUrl: './feature-path.component.html',
   styleUrls: ['./feature-path.component.css']
 })
-export class PathComponent implements OnInit {
+export class FeaturePathComponent implements OnInit {
 
   @Input('path')
   path: KartPath;

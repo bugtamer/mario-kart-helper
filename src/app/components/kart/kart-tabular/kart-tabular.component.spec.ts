@@ -1,24 +1,24 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabularComponent } from './kart-tabular.component';
+import { KartTabularComponent } from './kart-tabular.component';
 
 
 describe('TabularComponent', () => {
 
-  let component: TabularComponent;
-  let fixture: ComponentFixture<TabularComponent>;
+  let component: KartTabularComponent;
+  let fixture: ComponentFixture<KartTabularComponent>;
 
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TabularComponent ]
+      declarations: [ KartTabularComponent ]
     })
     .compileComponents();
   }));
 
   
   beforeEach(() => {
-    fixture = TestBed.createComponent(TabularComponent);
+    fixture = TestBed.createComponent(KartTabularComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

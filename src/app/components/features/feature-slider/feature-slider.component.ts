@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './feature-slider.component.html',
   styleUrls: ['./feature-slider.component.css']
 })
-export class SliderComponent implements OnInit {
+export class FeatureSliderComponent implements OnInit {
 
   @Input()
   name: string;

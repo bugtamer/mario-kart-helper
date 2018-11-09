@@ -2,18 +2,18 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AngularMaterialModule } from 'src/app/angular-material';
 
-import { SliderComponent } from './feature-slider.component';
+import { FeatureSliderComponent } from './feature-slider.component';
 
 
 describe('SliderComponent', () => {
 
-  let component: SliderComponent;
-  let fixture: ComponentFixture<SliderComponent>;
+  let component: FeatureSliderComponent;
+  let fixture: ComponentFixture<FeatureSliderComponent>;
 
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SliderComponent ],
+      declarations: [ FeatureSliderComponent ],
       imports: [ AngularMaterialModule ]
     })
     .compileComponents();
@@ -21,7 +21,7 @@ describe('SliderComponent', () => {
 
   
   beforeEach(() => {
-    fixture = TestBed.createComponent(SliderComponent);
+    fixture = TestBed.createComponent(FeatureSliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

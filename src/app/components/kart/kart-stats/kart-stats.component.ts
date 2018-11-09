@@ -8,7 +8,7 @@ import { NullModel } from 'src/app/util/null-domain-models';
   templateUrl: './kart-stats.component.html',
   styleUrls: ['./kart-stats.component.css']
 })
-export class StatsComponent implements OnInit {
+export class KartStatsComponent implements OnInit {
 
   @Input()
   element: KartFeatures = NullModel.getKartFeatures();
