@@ -7,9 +7,9 @@ import { NullModel } from 'src/app/util/null-domain-models';
 import { Random } from 'src/app/util/random';
 
 @Component({
-  selector: 'app-kart-selector',
-  templateUrl: './selector.component.html',
-  styleUrls: ['./selector.component.css']
+  selector: 'app-feature-selector',
+  templateUrl: './feature-selector.component.html',
+  styleUrls: ['./feature-selector.component.css']
 })
 export class SelectorComponent implements OnInit {
 

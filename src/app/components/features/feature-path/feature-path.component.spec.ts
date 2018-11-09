@@ -2,31 +2,32 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AngularMaterialModule } from 'src/app/angular-material';
 
-import { SliderComponent } from './slider.component';
+import { PathComponent } from './feature-path.component';
+import { SliderComponent } from 'src/app/components/features/feature-slider/feature-slider.component';
 
 
-describe('SliderComponent', () => {
+describe('PathComponent', () => {
 
-  let component: SliderComponent;
-  let fixture: ComponentFixture<SliderComponent>;
+  let component: PathComponent;
+  let fixture: ComponentFixture<PathComponent>;
 
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SliderComponent ],
+      declarations: [ PathComponent, SliderComponent ],
       imports: [ AngularMaterialModule ]
     })
     .compileComponents();
   }));
 
-  
+
   beforeEach(() => {
-    fixture = TestBed.createComponent(SliderComponent);
+    fixture = TestBed.createComponent(PathComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });

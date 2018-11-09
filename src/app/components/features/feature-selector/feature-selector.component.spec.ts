@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { StatsService } from 'src/app/services/stats/stats.service';
 
-import { SelectorComponent } from './selector.component';
+import { SelectorComponent } from './feature-selector.component';
 
 
 describe('SelectorComponent', () => {

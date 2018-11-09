@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-kart-statistics-slider',
-  templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.css']
+  selector: 'app-feature-slider',
+  templateUrl: './feature-slider.component.html',
+  styleUrls: ['./feature-slider.component.css']
 })
 export class SliderComponent implements OnInit {
 

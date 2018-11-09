@@ -4,8 +4,8 @@ import { AngularMaterialModule } from '../../../angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { SimpleComponent } from './simple.component';
-import { SelectorComponent } from '../../kart/selector/selector.component';
-import { TabularComponent } from '../../kart/statistics/tabular/tabular.component';
+import { SelectorComponent } from '../../features/feature-selector/feature-selector.component';
+import { TabularComponent } from '../../kart/tabular/tabular.component';
 
 
 describe('SimpleComponent', () => {

@@ -1,8 +1,8 @@
 <div class="center">
-    <app-kart-selector type="Driver" (newSelection)="onFeatureChange($event)"></app-kart-selector>
-    <app-kart-selector type="Body"   (newSelection)="onFeatureChange($event)"></app-kart-selector>
-    <app-kart-selector type="Tires"  (newSelection)="onFeatureChange($event)"></app-kart-selector>
-    <app-kart-selector type="Glider" (newSelection)="onFeatureChange($event)"></app-kart-selector>
+    <app-feature-selector type="Driver" (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector type="Body"   (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector type="Tires"  (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector type="Glider" (newSelection)="onFeatureChange($event)"></app-feature-selector>
 </div>
 
 <app-tabular [kart]="_kart"></app-tabular>

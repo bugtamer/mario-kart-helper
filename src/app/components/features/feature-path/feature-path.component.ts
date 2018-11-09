@@ -4,9 +4,9 @@ import { AverageService } from 'src/app/services/avg/Average.service';
 import { NullModel } from 'src/app/util/null-domain-models';
 
 @Component({
-  selector: 'app-path',
-  templateUrl: './path.component.html',
-  styleUrls: ['./path.component.css']
+  selector: 'app-feature-path',
+  templateUrl: './feature-path.component.html',
+  styleUrls: ['./feature-path.component.css']
 })
 export class PathComponent implements OnInit {
 
