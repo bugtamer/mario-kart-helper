@@ -14,7 +14,7 @@ import { SizePipe } from 'src/app/pipes/size/size.pipe';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/app/components/header/header.component';
-import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.component';
+import { SimpleComponent } from 'src/app/components/builders/simple/simple.component';
 import { FeatureSliderComponent } from 'src/app/components/features/feature-slider/feature-slider.component';
 import { KartStatsComponent } from 'src/app/components/kart/kart-stats/kart-stats.component';
 import { FeatureSelectorComponent } from 'src/app/components/features/feature-selector/feature-selector.component';
@@ -22,7 +22,7 @@ import { FeaturePathComponent } from 'src/app/components/features/feature-path/f
 import { KartTabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 import { MenuComponent } from './components/header/menu/menu.component';
-import { AdvancedComponent } from './components/kart-builders/advanced/advanced.component';
+import { AdvancedComponent } from './components/builders/builder-advanced/builder-advanced.component';
 import { FeatureListComponent } from './components/features/feature-list/feature-list.component';
 import { KartComponent } from './components/kart/kart.component';
 

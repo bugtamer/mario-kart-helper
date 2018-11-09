@@ -1,8 +1,8 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.component';
-import { AdvancedComponent } from 'src/app/components/kart-builders/advanced/advanced.component';
+import { SimpleComponent } from 'src/app/components/builders/simple/simple.component';
+import { AdvancedComponent } from 'src/app/components/builders/builder-advanced/builder-advanced.component';
 
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 

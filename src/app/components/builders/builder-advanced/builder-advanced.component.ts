@@ -9,9 +9,9 @@ import { NullModel } from 'src/app/util/null-domain-models';
 
 
 @Component({
-  selector: 'app-advanced',
-  templateUrl: './advanced.component.html',
-  styleUrls: ['./advanced.component.css']
+  selector: 'app-builder-advanced',
+  templateUrl: './builder-advanced.component.html',
+  styleUrls: ['./builder-advanced.component.css']
 })
 export class AdvancedComponent implements OnInit {
 
