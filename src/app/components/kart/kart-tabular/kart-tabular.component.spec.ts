@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabularComponent } from './tabular.component';
+import { TabularComponent } from './kart-tabular.component';
 
 
 describe('TabularComponent', () => {

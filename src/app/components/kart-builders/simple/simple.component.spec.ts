@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { SimpleComponent } from './simple.component';
 import { SelectorComponent } from '../../features/feature-selector/feature-selector.component';
-import { TabularComponent } from '../../kart/tabular/tabular.component';
+import { TabularComponent } from '../../kart/kart-tabular/kart-tabular.component';
 
 
 describe('SimpleComponent', () => {

@@ -7,7 +7,7 @@ import { StatsService } from 'src/app/services/stats/stats.service';
 
 import { AdvancedComponent } from './advanced.component';
 import { FeatureListComponent } from 'src/app/components/features/feature-list/feature-list.component';
-import { TabularComponent } from 'src/app/components/kart/tabular/tabular.component';
+import { TabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
 import { KartComponent } from 'src/app/components/kart/kart.component';
 
 

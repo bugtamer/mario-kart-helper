@@ -6,8 +6,8 @@ import { NullModel } from 'src/app/util/null-domain-models';
 
 @Component({
   selector: 'app-tabular',
-  templateUrl: './tabular.component.html',
-  styleUrls: ['./tabular.component.css']
+  templateUrl: './kart-tabular.component.html',
+  styleUrls: ['./kart-tabular.component.css']
 })
 export class TabularComponent implements OnInit {
 

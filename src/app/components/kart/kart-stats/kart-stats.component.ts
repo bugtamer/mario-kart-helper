@@ -5,8 +5,8 @@ import { NullModel } from 'src/app/util/null-domain-models';
 
 @Component({
   selector: 'app-kart-statistics-stats',
-  templateUrl: './stats.component.html',
-  styleUrls: ['./stats.component.css']
+  templateUrl: './kart-stats.component.html',
+  styleUrls: ['./kart-stats.component.css']
 })
 export class StatsComponent implements OnInit {
 

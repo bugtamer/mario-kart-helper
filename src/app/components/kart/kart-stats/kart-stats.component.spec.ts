@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularMaterialModule } from 'src/app/angular-material';
 
-import { StatsComponent } from './stats.component';
+import { StatsComponent } from './kart-stats.component';
 import { PathComponent } from 'src/app/components/features/feature-path/feature-path.component';
 import { SliderComponent } from 'src/app/components/features/feature-slider/feature-slider.component';
 
