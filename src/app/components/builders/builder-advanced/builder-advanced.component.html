@@ -1,4 +1,5 @@
 <mat-tab-group>
+
   <mat-tab label="Kart">
       <app-tabular [kart]="kart"></app-tabular>
       <app-kart [kart]="kart"></app-kart>
@@ -27,4 +28,5 @@
       [data]="featuresList.ofGliders"
       (newSelection)="onFeatureChange($event)"></app-feature-list>
   </mat-tab>
+  
 </mat-tab-group>
