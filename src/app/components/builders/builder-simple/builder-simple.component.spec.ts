@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AngularMaterialModule } from '../../../angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
-import { SimpleComponent } from './simple.component';
+import { SimpleComponent } from './builder-simple.component';
 import { FeatureSelectorComponent } from '../../features/feature-selector/feature-selector.component';
 import { KartTabularComponent } from '../../kart/kart-tabular/kart-tabular.component';
 

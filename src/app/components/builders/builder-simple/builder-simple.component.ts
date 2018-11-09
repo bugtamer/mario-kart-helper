@@ -4,8 +4,8 @@ import { NullModel } from 'src/app/util/null-domain-models';
 
 @Component({
   selector: 'app-simple',
-  templateUrl: './simple.component.html',
-  styleUrls: ['./simple.component.css']
+  templateUrl: './builder-simple.component.html',
+  styleUrls: ['./builder-simple.component.css']
 })
 export class SimpleComponent implements OnInit {
 

@@ -9,7 +9,7 @@ import { routingProvider } from './routing';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/app/components/header/header.component';
-import { SimpleComponent } from 'src/app/components/builders/simple/simple.component';
+import { SimpleComponent } from 'src/app/components/builders/builder-simple/builder-simple.component';
 import { AdvancedComponent } from 'src/app/components/builders/builder-advanced/builder-advanced.component';
 import { FeatureSliderComponent } from 'src/app/components/features/feature-slider/feature-slider.component';
 import { KartStatsComponent } from 'src/app/components/kart/kart-stats/kart-stats.component';
