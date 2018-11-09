@@ -18,7 +18,6 @@ import { SimpleComponent } from 'src/app/components/kart-builders/simple/simple.
 import { SliderComponent } from 'src/app/components/kart/statistics/slider/slider.component';
 import { StatsComponent } from 'src/app/components/kart/statistics/stats/stats.component';
 import { SelectorComponent } from 'src/app/components/kart/selector/selector.component';
-import { ElementComponent } from 'src/app/components/kart/element/element.component';
 import { PathComponent } from 'src/app/components/kart/statistics/path/path.component';
 import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tabular.component';
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
@@ -35,7 +34,6 @@ import { KartComponent } from './components/kart/kart.component';
     SliderComponent,
     StatsComponent,
     SelectorComponent,
-    ElementComponent,
     PathComponent,
     TabularComponent,
     SizePipe,
