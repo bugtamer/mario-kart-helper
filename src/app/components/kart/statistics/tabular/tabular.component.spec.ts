@@ -1,10 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularMaterialModule } from 'src/app/angular-material';
-import { HttpClientModule } from '@angular/common/http';
-
 import { TabularComponent } from './tabular.component';
-import { SelectorComponent } from 'src/app/components/kart/selector/selector.component';
 
 
 describe('TabularComponent', () => {
@@ -15,8 +11,7 @@ describe('TabularComponent', () => {
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TabularComponent, SelectorComponent ],
-      imports: [ AngularMaterialModule, HttpClientModule ]
+      declarations: [ TabularComponent ]
     })
     .compileComponents();
   }));

@@ -4,7 +4,7 @@ import { AngularMaterialModule } from 'src/app/angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FeatureListComponent } from './feature-list.component';
-import { DRIVERS } from 'src/app/services/stats/data/drivers';
+import { NullModel } from 'src/app/util/null-domain-models';
 
 describe('FeatureListComponent', () => {
 
@@ -24,7 +24,7 @@ describe('FeatureListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(FeatureListComponent);
     component = fixture.componentInstance;
-    component.dataSource = DRIVERS;
+    component.dataSource = [ NullModel.getKartFeatures() ];
     fixture.detectChanges();
   });
 

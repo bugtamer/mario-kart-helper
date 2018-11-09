@@ -4,8 +4,8 @@ import { DRIVERS } from 'src/app/services/stats/data/drivers';
 import { BODIES } from 'src/app/services/stats/data/bodies';
 import { TIRES } from 'src/app/services/stats/data/tires';
 import { GLIDERS } from 'src/app/services/stats/data/gliders';
-import { NullModel } from 'src/app/util/null-domain-models';
 import Kart from 'src/app/models/Kart';
+import { NullModel } from 'src/app/util/null-domain-models';
 
 
 @Component({
@@ -15,8 +15,8 @@ import Kart from 'src/app/models/Kart';
 })
 export class AdvancedComponent implements OnInit {
 
-  kart: Kart = NullModel.getKart();
-  featuresList = { };
+  kart: Kart;
+  featuresList;
 
   
   constructor() { }
@@ -34,6 +34,7 @@ export class AdvancedComponent implements OnInit {
 
 
   private featuresInit(): void {
+    this.featuresList = { };
     this.featuresList['ofDrivers'] = DRIVERS;
     this.featuresList['ofBodies']  = BODIES;
     this.featuresList['ofTires']   = TIRES;
@@ -42,6 +43,7 @@ export class AdvancedComponent implements OnInit {
 
   
   private kartInit(): void {
+    this.kart = NullModel.getKart();
     this.kart.driver = this.featuresList['ofDrivers'][0];
     this.kart.body   = this.featuresList['ofBodies'][0];
     this.kart.tires  = this.featuresList['ofTires'][0];

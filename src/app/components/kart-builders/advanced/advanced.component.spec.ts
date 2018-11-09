@@ -7,6 +7,8 @@ import { StatsService } from 'src/app/services/stats/stats.service';
 
 import { AdvancedComponent } from './advanced.component';
 import { FeatureListComponent } from 'src/app/components/features/feature-list/feature-list.component';
+import { TabularComponent } from 'src/app/components/kart/statistics/tabular/tabular.component';
+import { KartComponent } from 'src/app/components/kart/kart.component';
 
 
 describe('AdvancedComponent', () => {
@@ -17,7 +19,7 @@ describe('AdvancedComponent', () => {
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdvancedComponent, FeatureListComponent ],
+      declarations: [ AdvancedComponent, KartComponent, FeatureListComponent, TabularComponent ],
       imports: [ AngularMaterialModule, HttpClientModule ],
       providers: [ StatsService ]
     })
