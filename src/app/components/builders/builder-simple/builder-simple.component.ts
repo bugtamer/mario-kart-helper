@@ -7,7 +7,7 @@ import { NullModel } from 'src/app/util/null-domain-models';
   templateUrl: './builder-simple.component.html',
   styleUrls: ['./builder-simple.component.css']
 })
-export class SimpleComponent implements OnInit {
+export class BuilderSimpleComponent implements OnInit {
 
   private _kart: Kart;
 

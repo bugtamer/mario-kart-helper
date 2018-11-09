@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { StatsService } from 'src/app/services/stats/stats.service';
 
-import { AdvancedComponent } from './builder-advanced.component';
+import { BuilderAdvancedComponent } from './builder-advanced.component';
 import { FeatureListComponent } from 'src/app/components/features/feature-list/feature-list.component';
 import { KartTabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
 import { KartComponent } from 'src/app/components/kart/kart.component';
@@ -13,13 +13,13 @@ import { KartComponent } from 'src/app/components/kart/kart.component';
 
 describe('AdvancedComponent', () => {
 
-  let component: AdvancedComponent;
-  let fixture: ComponentFixture<AdvancedComponent>;
+  let component: BuilderAdvancedComponent;
+  let fixture: ComponentFixture<BuilderAdvancedComponent>;
 
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdvancedComponent, KartComponent, FeatureListComponent, KartTabularComponent ],
+      declarations: [ BuilderAdvancedComponent, KartComponent, FeatureListComponent, KartTabularComponent ],
       imports: [ AngularMaterialModule, HttpClientModule ],
       providers: [ StatsService ]
     })
@@ -28,7 +28,7 @@ describe('AdvancedComponent', () => {
 
   
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdvancedComponent);
+    fixture = TestBed.createComponent(BuilderAdvancedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

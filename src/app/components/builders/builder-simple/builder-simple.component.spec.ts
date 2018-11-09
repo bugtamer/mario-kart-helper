@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AngularMaterialModule } from '../../../angular-material';
 import { HttpClientModule } from '@angular/common/http';
 
-import { SimpleComponent } from './builder-simple.component';
+import { BuilderSimpleComponent } from './builder-simple.component';
 import { FeatureSelectorComponent } from '../../features/feature-selector/feature-selector.component';
 import { KartTabularComponent } from '../../kart/kart-tabular/kart-tabular.component';
 
 
-describe('SimpleComponent', () => {
+describe('BuilderSimpleComponent', () => {
 
-  let component: SimpleComponent;
-  let fixture: ComponentFixture<SimpleComponent>;
+  let component: BuilderSimpleComponent;
+  let fixture: ComponentFixture<BuilderSimpleComponent>;
 
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        SimpleComponent,
+        BuilderSimpleComponent,
         FeatureSelectorComponent,
         KartTabularComponent
       ],
@@ -31,7 +31,7 @@ describe('SimpleComponent', () => {
 
   
   beforeEach(() => {
-    fixture = TestBed.createComponent(SimpleComponent);
+    fixture = TestBed.createComponent(BuilderSimpleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -13,7 +13,7 @@ import { NullModel } from 'src/app/util/null-domain-models';
   templateUrl: './builder-advanced.component.html',
   styleUrls: ['./builder-advanced.component.css']
 })
-export class AdvancedComponent implements OnInit {
+export class BuilderAdvancedComponent implements OnInit {
 
   kart: Kart;
   featuresList;

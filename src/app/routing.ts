@@ -1,8 +1,8 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SimpleComponent } from 'src/app/components/builders/builder-simple/builder-simple.component';
-import { AdvancedComponent } from 'src/app/components/builders/builder-advanced/builder-advanced.component';
+import { BuilderSimpleComponent } from 'src/app/components/builders/builder-simple/builder-simple.component';
+import { BuilderAdvancedComponent } from 'src/app/components/builders/builder-advanced/builder-advanced.component';
 
 import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-not-found.component';
 
@@ -11,8 +11,8 @@ import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-no
 // Wildcard routes are the least specific routes in the route configuration.
 // Be sure it is the last route in the configuration.
 const appRoutes: Routes = [
-  { path: 'simple', component: SimpleComponent, pathMatch: 'full' },
-  { path: 'advanced', component: AdvancedComponent, pathMatch: 'full' },
+  { path: 'simple', component: BuilderSimpleComponent, pathMatch: 'full' },
+  { path: 'advanced', component: BuilderAdvancedComponent, pathMatch: 'full' },
   { path: '', redirectTo: '/advanced', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
