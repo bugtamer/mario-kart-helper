@@ -5,7 +5,7 @@ import { PointsService } from 'src/app/services/points/Points.service';
 import { NullModel } from 'src/app/util/null-domain-models';
 
 @Component({
-  selector: 'app-tabular',
+  selector: 'app-kart-tabular',
   templateUrl: './kart-tabular.component.html',
   styleUrls: ['./kart-tabular.component.css']
 })
