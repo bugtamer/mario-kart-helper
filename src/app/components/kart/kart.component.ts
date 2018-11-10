@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { KartFeatures } from 'src/app/models/KartFeatures';
-import { MatTableParserService } from 'src/app/services/model-adapters/model-adapters.service';
 import { NullModel } from 'src/app/util/null-domain-models';
+import { Kart } from 'src/app/models/Kart';
 
 @Component({
   selector: 'app-kart',
@@ -11,11 +10,12 @@ import { NullModel } from 'src/app/util/null-domain-models';
 export class KartComponent implements OnInit {
 
   @Input('kart')
-  kart: Array<KartFeatures> = [ ];
+  kart: Kart;
 
-  constructor(private parse: MatTableParserService) { }
+  constructor() { }
 
   ngOnInit() {
+    this.kart = this.kart || NullModel.getKart();
   }
 
 }
