@@ -1,3 +1,4 @@
+<h2>Simple kart builder</h2>
 <div class="center">
     <app-feature-selector type="Driver" (newSelection)="onFeatureChange($event)"></app-feature-selector>
     <app-feature-selector type="Body"   (newSelection)="onFeatureChange($event)"></app-feature-selector>
@@ -6,3 +7,4 @@
 </div>
 
 <app-kart-tabular [kart]="_kart"></app-kart-tabular>
+<app-kart [kart]="_kart"></app-kart>
