@@ -13,7 +13,7 @@ export class KartComponent implements OnInit {
   @Input('kart')
   kart: Array<KartFeatures> = [ ];
 
-  constructor() { }
+  constructor(private parse: MatTableParserService) { }
 
   ngOnInit() {
   }
