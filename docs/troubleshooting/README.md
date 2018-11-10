@@ -11,6 +11,11 @@
 
 - `$ sudo ng serve`
 - try to run a non [flatpak](https://www.flatpak.org/) app
+- or if VS Code shows: [Visual Studio Code is unable to watch for file changes in this large workspace. Please follow the instructions link to resolve this issue.](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc) (better solution)
+  - `$ sudo nano /etc/sysctl.conf`
+  - Add `fs.inotify.max_user_watches=40000` to the end of the file. The current project has about 35k files.
+  - `$ sudo sysctl -p`
+
 
 ***
 
