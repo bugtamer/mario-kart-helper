@@ -4,6 +4,9 @@ import { getDisplayedColumns } from './displayedColumns';
 import { MatTableParserService, TabularFeature } from '../../../services/model-adapters/model-adapters.service';
 import { NullModel } from 'src/app/util/null-domain-models';
 import { KartFeatures } from 'src/app/models/KartFeatures';
+import { Kart } from '../../../models/Kart';
+import { AverageService } from '../../../services/avg/Average.service';
+import { PointsService } from '../../../services/points/Points.service';
 
 
 @Component({
@@ -30,9 +33,14 @@ export class FeatureListComponent implements OnInit {
 
   dataSource;
   displayedColumns: string[] = getDisplayedColumns();
+  kart: Kart;
 
   
-  constructor(private _parser: MatTableParserService) { }
+  constructor(
+    private _parser: MatTableParserService,
+    private avg: AverageService,
+    private points: PointsService
+  ) { }
 
   
   ngOnInit() {
@@ -41,6 +49,16 @@ export class FeatureListComponent implements OnInit {
     this.dataSource = new MatTableDataSource<TabularFeature>(parsedData);
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
+    this.kart = NullModel.getKart();
+    this.updateKart(this.data[0]);
+    this.updateKart(this.data[1]);
+    this.updateKart(this.data[2]);
+    this.updateKart(this.data[3]);
+  }
+
+  
+  private updateKart(feature: KartFeatures) {
+    this.kart[feature.type.toLowerCase()] = feature;
   }
 
   
@@ -54,6 +72,7 @@ export class FeatureListComponent implements OnInit {
     for (let i=0;   i < this.data.length;   i++)
       if (this.data[i].name === selectedFeatureName) {
         this._event.emit( this.data[i] );
+        this.updateKart( this.data[i] );
         break;
       }
   }
