@@ -67,7 +67,12 @@ export class RadarChart {
 
     getFeatures(kart: Kart) {
         let data: Array<PrimengRadarChartDataSet> = [];
-        return {labels: this.getPathLabels(), datasets: data};
+        data.push( new DataSet('Driver', 255, 83,  13, this.kartToArray(kart, 'driver')) );
+        data.push( new DataSet('Body',   232, 44,  12, this.kartToArray(kart, 'body')) );
+        data.push( new DataSet('Tires',  255,  0,   0, this.kartToArray(kart, 'tires')) );
+        data.push( new DataSet('Glider', 232, 12, 122, this.kartToArray(kart, 'glider')) );
+        data.push( new DataSet('Max',    255, 13, 255, [5.75, 5.75, 5.75, 5.75, 5.75, 5.75]) );
+        return {labels: this.getFeatureLabels(), datasets: data};
     }
     
 
@@ -96,9 +101,26 @@ export class RadarChart {
         return data;
     }
 
+
+    private kartToArray(kart: Kart, featureType: string): Array<number> {
+        let data: Array<number> = [ ];
+        data.push( this.avg.path(kart[featureType].speed) );
+        data.push( kart[featureType].acceleration );
+        data.push( kart[featureType].weight );
+        data.push( this.avg.path(kart[featureType].handling) );
+        data.push( kart[featureType].grid );
+        data.push( kart[featureType].miniTurbo );
+        return data;
+    }
+
     
     private getPathLabels() {
         return ['Average', 'Ground', 'Water', 'Air', 'Anti-Gravity'];
+    }
+
+    
+    private getFeatureLabels() {
+        return ['Speed', 'Acceleration', 'Weight', 'Handling', 'Grid', 'Mini-Turbo'];
     }
 
 }

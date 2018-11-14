@@ -19,9 +19,11 @@ export class BuilderAdvancedComponent implements OnInit {
   kart: Kart;
   featuresList;
 
+  featureOptions = {title: {display: true, text: 'Features', fontSize: 16}, legend: {position: 'bottom'}};
   handlingOptions = {title: {display: true, text: 'Handling', fontSize: 16}, legend: {position: 'bottom'}};
   speedOptions = {title: {display: true, text: 'Speed', fontSize: 16}, legend: {position: 'bottom'}};
   
+  featureRadar: any;
   handlingRadar: any;
   speedRadar: any;
 
@@ -32,6 +34,7 @@ export class BuilderAdvancedComponent implements OnInit {
   ngOnInit() {
     this.featuresInit();
     this.kartInit();
+    this.featureRadar = this.chart.getFeatures(this.kart);
     this.handlingRadar = this.chart.getHandling(this.kart);
     this.speedRadar = this.chart.getSpeed(this.kart);
   }
