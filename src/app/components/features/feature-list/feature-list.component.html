@@ -5,14 +5,14 @@
       matSort matSortActive="totalPoints" matSortDisableClear matSortDirection="asc">
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       <tr mat-footer-row *matFooterRowDef="displayedColumns" class="example-first-footer-row"></tr>
       <tr mat-footer-row *matFooterRowDef="['Average']" class="example-second-footer-row"></tr>
       
       <!-- Average column -->
       <ng-container matColumnDef="Average">
-        <td mat-footer-cell *matFooterCellDef>XXX {{avg.speed(kart)}}</td>
-        <td mat-footer-cell *matFooterCellDef>speed {{avg.speed(kart)}}</td>
+        <td mat-footer-cell *matFooterCellDef colspan="17">XXX {{avg.speed(kart)}}</td>
       </ng-container>
         
       <!-- Choice Column -->

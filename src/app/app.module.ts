@@ -25,6 +25,7 @@ import { FeatureListComponent } from './components/features/feature-list/feature
 import { KartStatsComponent } from 'src/app/components/kart/kart-stats/kart-stats.component';
 import { KartTabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
 import { KartComponent } from './components/kart/kart.component';
+import { FeatureHtableComponent } from './components/features/feature-htable/feature-htable.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { KartComponent } from './components/kart/kart.component';
     MenuComponent,
     BuilderAdvancedComponent,
     FeatureListComponent,
-    KartComponent
+    KartComponent,
+    FeatureHtableComponent
   ],
   imports: [
     BrowserModule,
