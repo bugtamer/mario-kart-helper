@@ -6,6 +6,7 @@ import { TIRES } from 'src/app/services/stats/data/tires';
 import { GLIDERS } from 'src/app/services/stats/data/gliders';
 import Kart from 'src/app/models/Kart';
 import { NullModel } from 'src/app/util/null-domain-models';
+import { initRadar } from './primeng-init-radar';
 
 
 @Component({
@@ -17,9 +18,13 @@ export class BuilderAdvancedComponent implements OnInit {
 
   kart: Kart;
   featuresList;
+  
+  radar: any;
 
   
-  constructor() { }
+  constructor() {
+    this.radar = initRadar();
+  }
 
   
   ngOnInit() {

@@ -20,6 +20,7 @@
 - [Project requirements](./docs/requirements.md)
 - [Angular/CLI info](./docs/angular-cli-info.md)
 - [Angular Material](./docs/material_angular/material_angular.md)
+- [PrimeNG](./docs/primeng.md)
 - [Testing](./docs/testing/README.md)
 - [Troubleshooting](./docs/troubleshooting/README.md)
 - [Markdown emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :wink:

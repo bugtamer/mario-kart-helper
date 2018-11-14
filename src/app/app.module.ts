@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularMaterialModule } from './angular-material';
+import { PrimeNgModule } from './primeng.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { routingProvider } from 'src/app/routing';
@@ -49,6 +50,7 @@ import { FeatureHtableComponent } from './components/features/feature-htable/fea
     BrowserModule,
     HttpClientModule,
     AngularMaterialModule,
+    PrimeNgModule,
     routingProvider
   ],
   providers: [
