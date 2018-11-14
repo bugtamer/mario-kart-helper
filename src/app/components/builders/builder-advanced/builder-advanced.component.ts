@@ -6,7 +6,7 @@ import { TIRES } from 'src/app/services/stats/data/tires';
 import { GLIDERS } from 'src/app/services/stats/data/gliders';
 import Kart from 'src/app/models/Kart';
 import { NullModel } from 'src/app/util/null-domain-models';
-import { initRadar } from './primeng-init-radar';
+import { RadarChart } from './primeng-init-radar';
 
 
 @Component({
@@ -18,18 +18,22 @@ export class BuilderAdvancedComponent implements OnInit {
 
   kart: Kart;
   featuresList;
+
+  handlingOptions = {title: {display: true, text: 'Handling', fontSize: 16}, legend: {position: 'bottom'}};
+  speedOptions = {title: {display: true, text: 'Speed', fontSize: 16}, legend: {position: 'bottom'}};
   
-  radar: any;
+  handlingRadar: any;
+  speedRadar: any;
 
   
-  constructor() {
-    this.radar = initRadar();
-  }
+  constructor(private chart: RadarChart) { }
 
   
   ngOnInit() {
     this.featuresInit();
     this.kartInit();
+    this.handlingRadar = this.chart.getHandling(this.kart);
+    this.speedRadar = this.chart.getSpeed(this.kart);
   }
 
 
