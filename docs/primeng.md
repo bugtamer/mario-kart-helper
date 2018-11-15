@@ -12,7 +12,7 @@ $ npm install chart.js --save
 $ npm install font-awesome --save
 ```
 
-## `angular.json` additions
+**`angular.json` should have these additions**
 
 ```json
 [...]
@@ -22,10 +22,14 @@ $ npm install font-awesome --save
     "node_modules/primeng/resources/themes/nova-light/theme.css",
     "node_modules/primeng/resources/primeng.min.css"
 ],
+"scripts": [
+    [...],
+    "node_modules/chart.js/dist/Chart.js"
+]
 [...]
 ```
 
-## `index.html` additions
+**otherwise `index.html` should have these additions**
 
 ```html
 <head>
@@ -40,8 +44,10 @@ $ npm install font-awesome --save
   <script src="node_modules/chart.js/dist/Chart.js"></script>
 </body>
 ```
-**Note** it is thrown the following message: `ERROR ReferenceError: "Chart is not defined"` when `<script src="node_modules/chart.js/dist/Chart.js"></script>` is not present in `index.html`.
 
+## Troubleshooting
+
+It is thrown the following message: `ERROR ReferenceError: "Chart is not defined"` when `chart.js` dependency is not present in the project in either `index.html` or `angular.json`.
 
 ## PrimeNG resources
 
