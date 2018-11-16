@@ -1,0 +1,14 @@
+.center {
+    text-align: center;
+}
+
+
+.selector {
+    margin: 1em 1em;
+}
+
+
+.chart {
+    display: inline-block;
+    margin: 2em 1em;
+}

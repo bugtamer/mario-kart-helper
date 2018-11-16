@@ -1,10 +1,16 @@
-<h2>Simple kart builder</h2>
+<!-- <h2 class="center">Simple kart builder</h2> -->
 <div class="center">
-    <app-feature-selector type="Driver" (newSelection)="onFeatureChange($event)"></app-feature-selector>
-    <app-feature-selector type="Body"   (newSelection)="onFeatureChange($event)"></app-feature-selector>
-    <app-feature-selector type="Tires"  (newSelection)="onFeatureChange($event)"></app-feature-selector>
-    <app-feature-selector type="Glider" (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector class="selector" type="Driver" (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector class="selector" type="Body"   (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector class="selector" type="Tires"  (newSelection)="onFeatureChange($event)"></app-feature-selector>
+    <app-feature-selector class="selector" type="Glider" (newSelection)="onFeatureChange($event)"></app-feature-selector>
 </div>
 
+<p-chart class="chart" type="horizontalBar" [data]="featureChart" [options]="featureOptions"  [width]="width" [height]="height">Loading?...</p-chart>
+<!-- <p-chart class="chart" type="horizontalBar" [data]="kartChart" [options]="kartOptions" [width]="width" [height]="height">Loading?...</p-chart> -->
+<p-chart class="chart" type="horizontalBar" [data]="speedChart" [options]="speedOptions" [width]="width" [height]="height">Loading?...</p-chart>
+<p-chart class="chart" type="horizontalBar" [data]="handlingChart" [options]="handlingOptions" [width]="width" [height]="height">Loading?...</p-chart>
+<!--
 <app-kart-tabular [kart]="_kart"></app-kart-tabular>
 <app-kart [kart]="_kart"></app-kart>
+-->
