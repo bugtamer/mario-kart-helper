@@ -6,6 +6,10 @@
     <app-feature-selector class="selector" type="Glider" (newSelection)="onFeatureChange($event)"></app-feature-selector>
 </div>
 
+<div class="center">
+    <app-filter-size></app-filter-size>
+</div>
+
 <p-chart class="chart" type="horizontalBar" [data]="featureChart" [options]="featureOptions"  [width]="width" [height]="height">Loading?...</p-chart>
 <!-- <p-chart class="chart" type="horizontalBar" [data]="kartChart" [options]="kartOptions" [width]="width" [height]="height">Loading?...</p-chart> -->
 <p-chart class="chart" type="horizontalBar" [data]="speedChart" [options]="speedOptions" [width]="width" [height]="height">Loading?...</p-chart>

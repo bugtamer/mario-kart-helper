@@ -27,6 +27,7 @@ import { KartStatsComponent } from 'src/app/components/kart/kart-stats/kart-stat
 import { KartTabularComponent } from 'src/app/components/kart/kart-tabular/kart-tabular.component';
 import { KartComponent } from './components/kart/kart.component';
 import { FeatureHtableComponent } from './components/features/feature-htable/feature-htable.component';
+import { FilterSize } from 'src/app/components/filters/filter-size/filter-size.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { FeatureHtableComponent } from './components/features/feature-htable/fea
     BuilderAdvancedComponent,
     FeatureListComponent,
     KartComponent,
-    FeatureHtableComponent
+    FeatureHtableComponent,
+    FilterSize
   ],
   imports: [
     BrowserModule,
