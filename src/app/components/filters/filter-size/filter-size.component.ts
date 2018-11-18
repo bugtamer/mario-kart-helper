@@ -1,7 +1,12 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { MatCheckboxChange } from '@angular/material';
-import KartComponentType from 'src/app/models/KartComponentType';
-import DriverSize from 'src/app/models/DriverSize';
+
+
+export class FilterDriverSize {
+  Small:  boolean = true;
+  Medium: boolean = true;
+  Large:  boolean = true;
+}
+
 
 @Component({
   selector: 'app-filter-size',
@@ -10,32 +15,25 @@ import DriverSize from 'src/app/models/DriverSize';
 })
 export class FilterSize implements OnInit {
 
-  @Output()
-  expectedSizes: EventEmitter<MatCheckboxChange>;
+  @Output('change')
+  expectedSizes: EventEmitter<FilterDriverSize>;
 
-  states = { }
+  states: FilterDriverSize;
   
 
-  checked = false;
-  readonly indeterminate = false;
-  labelPosition = 'after';
-  disabled = false;
-
-
-  constructor() { }
+  constructor() {
+    this.expectedSizes = new EventEmitter<FilterDriverSize>();
+  }
 
 
   ngOnInit() {
-    this.states[DriverSize.Small] = true;
-    this.states[DriverSize.Medium] = true;
-    this.states[DriverSize.Large] = true;
+    this.states = new FilterDriverSize();
   }
 
 
   filterChange(event) {
-    console.log(this.states);
     this.states[event.source.id] = event.checked
-    console.log(this.states);
+    this.expectedSizes.emit( this.states );
   }
 
 }

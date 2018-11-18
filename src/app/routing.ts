@@ -13,7 +13,7 @@ import { PageNotFoundComponent } from 'src/app/components/page-not-found/page-no
 const appRoutes: Routes = [
   { path: 'simple', component: BuilderSimpleComponent, pathMatch: 'full' },
   { path: 'advanced', component: BuilderAdvancedComponent, pathMatch: 'full' },
-  { path: '', redirectTo: '/advanced', pathMatch: 'full'},
+  { path: '', redirectTo: '/simple', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
 

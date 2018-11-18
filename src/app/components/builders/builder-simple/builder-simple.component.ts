@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Kart } from 'src/app/models/Kart';
 import { NullModel } from 'src/app/util/null-domain-models';
 import { PrimeNgChart } from '../../../services/charts/primeng-charts.service';
+import { DRIVERS } from 'src/app/services/stats/data/drivers';
+import { BODIES } from 'src/app/services/stats/data/bodies';
+import { TIRES } from 'src/app/services/stats/data/tires';
+import { GLIDERS } from 'src/app/services/stats/data/gliders';
+import KartFeatures from 'src/app/models/KartFeatures';
 
 @Component({
   selector: 'app-simple',
@@ -11,6 +16,7 @@ import { PrimeNgChart } from '../../../services/charts/primeng-charts.service';
 export class BuilderSimpleComponent implements OnInit {
 
   private _kart: Kart;
+  featuresList;
 
   kartOptions;/* = {
     scaleOverride : true,
@@ -33,7 +39,8 @@ export class BuilderSimpleComponent implements OnInit {
 
   
   ngOnInit() {
-    this._kart = NullModel.getKart();
+    this.featuresInit();
+    this.kartInit();
     this.updateChart();
   }
 
@@ -52,6 +59,37 @@ export class BuilderSimpleComponent implements OnInit {
     this.speedOptions = this.chart.getPathOptions('Speed');
     this.handlingOptions = this.chart.getPathOptions('Handling');
     this.featureChart = this.chart.getFeatures(this._kart);
+  }
+
+
+  filterDrivers(event) {
+    console.log('filterDrivers()', event);
+    let filteredDrivers: Array<KartFeatures> = [];
+    for (let i=0; i < DRIVERS.length; i++)
+      if (event[ DRIVERS[i].size ])
+        filteredDrivers.push( DRIVERS[i] );
+    // this.featuresList['ofDrivers'].slice(0, 0);
+    // for (let i=0; i < filteredDrivers.length; i++)
+    //   this.featuresList['ofDrivers'].push( filteredDrivers[i] );
+      console.log('filterDrivers()', filteredDrivers);
+    }
+
+
+  private featuresInit(): void {
+    this.featuresList = { };
+    this.featuresList['ofDrivers'] = DRIVERS;
+    this.featuresList['ofBodies']  = BODIES;
+    this.featuresList['ofTires']   = TIRES;
+    this.featuresList['ofGliders'] = GLIDERS;
+  }
+
+  
+  private kartInit(): void {
+    this._kart = NullModel.getKart();
+    this._kart.driver = this.featuresList['ofDrivers'][0];
+    this._kart.body   = this.featuresList['ofBodies'][0];
+    this._kart.tires  = this.featuresList['ofTires'][0];
+    this._kart.glider = this.featuresList['ofGliders'][0];
   }
 
 }

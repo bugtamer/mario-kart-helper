@@ -6,9 +6,42 @@
     <app-feature-selector class="selector" type="Glider" (newSelection)="onFeatureChange($event)"></app-feature-selector>
 </div>
 
-<div class="center">
-    <app-filter-size></app-filter-size>
-</div>
+<mat-tab-group>
+
+    <mat-tab label="Kart">
+        <app-kart-tabular [kart]="_kart"></app-kart-tabular>
+        <app-kart [kart]="_kart"></app-kart>
+    </mat-tab>
+    
+    <mat-tab label="Drivers">
+        <div class="center">
+            <app-filter-size (change)="filterDrivers($event)"></app-filter-size>
+        </div>
+        <app-feature-list
+        [data]="featuresList.ofDrivers"
+        (newSelection)="onFeatureChange($event)"></app-feature-list>
+    </mat-tab>
+    
+    <mat-tab label="Body">
+      <app-feature-list
+        [data]="featuresList.ofBodies"
+        (newSelection)="onFeatureChange($event)"></app-feature-list>
+    </mat-tab>
+    
+    <mat-tab label="Tires">
+      <app-feature-list
+        [data]="featuresList.ofTires"
+        (newSelection)="onFeatureChange($event)"></app-feature-list>
+    </mat-tab>
+    
+    <mat-tab label="Glider">
+      <app-feature-list
+        [data]="featuresList.ofGliders"
+        (newSelection)="onFeatureChange($event)"></app-feature-list>
+    </mat-tab>
+    
+  </mat-tab-group>
+  
 
 <p-chart class="chart" type="horizontalBar" [data]="featureChart" [options]="featureOptions"  [width]="width" [height]="height">Loading?...</p-chart>
 <!-- <p-chart class="chart" type="horizontalBar" [data]="kartChart" [options]="kartOptions" [width]="width" [height]="height">Loading?...</p-chart> -->
