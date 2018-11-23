@@ -1,43 +1,45 @@
-<!-- <h2>Advanced kart builder</h2> -->
-
-<!-- <p-chart class="chart" type="horizontalBar" [data]="kartChart" [options]="kartOptions" [width]="width" [height]="height">Loading?...</p-chart> -->
-<p-chart class="chart" type="horizontalBar" [data]="featureChart" [options]="featureOptions"  [width]="width" [height]="height">Loading?...</p-chart>
-<p-chart class="chart" type="horizontalBar" [data]="speedChart" [options]="speedOptions" [width]="width" [height]="height">Loading?...</p-chart>
-<p-chart class="chart" type="horizontalBar" [data]="handlingChart" [options]="handlingOptions" [width]="width" [height]="height">Loading?...</p-chart>
+<p-chart class="chart" type="horizontalBar" [data]="charts.features" [options]="chartOptions.features" [width]="chartWidth" [height]="chartHeight">Loading...</p-chart>
+<p-chart class="chart" type="horizontalBar" [data]="charts.speed"    [options]="chartOptions.speed"    [width]="chartWidth" [height]="chartHeight">Loading...</p-chart>
+<p-chart class="chart" type="horizontalBar" [data]="charts.handling" [options]="chartOptions.handling" [width]="chartWidth" [height]="chartHeight">Loading...</p-chart>
 
 
-<!-- <app-feature-htable [kart]="kart"></app-feature-htable> -->
-<!--
 <mat-tab-group>
 
   <mat-tab label="Kart">
-      <app-kart-tabular [kart]="kart"></app-kart-tabular>
-      <app-kart [kart]="kart"></app-kart>
+  </mat-tab>
+
+  <mat-tab label="Filters">
+      <div class="center">
+        <app-filter-size></app-filter-size>
+      </div>
   </mat-tab>
   
   <mat-tab label="Drivers">
     <app-feature-list
       [data]="featuresList.ofDrivers"
+      [selectedItemName]="selectedItemName.Driver"
       (newSelection)="onFeatureChange($event)"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Body">
     <app-feature-list
       [data]="featuresList.ofBodies"
+      [selectedItemName]="selectedItemName.Body"
       (newSelection)="onFeatureChange($event)"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Tires">
     <app-feature-list
       [data]="featuresList.ofTires"
+      [selectedItemName]="selectedItemName.Tires"
       (newSelection)="onFeatureChange($event)"></app-feature-list>
   </mat-tab>
   
   <mat-tab label="Glider">
     <app-feature-list
       [data]="featuresList.ofGliders"
+      [selectedItemName]="selectedItemName.Glider"
       (newSelection)="onFeatureChange($event)"></app-feature-list>
   </mat-tab>
   
 </mat-tab-group>
--->

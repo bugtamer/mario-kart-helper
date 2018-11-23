@@ -28,6 +28,9 @@ export class FeatureListComponent implements OnInit {
   @Input()
   areChoosable: boolean = this.areChoosable || true;
 
+  @Input()
+  selectedItemName: string = this.selectedItemName || '';
+
   @Output('newSelection')
   private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
 

@@ -119,7 +119,21 @@ export class PrimeNgChart {
                   }
               }]
             }
-          };;
+          };
+    }
+
+
+    getFeatureOptions(label: string) {
+        return {
+            title: {
+                display: true,
+                text: label,
+                fontSize: 16
+            },
+            legend: {
+                position: 'bottom'
+            }
+        };
     }
 
 
@@ -138,7 +152,7 @@ export class PrimeNgChart {
                   }
               }]
             }
-          };;
+          };
     }
 
     

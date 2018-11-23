@@ -18,18 +18,12 @@ export class BuilderAdvancedComponent implements OnInit {
 
   kart: Kart;
   featuresList;
+  selectedItemName = { };
 
-  kartOptions = this.chart.getKartOptions('Kart');
-  featureOptions = {title: {display: true, text: 'Kart stats', fontSize: 16}, legend: {position: 'bottom'}};
-  handlingOptions = this.chart.getPathOptions('Handling');
-  speedOptions = this.chart.getPathOptions('Speed');
-  
-  kartChart: any;
-  featureChart: any;
-  handlingChart: any;
-  speedChart: any;
-  width = "30vw";
-  height = "60vh";
+  charts = { };
+  chartOptions = { };
+  chartWidth = "25vw";
+  chartHeight = "50vh";
 
   
   constructor(private chart: PrimeNgChart) { }
@@ -38,15 +32,15 @@ export class BuilderAdvancedComponent implements OnInit {
   ngOnInit() {
     this.featuresInit();
     this.kartInit();
-    this.kartChart = this.chart.getKart(this.kart);
-    this.featureChart = this.chart.getFeatures(this.kart);
-    this.handlingChart = this.chart.getHandling(this.kart);
-    this.speedChart = this.chart.getSpeed(this.kart);
+    this.chartInit();
   }
 
 
   onFeatureChange(feature: KartFeatures) {
+    console.log('onFeatureChange(feature)', feature);
     this.kart[feature.type.toLowerCase()] = feature;
+    this.selectedItemName[feature.type] = feature.name;
+    this.chartInit();
   }
 
 
@@ -61,10 +55,23 @@ export class BuilderAdvancedComponent implements OnInit {
   
   private kartInit(): void {
     this.kart = NullModel.getKart();
-    this.kart.driver = this.featuresList['ofDrivers'][0];
-    this.kart.body   = this.featuresList['ofBodies'][0];
-    this.kart.tires  = this.featuresList['ofTires'][0];
-    this.kart.glider = this.featuresList['ofGliders'][0];
+    this.onFeatureChange( this.featuresList['ofDrivers'][0] );
+    this.onFeatureChange( this.featuresList['ofBodies'][0] );
+    this.onFeatureChange( this.featuresList['ofTires'][0] );
+    this.onFeatureChange( this.featuresList['ofGliders'][0] );
+  }
+
+
+  private chartInit(): void {
+    this.chartOptions['kart']     = this.chart.getKartOptions('Kart');
+    this.chartOptions['features'] = this.chart.getFeatureOptions('Kart stats');
+    this.chartOptions['handling'] = this.chart.getPathOptions('Handling');
+    this.chartOptions['speed']    = this.chart.getPathOptions('Speed');
+
+    this.charts['kart']     = this.chart.getKart(this.kart);
+    this.charts['features'] = this.chart.getFeatures(this.kart);
+    this.charts['handling'] = this.chart.getHandling(this.kart);
+    this.charts['speed']    = this.chart.getSpeed(this.kart);
   }
 
 }
