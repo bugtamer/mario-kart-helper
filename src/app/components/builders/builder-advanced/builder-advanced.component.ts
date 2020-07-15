@@ -17,11 +17,11 @@ import { PrimeNgChart } from '../../../services/charts/primeng-charts.service';
 export class BuilderAdvancedComponent implements OnInit {
 
   kart: Kart;
-  featuresList;
-  selectedItemName = { };
+  featuresList : any;
+  selectedItemName : any = { };
 
-  charts = { };
-  chartOptions = { };
+  charts : any = { };
+  chartOptions : any = { };
   chartWidth = "25vw";
   chartHeight = "50vh";
 

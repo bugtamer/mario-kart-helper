@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  private _title: string = 'Mario Kart Helper';
+  title: string = 'Mario Kart Helper';
 
   constructor() { }
 

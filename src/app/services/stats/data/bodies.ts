@@ -23,7 +23,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/bodies/Standard_Kart.png",
+      "url": "assets/img/bodies/Standard_Kart.png",
       "width": 100,
       "height": 64
     }
@@ -49,7 +49,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/bodies/The_Duke.png",
+      "url": "assets/img/bodies/The_Duke.png",
       "width": 100,
       "height": 64
     }
@@ -75,7 +75,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/bodies/300_SL_Roadster.png",
+      "url": "assets/img/bodies/300_SL_Roadster.png",
       "width": 100,
       "height": 64
     }
@@ -101,7 +101,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/bodies/Pipe_Frame.png",
+      "url": "assets/img/bodies/Pipe_Frame.png",
       "width": 100,
       "height": 64
     }
@@ -127,7 +127,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/bodies/Varmint.png",
+      "url": "assets/img/bodies/Varmint.png",
       "width": 100,
       "height": 64
     }
@@ -153,7 +153,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/bodies/City_Tripper.png",
+      "url": "assets/img/bodies/City_Tripper.png",
       "width": 100,
       "height": 64
     }
@@ -179,7 +179,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/bodies/Mach_8.png",
+      "url": "assets/img/bodies/Mach_8.png",
       "width": 100,
       "height": 64
     }
@@ -205,7 +205,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/bodies/Sports_Coupe.png",
+      "url": "assets/img/bodies/Sports_Coupe.png",
       "width": 100,
       "height": 64
     }
@@ -231,7 +231,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/bodies/Inkstriker.png",
+      "url": "assets/img/bodies/Inkstriker.png",
       "width": 100,
       "height": 64
     }
@@ -257,7 +257,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/bodies/Steel_Driver.png",
+      "url": "assets/img/bodies/Steel_Driver.png",
       "width": 100,
       "height": 64
     }
@@ -283,7 +283,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/bodies/Tri-Speeder.png",
+      "url": "assets/img/bodies/Tri-Speeder.png",
       "width": 100,
       "height": 64
     }
@@ -309,7 +309,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/bodies/Bone_Rattler.png",
+      "url": "assets/img/bodies/Bone_Rattler.png",
       "width": 100,
       "height": 64
     }
@@ -335,7 +335,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Cat_Cruiser.png",
+      "url": "assets/img/bodies/Cat_Cruiser.png",
       "width": 100,
       "height": 64
     }
@@ -361,7 +361,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Comet.png",
+      "url": "assets/img/bodies/Comet.png",
       "width": 100,
       "height": 64
     }
@@ -387,7 +387,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Yoshi_Bike.png",
+      "url": "assets/img/bodies/Yoshi_Bike.png",
       "width": 100,
       "height": 64
     }
@@ -413,7 +413,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Teddy_Buggy.png",
+      "url": "assets/img/bodies/Teddy_Buggy.png",
       "width": 100,
       "height": 64
     }
@@ -439,7 +439,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/bodies/Circuit_Special.png",
+      "url": "assets/img/bodies/Circuit_Special.png",
       "width": 100,
       "height": 64
     }
@@ -465,7 +465,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/bodies/B-Dasher.png",
+      "url": "assets/img/bodies/B-Dasher.png",
       "width": 100,
       "height": 64
     }
@@ -491,7 +491,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/bodies/P-Wing.png",
+      "url": "assets/img/bodies/P-Wing.png",
       "width": 100,
       "height": 64
     }
@@ -517,7 +517,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/bodies/Badwagon.png",
+      "url": "assets/img/bodies/Badwagon.png",
       "width": 100,
       "height": 64
     }
@@ -543,7 +543,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/bodies/Standard_ATV.png",
+      "url": "assets/img/bodies/Standard_ATV.png",
       "width": 100,
       "height": 64
     }
@@ -569,7 +569,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/bodies/GLA.png",
+      "url": "assets/img/bodies/GLA.png",
       "width": 100,
       "height": 64
     }
@@ -595,7 +595,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Prancer.png",
+      "url": "assets/img/bodies/Prancer.png",
       "width": 100,
       "height": 64
     }
@@ -621,7 +621,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Sport_Bike.png",
+      "url": "assets/img/bodies/Sport_Bike.png",
       "width": 100,
       "height": 64
     }
@@ -647,7 +647,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Jet_Bike.png",
+      "url": "assets/img/bodies/Jet_Bike.png",
       "width": 100,
       "height": 64
     }
@@ -673,7 +673,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 7,
     "image": {
-      "url": "src/assets/img/bodies/Biddybuggy.png",
+      "url": "assets/img/bodies/Biddybuggy.png",
       "width": 100,
       "height": 64
     }
@@ -699,7 +699,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 7,
     "image": {
-      "url": "src/assets/img/bodies/Mr_Scooty.png",
+      "url": "assets/img/bodies/Mr_Scooty.png",
       "width": 100,
       "height": 64
     }
@@ -725,7 +725,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/bodies/Landship.png",
+      "url": "assets/img/bodies/Landship.png",
       "width": 100,
       "height": 64
     }
@@ -751,7 +751,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/bodies/Streetle.png",
+      "url": "assets/img/bodies/Streetle.png",
       "width": 100,
       "height": 64
     }
@@ -777,7 +777,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Sneaker.png",
+      "url": "assets/img/bodies/Sneaker.png",
       "width": 100,
       "height": 64
     }
@@ -803,7 +803,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Gold_Standard.png",
+      "url": "assets/img/bodies/Gold_Standard.png",
       "width": 100,
       "height": 64
     }
@@ -829,7 +829,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Master_Cycle.png",
+      "url": "assets/img/bodies/Master_Cycle.png",
       "width": 100,
       "height": 64
     }
@@ -855,7 +855,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Standard_Bike.png",
+      "url": "assets/img/bodies/Standard_Bike.png",
       "width": 100,
       "height": 64
     }
@@ -881,7 +881,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Flame_Rider.png",
+      "url": "assets/img/bodies/Flame_Rider.png",
       "width": 100,
       "height": 64
     }
@@ -907,7 +907,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/Wild_Wiggler.png",
+      "url": "assets/img/bodies/Wild_Wiggler.png",
       "width": 100,
       "height": 64
     }
@@ -933,7 +933,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/bodies/W_25_Silver_Arrow.png",
+      "url": "assets/img/bodies/W_25_Silver_Arrow.png",
       "width": 100,
       "height": 64
     }
@@ -959,7 +959,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Blue_Falcon.png",
+      "url": "assets/img/bodies/Blue_Falcon.png",
       "width": 100,
       "height": 64
     }
@@ -985,7 +985,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Splat_Buggy.png",
+      "url": "assets/img/bodies/Splat_Buggy.png",
       "width": 100,
       "height": 64
     }
@@ -1011,7 +1011,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 7,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Tanooki_Kart.png",
+      "url": "assets/img/bodies/Tanooki_Kart.png",
       "width": 100,
       "height": 64
     }
@@ -1037,7 +1037,7 @@ export const BODIES: KartFeatures[] = [
     "grid": 7,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/bodies/Koopa_Clown.png",
+      "url": "assets/img/bodies/Koopa_Clown.png",
       "width": 100,
       "height": 64
     }

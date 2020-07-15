@@ -28,18 +28,18 @@
     
 <!-- speed -->
 <tr>
-  <td>{{ _avg.speed(kart) }}</td>
-  <td>{{ _totalPoints.speed(kart) }}</td>
+  <td>{{ avg.speed(kart) }}</td>
+  <td>{{ totalPoints.speed(kart) }}</td>
   <th>Speed *</th>
-  <td>{{ _avg.path( kart.driver.speed ) }}</td>
-  <td>{{ _avg.path( kart.body.speed ) }}</td>
-  <td>{{ _avg.path( kart.tires.speed ) }}</td>
-  <td>{{ _avg.path( kart.glider.speed ) }}</td>
+  <td>{{ avg.path( kart.driver.speed ) }}</td>
+  <td>{{ avg.path( kart.body.speed ) }}</td>
+  <td>{{ avg.path( kart.tires.speed ) }}</td>
+  <td>{{ avg.path( kart.glider.speed ) }}</td>
 </tr>
 
 <tr>
-  <td>{{ _avg.speedGround(kart) }}</td>
-  <td>{{ _totalPoints.speedGround(kart) }}</td>
+  <td>{{ avg.speedGround(kart) }}</td>
+  <td>{{ totalPoints.speedGround(kart) }}</td>
   <td>Ground</td>
   <td>{{ kart.driver .speed.ground }}</td>
   <td>{{ kart.body   .speed.ground }}</td>
@@ -48,8 +48,8 @@
 </tr>
 
 <tr>
-  <td>{{ _avg.speedWater(kart) }}</td>
-  <td>{{ _totalPoints.speedWater(kart) }}</td>
+  <td>{{ avg.speedWater(kart) }}</td>
+  <td>{{ totalPoints.speedWater(kart) }}</td>
   <td>Water</td>
   <td>{{ kart.driver .speed.water }}</td>
   <td>{{ kart.body   .speed.water }}</td>
@@ -58,8 +58,8 @@
 </tr>
 
 <tr>
-  <td>{{ _avg.speedAir(kart) }}</td>
-  <td>{{ _totalPoints.speedAir(kart) }}</td>
+  <td>{{ avg.speedAir(kart) }}</td>
+  <td>{{ totalPoints.speedAir(kart) }}</td>
   <td>Air</td>
   <td>{{ kart.driver .speed.air }}</td>
   <td>{{ kart.body   .speed.air }}</td>
@@ -68,8 +68,8 @@
 </tr>
 
 <tr>
-  <td>{{ _avg.speedAntiGravity(kart) }}</td>
-  <td>{{ _totalPoints.speedAntiGravity(kart) }}</td>
+  <td>{{ avg.speedAntiGravity(kart) }}</td>
+  <td>{{ totalPoints.speedAntiGravity(kart) }}</td>
   <td>Anti-Gravity</td>
   <td>{{ kart.driver .speed.antiGravity }}</td>
   <td>{{ kart.body   .speed.antiGravity }}</td>
@@ -79,8 +79,8 @@
 
 <!-- acceleration -->
 <tr>
-  <td>{{ _avg.acceleration(kart) }}</td>
-  <td>{{ _totalPoints.acceleration(kart) }}</td>
+  <td>{{ avg.acceleration(kart) }}</td>
+  <td>{{ totalPoints.acceleration(kart) }}</td>
   <th>Acceleration</th>
   <td>{{ kart.driver .acceleration }}</td>
   <td>{{ kart.body   .acceleration }}</td>
@@ -90,8 +90,8 @@
 
 <!-- weight -->
 <tr>
-  <td>{{ _avg.weight(kart) }}</td>
-  <td>{{ _totalPoints.weight(kart) }}</td>
+  <td>{{ avg.weight(kart) }}</td>
+  <td>{{ totalPoints.weight(kart) }}</td>
   <th>Weight</th>
   <td>{{ kart.driver .weight }}</td>
   <td>{{ kart.body   .weight }}</td>
@@ -101,18 +101,18 @@
 
 <!-- handling -->
   <tr>
-  <td>{{ _avg.handling(kart) }}</td>
-  <td>{{ _totalPoints.handling(kart) }}</td>
+  <td>{{ avg.handling(kart) }}</td>
+  <td>{{ totalPoints.handling(kart) }}</td>
   <th>Handling *</th>
-  <td>{{ _avg.path( kart.driver .handling ) }}</td>
-  <td>{{ _avg.path( kart.body   .handling ) }}</td>
-  <td>{{ _avg.path( kart.tires  .handling ) }}</td>
-  <td>{{ _avg.path( kart.glider .handling ) }}</td>
+  <td>{{ avg.path( kart.driver .handling ) }}</td>
+  <td>{{ avg.path( kart.body   .handling ) }}</td>
+  <td>{{ avg.path( kart.tires  .handling ) }}</td>
+  <td>{{ avg.path( kart.glider .handling ) }}</td>
 </tr>
 
 <tr>
-  <td>{{ _avg.handlingGround(kart) }}</td>
-  <td>{{ _totalPoints.handlingGround(kart) }}</td>
+  <td>{{ avg.handlingGround(kart) }}</td>
+  <td>{{ totalPoints.handlingGround(kart) }}</td>
   <td>Ground</td>
   <td>{{ kart.driver .handling.ground }}</td>
   <td>{{ kart.body   .handling.ground }}</td>
@@ -121,8 +121,8 @@
 </tr>
 
 <tr>
-  <td>{{ _avg.handlingWater(kart) }}</td>
-  <td>{{ _totalPoints.handlingWater(kart) }}</td>
+  <td>{{ avg.handlingWater(kart) }}</td>
+  <td>{{ totalPoints.handlingWater(kart) }}</td>
   <td>Water</td>
   <td>{{ kart.driver .handling.water }}</td>
   <td>{{ kart.body   .handling.water }}</td>
@@ -131,8 +131,8 @@
 </tr>
 
 <tr>
-  <td>{{ _avg.handlingAir(kart) }}</td>
-  <td>{{ _totalPoints.handlingAir(kart) }}</td>
+  <td>{{ avg.handlingAir(kart) }}</td>
+  <td>{{ totalPoints.handlingAir(kart) }}</td>
   <td>Air</td>
   <td>{{ kart.driver .handling.air }}</td>
   <td>{{ kart.body   .handling.air }}</td>
@@ -141,8 +141,8 @@
 </tr>
 
 <tr>
-  <td>{{ _avg.handlingAntiGravity(kart) }}</td>
-  <td>{{ _totalPoints.handlingAntiGravity(kart) }}</td>
+  <td>{{ avg.handlingAntiGravity(kart) }}</td>
+  <td>{{ totalPoints.handlingAntiGravity(kart) }}</td>
   <td>Anti-Gravity</td>
   <td>{{ kart.driver .handling.antiGravity }}</td>
   <td>{{ kart.body   .handling.antiGravity }}</td>
@@ -152,8 +152,8 @@
 
 <!-- Grid -->
 <tr>
-  <td>{{ _avg.grid(kart) }}</td>
-  <td>{{ _totalPoints.grid(kart) }}</td>
+  <td>{{ avg.grid(kart) }}</td>
+  <td>{{ totalPoints.grid(kart) }}</td>
   <th>Grid</th>
   <td>{{ kart.driver .grid }}</td>
   <td>{{ kart.body   .grid }}</td>
@@ -163,8 +163,8 @@
 
   <!-- Mini-Turbo -->
   <tr>
-    <td>{{ _avg.miniTurbo(kart) }}</td>
-    <td>{{ _totalPoints.miniTurbo(kart) }}</td>
+    <td>{{ avg.miniTurbo(kart) }}</td>
+    <td>{{ totalPoints.miniTurbo(kart) }}</td>
     <th>Mini-Turbo</th>
     <td>{{ kart.driver .miniTurbo }}</td>
     <td>{{ kart.body   .miniTurbo }}</td>

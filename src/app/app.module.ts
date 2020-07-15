@@ -28,6 +28,7 @@ import { KartTabularComponent } from 'src/app/components/kart/kart-tabular/kart-
 import { KartComponent } from './components/kart/kart.component';
 import { FeatureHtableComponent } from './components/features/feature-htable/feature-htable.component';
 import { FilterSize } from 'src/app/components/filters/filter-size/filter-size.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { FilterSize } from 'src/app/components/filters/filter-size/filter-size.c
     HttpClientModule,
     AngularMaterialModule,
     PrimeNgModule,
-    routingProvider
+    routingProvider,
+    BrowserAnimationsModule
   ],
   providers: [
     StatsService,

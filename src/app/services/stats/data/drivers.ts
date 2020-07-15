@@ -24,7 +24,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/drivers/Baby_Peach.png",
+      "url": "assets/img/drivers/Baby_Peach.png",
       "width": 64,
       "height": 64
     }
@@ -50,7 +50,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/drivers/Baby_Daisy.png",
+      "url": "assets/img/drivers/Baby_Daisy.png",
       "width": 64,
       "height": 64
     }
@@ -76,7 +76,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/drivers/Baby_Rosalina.png",
+      "url": "assets/img/drivers/Baby_Rosalina.png",
       "width": 64,
       "height": 64
     }
@@ -102,7 +102,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/drivers/Lemmy.png",
+      "url": "assets/img/drivers/Lemmy.png",
       "width": 64,
       "height": 64
     }
@@ -128,7 +128,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Baby_Mario.png",
+      "url": "assets/img/drivers/Baby_Mario.png",
       "width": 64,
       "height": 64
     }
@@ -154,7 +154,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Baby_Luigi.png",
+      "url": "assets/img/drivers/Baby_Luigi.png",
       "width": 64,
       "height": 64
     }
@@ -180,7 +180,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Dry_Bones.png",
+      "url": "assets/img/drivers/Dry_Bones.png",
       "width": 64,
       "height": 64
     }
@@ -206,7 +206,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Mii.png",
+      "url": "assets/img/drivers/Mii.png",
       "width": 64,
       "height": 64
     }
@@ -232,7 +232,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Toadette.png",
+      "url": "assets/img/drivers/Toadette.png",
       "width": 64,
       "height": 64
     }
@@ -258,7 +258,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Wendy.png",
+      "url": "assets/img/drivers/Wendy.png",
       "width": 64,
       "height": 64
     }
@@ -284,7 +284,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Isabelle.png",
+      "url": "assets/img/drivers/Isabelle.png",
       "width": 64,
       "height": 64
     }
@@ -310,7 +310,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Koopa.png",
+      "url": "assets/img/drivers/Koopa.png",
       "width": 64,
       "height": 64
     }
@@ -336,7 +336,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Lakitu.png",
+      "url": "assets/img/drivers/Lakitu.png",
       "width": 64,
       "height": 64
     }
@@ -362,7 +362,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/drivers/Bowser_Jr.png",
+      "url": "assets/img/drivers/Bowser_Jr.png",
       "width": 64,
       "height": 64
     }
@@ -388,7 +388,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Toad.png",
+      "url": "assets/img/drivers/Toad.png",
       "width": 64,
       "height": 64
     }
@@ -414,7 +414,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Shy_Guy.png",
+      "url": "assets/img/drivers/Shy_Guy.png",
       "width": 64,
       "height": 64
     }
@@ -440,7 +440,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Larry.png",
+      "url": "assets/img/drivers/Larry.png",
       "width": 64,
       "height": 64
     }
@@ -466,7 +466,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Cat_Peach.png",
+      "url": "assets/img/drivers/Cat_Peach.png",
       "width": 64,
       "height": 64
     }
@@ -492,7 +492,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Villager_Female.png",
+      "url": "assets/img/drivers/Villager_Female.png",
       "width": 64,
       "height": 64
     }
@@ -518,7 +518,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Female_Inkling.png",
+      "url": "assets/img/drivers/Female_Inkling.png",
       "width": 64,
       "height": 64
     }
@@ -544,7 +544,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Peach.png",
+      "url": "assets/img/drivers/Peach.png",
       "width": 64,
       "height": 64
     }
@@ -570,7 +570,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Daisy.png",
+      "url": "assets/img/drivers/Daisy.png",
       "width": 64,
       "height": 64
     }
@@ -596,7 +596,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Yoshi.png",
+      "url": "assets/img/drivers/Yoshi.png",
       "width": 64,
       "height": 64
     }
@@ -622,7 +622,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Tanooki_Mario.png",
+      "url": "assets/img/drivers/Tanooki_Mario.png",
       "width": 64,
       "height": 64
     }
@@ -648,7 +648,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Villager_Male.png",
+      "url": "assets/img/drivers/Villager_Male.png",
       "width": 64,
       "height": 64
     }
@@ -674,7 +674,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/drivers/Male_Inkling.png",
+      "url": "assets/img/drivers/Male_Inkling.png",
       "width": 64,
       "height": 64
     }
@@ -700,7 +700,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Mario.png",
+      "url": "assets/img/drivers/Mario.png",
       "width": 64,
       "height": 64
     }
@@ -726,7 +726,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Ludwig.png",
+      "url": "assets/img/drivers/Ludwig.png",
       "width": 64,
       "height": 64
     }
@@ -752,7 +752,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Mii.png",
+      "url": "assets/img/drivers/Mii.png",
       "width": 64,
       "height": 64
     }
@@ -778,7 +778,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Luigi.png",
+      "url": "assets/img/drivers/Luigi.png",
       "width": 64,
       "height": 64
     }
@@ -804,7 +804,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Iggy.png",
+      "url": "assets/img/drivers/Iggy.png",
       "width": 64,
       "height": 64
     }
@@ -830,7 +830,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/drivers/Metal_Mario.png",
+      "url": "assets/img/drivers/Metal_Mario.png",
       "width": 64,
       "height": 64
     }
@@ -856,7 +856,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/drivers/Pink_Gold_Peach.png",
+      "url": "assets/img/drivers/Pink_Gold_Peach.png",
       "width": 64,
       "height": 64
     }
@@ -882,7 +882,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/drivers/Gold_Mario.png",
+      "url": "assets/img/drivers/Gold_Mario.png",
       "width": 64,
       "height": 64
     }
@@ -908,7 +908,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Rosalina.png",
+      "url": "assets/img/drivers/Rosalina.png",
       "width": 64,
       "height": 64
     }
@@ -934,7 +934,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/Link.png",
+      "url": "assets/img/drivers/Link.png",
       "width": 64,
       "height": 64
     }
@@ -960,7 +960,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/drivers/King_Boo.png",
+      "url": "assets/img/drivers/King_Boo.png",
       "width": 64,
       "height": 64
     }
@@ -986,7 +986,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/drivers/Donkey_Kong.png",
+      "url": "assets/img/drivers/Donkey_Kong.png",
       "width": 64,
       "height": 64
     }
@@ -1012,7 +1012,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/drivers/Waluigi.png",
+      "url": "assets/img/drivers/Waluigi.png",
       "width": 64,
       "height": 64
     }
@@ -1038,7 +1038,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/drivers/Roy.png",
+      "url": "assets/img/drivers/Roy.png",
       "width": 64,
       "height": 64
     }
@@ -1064,7 +1064,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/drivers/Wario.png",
+      "url": "assets/img/drivers/Wario.png",
       "width": 64,
       "height": 64
     }
@@ -1090,7 +1090,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/drivers/Dry_Bowser.png",
+      "url": "assets/img/drivers/Dry_Bowser.png",
       "width": 64,
       "height": 64
     }
@@ -1116,7 +1116,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/drivers/Bowser.png",
+      "url": "assets/img/drivers/Bowser.png",
       "width": 64,
       "height": 64
     }
@@ -1142,7 +1142,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/drivers/Morton.png",
+      "url": "assets/img/drivers/Morton.png",
       "width": 64,
       "height": 64
     }
@@ -1168,7 +1168,7 @@ export const DRIVERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/drivers/Mii.png",
+      "url": "assets/img/drivers/Mii.png",
       "width": 64,
       "height": 64
     }

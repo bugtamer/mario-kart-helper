@@ -20,7 +20,7 @@ export class FeaturePathComponent implements OnInit {
   description: string;
 
   
-  constructor(private _avg: AverageService) { }
+  constructor(public avg: AverageService) { }
 
   
   ngOnInit() {

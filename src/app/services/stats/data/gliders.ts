@@ -23,7 +23,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/gliders/Super_Glider.png",
+      "url": "assets/img/gliders/Super_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -49,7 +49,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/gliders/Waddle_Wing.png",
+      "url": "assets/img/gliders/Waddle_Wing.png",
       "width": 100,
       "height": 64
     }
@@ -75,7 +75,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/gliders/Hylian_Kite.png",
+      "url": "assets/img/gliders/Hylian_Kite.png",
       "width": 100,
       "height": 64
     }
@@ -101,7 +101,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Cloud_Glider.png",
+      "url": "assets/img/gliders/Cloud_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -127,7 +127,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Parachute_Glider.png",
+      "url": "assets/img/gliders/Parachute_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -153,7 +153,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Flower_Glider.png",
+      "url": "assets/img/gliders/Flower_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -179,7 +179,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Paper_Glider.png",
+      "url": "assets/img/gliders/Paper_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -205,7 +205,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/gliders/Wario_Wing.png",
+      "url": "assets/img/gliders/Wario_Wing.png",
       "width": 100,
       "height": 64
     }
@@ -231,7 +231,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/gliders/Plane_Glider.png",
+      "url": "assets/img/gliders/Plane_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -257,7 +257,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/gliders/Gold_Glider.png",
+      "url": "assets/img/gliders/Gold_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -283,7 +283,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Peach_Parasol_Glider.png",
+      "url": "assets/img/gliders/Peach_Parasol_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -309,7 +309,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Parafoil_Glider.png",
+      "url": "assets/img/gliders/Parafoil_Glider.png",
       "width": 100,
       "height": 64
     }
@@ -335,7 +335,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/Bowser_Kite.png",
+      "url": "assets/img/gliders/Bowser_Kite.png",
       "width": 100,
       "height": 64
     }
@@ -361,7 +361,7 @@ export const GLIDERS: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/gliders/MKTV_Parafoil_Glider.png",
+      "url": "assets/img/gliders/MKTV_Parafoil_Glider.png",
       "width": 100,
       "height": 64
     }

@@ -12,12 +12,20 @@ import { NullModel } from 'src/app/util/null-domain-models';
 export class KartTabularComponent implements OnInit {
 
   @Input('kart')
-  private kart: Kart;
+  kart: Kart;
 
   constructor(private _totalPoints: PointsService, private _avg: AverageService) { }
 
   ngOnInit() {
     this.kart = this.kart || NullModel.getKart();
+  }
+
+  get totalPoints() : AverageService {
+    return this._totalPoints;
+  }
+
+  get avg() : AverageService {
+    return this._avg;
   }
 
 }

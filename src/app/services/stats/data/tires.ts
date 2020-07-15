@@ -23,7 +23,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/tires/Standard.png",
+      "url": "assets/img/tires/Standard.png",
       "width": 100,
       "height": 64
     }
@@ -49,7 +49,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/tires/Blue_Standard.png",
+      "url": "assets/img/tires/Blue_Standard.png",
       "width": 100,
       "height": 64
     }
@@ -75,7 +75,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 5,
     "miniTurbo": 3,
     "image": {
-      "url": "src/assets/img/tires/GLA_Tires.png",
+      "url": "assets/img/tires/GLA_Tires.png",
       "width": 100,
       "height": 64
     }
@@ -101,7 +101,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/tires/Monster.png",
+      "url": "assets/img/tires/Monster.png",
       "width": 100,
       "height": 64
     }
@@ -127,7 +127,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 7,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/tires/Hot_Monster.png",
+      "url": "assets/img/tires/Hot_Monster.png",
       "width": 100,
       "height": 64
     }
@@ -153,7 +153,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/tires/Roller.png",
+      "url": "assets/img/tires/Roller.png",
       "width": 100,
       "height": 64
     }
@@ -179,7 +179,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 4,
     "miniTurbo": 6,
     "image": {
-      "url": "src/assets/img/tires/Azure_Roller.png",
+      "url": "assets/img/tires/Azure_Roller.png",
       "width": 100,
       "height": 64
     }
@@ -205,7 +205,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/tires/Slim.png",
+      "url": "assets/img/tires/Slim.png",
       "width": 100,
       "height": 64
     }
@@ -231,7 +231,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/tires/Wood.png",
+      "url": "assets/img/tires/Wood.png",
       "width": 100,
       "height": 64
     }
@@ -257,7 +257,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 1,
     "miniTurbo": 2,
     "image": {
-      "url": "src/assets/img/tires/Crimson_Slim.png",
+      "url": "assets/img/tires/Crimson_Slim.png",
       "width": 100,
       "height": 64
     }
@@ -283,7 +283,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/tires/Slick.png",
+      "url": "assets/img/tires/Slick.png",
       "width": 100,
       "height": 64
     }
@@ -309,7 +309,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 0,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/tires/Cyber_Slick.png",
+      "url": "assets/img/tires/Cyber_Slick.png",
       "width": 100,
       "height": 64
     }
@@ -335,7 +335,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/tires/Metal.png",
+      "url": "assets/img/tires/Metal.png",
       "width": 100,
       "height": 64
     }
@@ -361,7 +361,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 2,
     "miniTurbo": 0,
     "image": {
-      "url": "src/assets/img/tires/Gold_Tires.png",
+      "url": "assets/img/tires/Gold_Tires.png",
       "width": 100,
       "height": 64
     }
@@ -387,7 +387,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/tires/Button.png",
+      "url": "assets/img/tires/Button.png",
       "width": 100,
       "height": 64
     }
@@ -413,7 +413,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 3,
     "miniTurbo": 5,
     "image": {
-      "url": "src/assets/img/tires/Leaf_Tires.png",
+      "url": "assets/img/tires/Leaf_Tires.png",
       "width": 100,
       "height": 64
     }
@@ -439,7 +439,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/tires/Off-Road.png",
+      "url": "assets/img/tires/Off-Road.png",
       "width": 100,
       "height": 64
     }
@@ -465,7 +465,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/tires/Retro_Off-Road.png",
+      "url": "assets/img/tires/Retro_Off-Road.png",
       "width": 100,
       "height": 64
     }
@@ -491,7 +491,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 1,
     "image": {
-      "url": "src/assets/img/tires/Triforce_Tires.png",
+      "url": "assets/img/tires/Triforce_Tires.png",
       "width": 100,
       "height": 64
     }
@@ -517,7 +517,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/tires/Sponge.png",
+      "url": "assets/img/tires/Sponge.png",
       "width": 100,
       "height": 64
     }
@@ -543,7 +543,7 @@ export const TIRES: KartFeatures[] = [
     "grid": 6,
     "miniTurbo": 4,
     "image": {
-      "url": "src/assets/img/tires/Cushion.png",
+      "url": "assets/img/tires/Cushion.png",
       "width": 100,
       "height": 64
     }

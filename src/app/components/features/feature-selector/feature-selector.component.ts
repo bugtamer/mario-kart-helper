@@ -19,9 +19,9 @@ export class FeatureSelectorComponent implements OnInit {
   @Output('newSelection')
   private _event: EventEmitter<KartFeatures> = new EventEmitter<KartFeatures>();
   
-  private _element: KartFeatures = NullModel.getKartFeatures();
-  private _allElements: KartFeatures[];
-  private _selectedElement: string;
+  element: KartFeatures = NullModel.getKartFeatures();
+  allElements: KartFeatures[];
+  selectedElement: string;
   imgUrl: string = '#';
   imgName: string = '';
 
@@ -32,20 +32,20 @@ export class FeatureSelectorComponent implements OnInit {
   ngOnInit() {
     this._statsService.getComponents( this._type ).subscribe(
       receivedComponentData => {
-        this._allElements = receivedComponentData;
-        this._selectedElement = this._allElements[Random.getInteger(this._allElements.length)].name;
+        this.allElements = receivedComponentData;
+        this.selectedElement = this.allElements[Random.getInteger(this.allElements.length)].name;
         this.onSelectorChange();
       });
   }
 
   
   onSelectorChange(event?: Event): void {
-    for (let i=0;   i < this._allElements.length;   i++) {
-      if (this._allElements[i].name === this._selectedElement) {
-        this._element = this._allElements[i];
-        this._event.emit( this._element );
-        this.imgUrl = this._element.image.url;
-        this.imgName = this._element.name;
+    for (let i=0;   i < this.allElements.length;   i++) {
+      if (this.allElements[i].name === this.selectedElement) {
+        this.element = this.allElements[i];
+        this._event.emit( this.element );
+        this.imgUrl = this.element.image.url;
+        this.imgName = this.element.name;
         break;
       }
     }

@@ -15,7 +15,7 @@ import KartFeatures from 'src/app/models/KartFeatures';
 })
 export class BuilderSimpleComponent implements OnInit {
 
-  private _kart: Kart;
+  kart: Kart;
   featuresList;
 
   kartOptions;/* = {
@@ -47,18 +47,18 @@ export class BuilderSimpleComponent implements OnInit {
   
   onFeatureChange(feature?): void {
     let type: string = feature.type.toLowerCase();
-    this._kart[type] = feature;
+    this.kart[type] = feature;
     this.updateChart();
   }
 
   updateChart() {
-    this.kartChart = this.chart.getKart(this._kart);
-    this.handlingChart = this.chart.getHandling(this._kart);
-    this.speedChart = this.chart.getSpeed(this._kart);
+    this.kartChart = this.chart.getKart(this.kart);
+    this.handlingChart = this.chart.getHandling(this.kart);
+    this.speedChart = this.chart.getSpeed(this.kart);
     this.kartOptions = this.chart.getKartOptions('Kart');
     this.speedOptions = this.chart.getPathOptions('Speed');
     this.handlingOptions = this.chart.getPathOptions('Handling');
-    this.featureChart = this.chart.getFeatures(this._kart);
+    this.featureChart = this.chart.getFeatures(this.kart);
   }
 
 
@@ -85,11 +85,11 @@ export class BuilderSimpleComponent implements OnInit {
 
   
   private kartInit(): void {
-    this._kart = NullModel.getKart();
-    this._kart.driver = this.featuresList['ofDrivers'][0];
-    this._kart.body   = this.featuresList['ofBodies'][0];
-    this._kart.tires  = this.featuresList['ofTires'][0];
-    this._kart.glider = this.featuresList['ofGliders'][0];
+    this.kart = NullModel.getKart();
+    this.kart.driver = this.featuresList['ofDrivers'][0];
+    this.kart.body   = this.featuresList['ofBodies'][0];
+    this.kart.tires  = this.featuresList['ofTires'][0];
+    this.kart.glider = this.featuresList['ofGliders'][0];
   }
 
 }
