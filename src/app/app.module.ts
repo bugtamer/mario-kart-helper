@@ -9,6 +9,7 @@ import { FeatureVtableComponent } from './components/feature-vtable/feature-vtab
 import { ImageComponent } from './components/image/image.component';
 import { KartComponent } from './components/kart/kart.component';
 import { SpecBarComponent } from './components/spec-bar/spec-bar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SpecBarComponent } from './components/spec-bar/spec-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [
     StatsService,
