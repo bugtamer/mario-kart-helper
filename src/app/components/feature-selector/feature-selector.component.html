@@ -1,0 +1,8 @@
+<label *ngIf="label" [for]="selectorId">{{ label }}</label>
+
+<select #featureSelector [name]="selectorName" [id]="selectorId" (change)="onSelectionChange($event)">
+  <option *ngFor="let feature of featureList" [value]="feature.id">
+    <mkh-image [image]="feature.image" [name]="feature.name"></mkh-image>
+    {{ feature.name }}
+  </option>
+</select>

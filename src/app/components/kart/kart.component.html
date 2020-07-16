@@ -1,3 +1,131 @@
-<app-feature-list
-    [data]="[kart.driver, kart.body, kart.tires, kart.glider]"
-    areChoosable="false"></app-feature-list>
+<table>
+    <tr>
+        <th>Id</th>
+        <td>{{ kart.id }}</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>{{ kart.name }}</td>
+    </tr>
+    <tr>
+        <th>Size</th>
+        <td><mkh-spec-bar [score]="kart.size" maxScore="3"></mkh-spec-bar></td>
+    </tr>
+    <tr>
+        <th>Speed</th>
+        <td>
+            <mkh-spec-bar [score]="kart.speed"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Ground Speed</th>
+        <td>
+            <mkh-spec-bar [score]="kart.groundSpeed"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Water Speed</th>
+        <td>
+            <mkh-spec-bar [score]="kart.waterSpeed"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Air Speed</th>
+        <td>
+            <mkh-spec-bar [score]="kart.airSpeed"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>AntiGravity Speed</th>
+        <td>
+            <mkh-spec-bar [score]="kart.antiGravitySpeed"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Acceleration</th>
+        <td>
+            <mkh-spec-bar [score]="kart.acceleration"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Weight</th>
+        <td>
+            <mkh-spec-bar [score]="kart.weight"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Handling</th>
+        <td>
+            <mkh-spec-bar [score]="kart.handling"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Ground Handling</th>
+        <td>
+            <mkh-spec-bar [score]="kart.groundHandling"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Water Handling</th>
+        <td>
+            <mkh-spec-bar [score]="kart.waterHandling"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Air Handling</th>
+        <td>
+            <mkh-spec-bar [score]="kart.airHandling"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>AntiGravity Handling</th>
+        <td>
+            <mkh-spec-bar [score]="kart.antiGravityHandling"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Grid</th>
+        <td>
+            <mkh-spec-bar [score]="kart.grid"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Mini turbo</th>
+        <td>
+            <mkh-spec-bar [score]="kart.miniTurbo"></mkh-spec-bar>
+        </td>
+    </tr>
+    <tr>
+        <th>Image</th>
+        <td>
+            <mkh-image *ngFor="let image of kart.images" [image]="image"></mkh-image>
+        </td>
+    </tr>
+</table>
+
+
+<div class="inline">
+    <!-- <span class="inline">
+        <mkh-feature-vtable [feature]="kartFeatures"></mkh-feature-vtable>
+    </span> -->
+    
+    <span class="inline">
+        <mkh-feature-selector type="driver" name="Driver list" (change)="update($event)"></mkh-feature-selector>
+        <mkh-feature-vtable [feature]="driver"></mkh-feature-vtable>
+    </span>
+    
+    <span class="inline">
+        <mkh-feature-selector type="body" name="Body list" (change)="update($event)"></mkh-feature-selector>
+        <mkh-feature-vtable [feature]="body"></mkh-feature-vtable>
+    </span>
+    
+    <span class="inline">
+        <mkh-feature-selector type="tires" name="Tires list" (change)="update($event)"></mkh-feature-selector>
+        <mkh-feature-vtable [feature]="tires"></mkh-feature-vtable>
+    </span>
+    
+    <span class="inline">
+        <mkh-feature-selector type="glider" name="Glider list" (change)="update($event)"></mkh-feature-selector>
+        <mkh-feature-vtable [feature]="glider"></mkh-feature-vtable>
+    </span>
+</div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KartComponent } from './kart.component';
+import { SpecBarComponent } from './spec-bar.component';
 
-describe('KartComponent', () => {
-  let component: KartComponent;
-  let fixture: ComponentFixture<KartComponent>;
+describe('SpecBarComponent', () => {
+  let component: SpecBarComponent;
+  let fixture: ComponentFixture<SpecBarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ KartComponent ]
+      declarations: [ SpecBarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(KartComponent);
+    fixture = TestBed.createComponent(SpecBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

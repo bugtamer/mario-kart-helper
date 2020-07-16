@@ -1,0 +1,48 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <td>{{ feature.id }}</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>{{ feature.name }}</td>
+    </tr>
+    <tr>
+        <th>Type</th>
+        <td>{{ feature.type }}</td>
+    </tr>
+    <tr>
+        <th>Size</th>
+        <td>{{ feature.size ? feature.size : notAvailable }}</td>
+    </tr>
+    <tr>
+        <th>Speed</th>
+        <td>{{ feature.speed.level }}</td>
+    </tr>
+    <tr>
+        <th>Acceleration</th>
+        <td>{{ feature.acceleration }}</td>
+    </tr>
+    <tr>
+        <th>Weight</th>
+        <td>{{ feature.weight }}</td>
+    </tr>
+    <tr>
+        <th>Handling</th>
+        <td>{{ feature.handling.getLevel() }}</td>
+    </tr>
+    <tr>
+        <th>Grid</th>
+        <td>{{ feature.grid }}</td>
+    </tr>
+    <tr>
+        <th>Mini turbo</th>
+        <td>{{ feature.miniTurbo }}</td>
+    </tr>
+    <tr>
+        <th>Image</th>
+        <td>
+            <mkh-image [image]="feature.image" [name]="feature.name"></mkh-image>
+        </td>
+    </tr>
+</table>
