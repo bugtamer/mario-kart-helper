@@ -8,7 +8,6 @@ import { FeatureSelectorComponent } from './components/feature-selector/feature-
 import { FeatureVtableComponent } from './components/feature-vtable/feature-vtable.component';
 import { ImageComponent } from './components/image/image.component';
 import { KartComponent } from './components/kart/kart.component';
-import { SpecBarComponent } from './components/spec-bar/spec-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FeatureVtableComponent,
     ImageComponent,
     KartComponent,
-    SpecBarComponent
   ],
   imports: [
     BrowserModule,
