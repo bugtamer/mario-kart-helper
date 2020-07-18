@@ -1,6 +1,6 @@
-import { Feature } from './features/feature.model';
-import { Image } from './features/image.model';
-import { Medium } from './medium.model';
+import { Feature } from 'src/app/models/kart/feature.model';
+import { Image } from 'src/app/models/kart/image.model';
+import { Medium } from 'src/app/models/kart/medium.model';
 
 /**
  * - A Kart has four feature: diver, body, tires, and glider.
