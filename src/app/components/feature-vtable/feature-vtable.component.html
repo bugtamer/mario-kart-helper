@@ -1,48 +1,33 @@
-<table>
+<table class="table table-striped">
+  <thead>
     <tr>
-        <th>Id</th>
-        <td>{{ feature.id }}</td>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">type</th>
+      <th scope="col">Size</th>
+      <th scope="col">Speed</th>
+      <th scope="col">Acceleration</th>
+      <th scope="col">Weight</th>
+      <th scope="col">handling</th>
+      <th scope="col">Grid</th>
+      <th scope="col">Mini turbo</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
-        <th>Name</th>
-        <td>{{ feature.name }}</td>
+      <th scope="row">{{ feature.id }}</th>
+      <td>
+        <img [src]="feature.image.url" class="mr-2" style="width: 20px">
+        {{ feature.name }}
+      </td>
+      <td>{{ feature.type }}</td>
+      <td>{{ feature.size ? feature.size : notAvailable }}</td>
+      <td>{{ feature.speed.level }}</td>
+      <td>{{ feature.acceleration }}</td>
+      <td>{{ feature.weight }}</td>
+      <td>{{ feature.handling.getLevel() }}</td>
+      <td>{{ feature.grid }}</td>
+      <td>{{ feature.miniTurbo }}</td>
     </tr>
-    <tr>
-        <th>Type</th>
-        <td>{{ feature.type }}</td>
-    </tr>
-    <tr>
-        <th>Size</th>
-        <td>{{ feature.size ? feature.size : notAvailable }}</td>
-    </tr>
-    <tr>
-        <th>Speed</th>
-        <td>{{ feature.speed.level }}</td>
-    </tr>
-    <tr>
-        <th>Acceleration</th>
-        <td>{{ feature.acceleration }}</td>
-    </tr>
-    <tr>
-        <th>Weight</th>
-        <td>{{ feature.weight }}</td>
-    </tr>
-    <tr>
-        <th>Handling</th>
-        <td>{{ feature.handling.getLevel() }}</td>
-    </tr>
-    <tr>
-        <th>Grid</th>
-        <td>{{ feature.grid }}</td>
-    </tr>
-    <tr>
-        <th>Mini turbo</th>
-        <td>{{ feature.miniTurbo }}</td>
-    </tr>
-    <tr>
-        <th>Image</th>
-        <td>
-            <mkh-image [image]="feature.image" [name]="feature.name"></mkh-image>
-        </td>
-    </tr>
+  </tbody>
 </table>

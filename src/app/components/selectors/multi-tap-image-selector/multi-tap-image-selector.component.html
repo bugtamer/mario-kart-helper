@@ -1,0 +1,61 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="activeTab" class="nav-tabs">
+
+  <!-- kart -->
+  <li [ngbNavItem]="kartId">
+    <a ngbNavLink>{{ kartLabel }}</a>
+    <ng-template ngbNavContent>
+      <mkh-kart *ngIf="isKartSet; else kartIsNotReadyMessage"
+        [driver]="driver"
+        [body]="body"
+        [tires]="tires"
+        [glider]="glider">
+      </mkh-kart>
+    </ng-template>
+  </li>
+
+  <!-- driver -->
+  <li [ngbNavItem]="driverId">
+    <a ngbNavLink>{{ driverLabel }}</a>
+    <ng-template ngbNavContent>
+      <mkh-grid-image-selector type="driver" (change)="onDriverChange($event)"></mkh-grid-image-selector>
+    </ng-template>
+  </li>
+
+  <!-- body -->
+  <li [ngbNavItem]="bodyId">
+    <a ngbNavLink>{{ bodyLabel }}</a>
+    <ng-template ngbNavContent>
+      <mkh-grid-image-selector type="body" (change)="onBodyChange($event)"></mkh-grid-image-selector>
+    </ng-template>
+  </li>
+
+  <!-- tires -->
+  <li [ngbNavItem]="tiresId">
+    <a ngbNavLink>{{ tiresLabel }}</a>
+    <ng-template ngbNavContent>
+      <mkh-grid-image-selector type="tires" (change)="onTiresChange($event)"></mkh-grid-image-selector>
+    </ng-template>
+  </li>
+
+  <!-- glider -->
+  <li [ngbNavItem]="gliderId">
+    <a ngbNavLink>{{ gliderLabel }}</a>
+    <ng-template ngbNavContent>
+      <mkh-grid-image-selector type="glider" (change)="onGliderChange($event)"></mkh-grid-image-selector>
+    </ng-template>
+  </li>
+
+</ul>
+
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+
+<ng-template #kartIsNotReadyMessage>
+  <ol>
+    <li *ngIf="! isDriverSet">Choose a driver</li>
+    <li *ngIf="! isBodySet">Choose a body</li>
+    <li *ngIf="! isTiresSet">Choose tires</li>
+    <li *ngIf="! isGliderSet">Choose a glider</li>
+  </ol>
+</ng-template>

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Image } from 'src/app/models/kart/features/image.model';
+import { Image } from 'src/app/models/kart/image.model';
 
 @Component({
   selector: 'mkh-image',

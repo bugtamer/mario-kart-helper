@@ -3,8 +3,8 @@ import { Subscription, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { v4 as uuidv4 } from 'uuid';
 import { StatsService } from 'src/app/services/stats/stats.service';
-import { Feature } from 'src/app/models/kart/features/feature.model';
-import { FeatureWrapper } from 'src/app/models/feature-wrapper.model';
+import { Feature } from 'src/app/models/kart/feature.model';
+import { FeatureWrapper } from 'src/app/models/util/feature-wrapper.model';
 
 /**
  * This component let you choose a feature among all the available ones of the same kind.

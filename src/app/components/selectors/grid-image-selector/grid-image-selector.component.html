@@ -1,0 +1,10 @@
+<ul class="container list-group">
+  <li class="list-group-item" [class.highlighted]="isHighlighted(feature)" *ngFor="let feature of featureList">
+    <mkh-image-button
+      [image]="feature.image"
+      [isHighlighted]="! isHighlighted(feature)"
+      (click)="onSelectionChange($event)"
+    >
+  </mkh-image-button>
+  </li>
+</ul>

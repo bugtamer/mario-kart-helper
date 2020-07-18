@@ -1,0 +1,12 @@
+<span>
+  <input
+    type="image"
+    [class.hover]="isHighlighted"
+    [src]="url"
+    [attr.width.px]="width"
+    [attr.height.px]="height"
+    [alt]="name"
+    [title]="name"
+    (click)="onClick($event)"
+  />
+</span>

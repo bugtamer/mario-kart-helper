@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Feature } from 'src/app/models/kart/features/feature.model';
+import { Feature } from 'src/app/models/kart/feature.model';
 
 @Component({
   selector: 'mkh-feature-vtable',
@@ -9,7 +9,6 @@ import { Feature } from 'src/app/models/kart/features/feature.model';
 export class FeatureVtableComponent implements OnInit {
 
   ngOnInit(): void {
-    console.log('vtable', this.feature );
   }
 
   @Input()

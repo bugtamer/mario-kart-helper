@@ -1,0 +1,17 @@
+span {
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.highlighted {
+  /* background-color: crimson; */
+}
+
+img:hover {
+  background: linear-gradient(to right, crimson, white);
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 3em;
+
+}
