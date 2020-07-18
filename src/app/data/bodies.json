@@ -728,7 +728,7 @@
     }
   },
   {
-    "id": 2027,
+    "id": 2029,
     "name": "Streetle",
     "type": 2,
     "speed": {
@@ -754,7 +754,7 @@
     }
   },
   {
-    "id": 2028,
+    "id": 2030,
     "name": "Sneeker (Bounder)",
     "type": 2,
     "speed": {
@@ -780,7 +780,7 @@
     }
   },
   {
-    "id": 2029,
+    "id": 2031,
     "name": "Standard Bike",
     "type": 2,
     "speed": {
@@ -806,7 +806,7 @@
     }
   },
   {
-    "id": 2030,
+    "id": 2032,
     "name": "Blue Falcon",
     "type": 2,
     "speed": {
@@ -832,7 +832,7 @@
     }
   },
   {
-    "id": 2031,
+    "id": 2033,
     "name": "Standard Bike",
     "type": 2,
     "speed": {
@@ -858,7 +858,7 @@
     }
   },
   {
-    "id": 2032,
+    "id": 2034,
     "name": "Blue Falcon",
     "type": 2,
     "speed": {
@@ -884,7 +884,7 @@
     }
   },
   {
-    "id": 2033,
+    "id": 2035,
     "name": "Wild Wiggler",
     "type": 2,
     "speed": {
@@ -910,7 +910,7 @@
     }
   },
   {
-    "id": 2034,
+    "id": 2036,
     "name": "W 25 Silver Arrow",
     "type": 2,
     "speed": {
@@ -936,7 +936,7 @@
     }
   },
   {
-    "id": 2035,
+    "id": 2037,
     "name": "Blue Falcon",
     "type": 2,
     "speed": {
@@ -962,7 +962,7 @@
     }
   },
   {
-    "id": 2036,
+    "id": 2038,
     "name": "Splat Buggy",
     "type": 2,
     "speed": {
@@ -988,7 +988,7 @@
     }
   },
   {
-    "id": 2037,
+    "id": 2039,
     "name": "Tanooki Kart",
     "type": 2,
     "speed": {
@@ -1014,7 +1014,7 @@
     }
   },
   {
-    "id": 2038,
+    "id": 2040,
     "name": "Koopa Clown",
     "type": 2,
     "speed": {
