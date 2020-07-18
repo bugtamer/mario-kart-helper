@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { Feature } from 'src/app/models/kart/features/feature.model';
+import { Feature } from 'src/app/models/kart/feature.model';
 
 // Typescript v2.9+ required (or ES6/ES2015):
 // to import JSONs as *.ts file, tsconfig requires to

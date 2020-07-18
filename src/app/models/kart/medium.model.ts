@@ -1,4 +1,4 @@
-import { Deserializable } from '../deserializable.model';
+import { Deserializable } from 'src/app/models/util/deserializable.model';
 
 /**
  * Each field is a value between 0 an 10, both inclusive.
